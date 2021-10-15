@@ -1,0 +1,94 @@
+2021-08-10 19:27:15.992 +09:00 [DBG] >LOG:1628591235,D,MANAGEMENT: CMD ''
+2021-08-10 19:27:49.030 +09:00 [DBG] >LOG:1628591269,D,MANAGEMENT: CMD 'username "Auth" akitoshi.shiga'
+2021-08-10 19:27:49.033 +09:00 [DBG] >LOG:1628591269,D,MANAGEMENT: CMD ''
+2021-08-10 19:27:49.034 +09:00 [DBG] >LOG:1628591269,D,MANAGEMENT: CMD 'password [...]'
+2021-08-10 19:27:49.035 +09:00 [DBG] >LOG:1628591269,D,MANAGEMENT: CMD ''
+2021-08-10 19:27:49.437 +09:00 [DBG] >LOG:1628591269,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-08-10 19:27:49.437 +09:00 [DBG] >LOG:1628591269,I,TCP/UDP: Preserving recently used remote address: [AF_INET]35.76.69.46:443
+2021-08-10 19:27:49.437 +09:00 [DBG] >LOG:1628591269,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-08-10 19:27:49.437 +09:00 [DBG] >LOG:1628591269,I,UDP link local: (not bound)
+2021-08-10 19:27:49.437 +09:00 [DBG] >LOG:1628591269,I,UDP link remote: [AF_INET]35.76.69.46:443
+2021-08-10 19:27:49.445 +09:00 [DBG] >LOG:1628591269,,TLS: Initial packet from [AF_INET]35.76.69.46:443, sid=aee3ce15 691647e0
+2021-08-10 19:27:49.446 +09:00 [DBG] >LOG:1628591269,W,WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+2021-08-10 19:27:49.455 +09:00 [DBG] >LOG:1628591269,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-08-10 19:27:49.455 +09:00 [DBG] >LOG:1628591269,,VERIFY KU OK
+2021-08-10 19:27:49.455 +09:00 [DBG] >LOG:1628591269,,Validating certificate extended key usage
+2021-08-10 19:27:49.456 +09:00 [DBG] >LOG:1628591269,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-08-10 19:27:49.456 +09:00 [DBG] >LOG:1628591269,,VERIFY EKU OK
+2021-08-10 19:27:49.456 +09:00 [DBG] >LOG:1628591269,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-08-10 19:27:49.466 +09:00 [DBG] >LOG:1628591269,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-08-10 19:27:49.466 +09:00 [DBG] >LOG:1628591269,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]35.76.69.46:443
+2021-08-10 19:27:50.494 +09:00 [DBG] >LOG:1628591270,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-08-10 19:27:55.601 +09:00 [DBG] >LOG:1628591275,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-08-10 19:27:57.882 +09:00 [DBG] >LOG:1628591275,,PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,route-gateway 172.16.0.1,topology subnet,ping 1,ping-restart 20,ifconfig 172.16.0.2 255.255.255.224,peer-id 0,cipher AES-256-GCM'
+2021-08-10 19:27:57.882 +09:00 [DBG] >LOG:1628591275,,OPTIONS IMPORT: timers and/or timeouts modified
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,,OPTIONS IMPORT: --ifconfig/up options modified
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,,OPTIONS IMPORT: route options modified
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,,OPTIONS IMPORT: route-related options modified
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,,OPTIONS IMPORT: peer-id set
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,,OPTIONS IMPORT: adjusting link_mtu to 1624
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,,OPTIONS IMPORT: data channel crypto options modified
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,,Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,,Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,,ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=en7 HWADDR=64:4b:f0:2b:5b:1c
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,I,Opened utun device utun2
+2021-08-10 19:27:57.883 +09:00 [DBG] >LOG:1628591275,D,do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+2021-08-10 19:27:57.884 +09:00 [DBG] >LOG:1628591275,I,/sbin/ifconfig utun2 delete
+2021-08-10 19:27:57.884 +09:00 [DBG] >LOG:1628591275,I,NOTE: Tried to delete pre-existing tun/tap instance -- No Problem if failure
+2021-08-10 19:27:57.884 +09:00 [DBG] >LOG:1628591275,I,/sbin/ifconfig utun2 172.16.0.2 172.16.0.2 netmask 255.255.255.224 mtu 1500 up
+2021-08-10 19:27:57.884 +09:00 [DBG] >LOG:1628591275,,/sbin/route add -net 172.16.0.0 172.16.0.2 255.255.255.224
+2021-08-10 19:27:57.884 +09:00 [DBG] >LOG:1628591275,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.up utun2 1500 1552 172.16.0.2 255.255.255.224 init
+2021-08-10 19:27:57.884 +09:00 [DBG] >LOG:1628591277,,/sbin/route add -net 35.76.69.46 192.168.0.1 255.255.255.255
+2021-08-10 19:27:57.884 +09:00 [DBG] >LOG:1628591277,,/sbin/route add -net 0.0.0.0 172.16.0.1 128.0.0.0
+2021-08-10 19:27:57.884 +09:00 [DBG] >LOG:1628591277,,/sbin/route add -net 128.0.0.0 172.16.0.1 128.0.0.0
+2021-08-10 19:27:57.884 +09:00 [DBG] >LOG:1628591277,I,Initialization Sequence Completed
+2021-08-10 19:58:29.880 +09:00 [DBG] >LOG:1628593108,I,[vpn-server.insight-inc.biz] Inactivity timeout (--ping-restart), restarting
+2021-08-10 19:58:29.882 +09:00 [DBG] >LOG:1628593109,,/sbin/route delete -net 35.76.69.46 192.168.0.1 255.255.255.255
+2021-08-10 19:58:30.860 +09:00 [DBG] >LOG:1628593110,,/sbin/route delete -net 0.0.0.0 172.16.0.1 128.0.0.0
+2021-08-10 19:58:30.946 +09:00 [DBG] >LOG:1628593110,,/sbin/route delete -net 128.0.0.0 172.16.0.1 128.0.0.0
+2021-08-10 19:58:30.946 +09:00 [DBG] >LOG:1628593110,,Closing TUN/TAP interface
+2021-08-10 19:58:30.946 +09:00 [DBG] >LOG:1628593110,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.down utun2 1500 1552 172.16.0.2 255.255.255.224 init
+2021-08-10 19:58:32.235 +09:00 [DBG] >LOG:1628593112,I,SIGUSR1[soft,ping-restart] received, process restarting
+2021-08-10 19:58:32.259 +09:00 [DBG] >LOG:1628593112,,Restart pause, 5 second(s)
+2021-08-10 19:58:37.514 +09:00 [DBG] >LOG:1628593117,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-08-10 19:58:37.517 +09:00 [DBG] >LOG:1628593117,I,TCP/UDP: Preserving recently used remote address: [AF_INET]35.76.69.46:443
+2021-08-10 19:58:37.517 +09:00 [DBG] >LOG:1628593117,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-08-10 19:58:37.517 +09:00 [DBG] >LOG:1628593117,I,UDP link local: (not bound)
+2021-08-10 19:58:37.517 +09:00 [DBG] >LOG:1628593117,I,UDP link remote: [AF_INET]35.76.69.46:443
+2021-08-10 19:58:37.522 +09:00 [DBG] >LOG:1628593117,,TLS: Initial packet from [AF_INET]35.76.69.46:443, sid=b2f3736b 86487adf
+2021-08-10 19:58:37.530 +09:00 [DBG] >LOG:1628593117,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-08-10 19:58:37.530 +09:00 [DBG] >LOG:1628593117,,VERIFY KU OK
+2021-08-10 19:58:37.531 +09:00 [DBG] >LOG:1628593117,,Validating certificate extended key usage
+2021-08-10 19:58:37.545 +09:00 [DBG] >LOG:1628593117,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-08-10 19:58:37.545 +09:00 [DBG] >LOG:1628593117,,VERIFY EKU OK
+2021-08-10 19:58:37.545 +09:00 [DBG] >LOG:1628593117,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-08-10 19:58:37.548 +09:00 [DBG] >LOG:1628593117,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-08-10 19:58:37.549 +09:00 [DBG] >LOG:1628593117,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]35.76.69.46:443
+2021-08-10 19:58:38.656 +09:00 [DBG] >LOG:1628593118,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-08-10 19:58:38.664 +09:00 [DBG] >LOG:1628593118,,PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,route-gateway 172.16.0.33,topology subnet,ping 1,ping-restart 20,ifconfig 172.16.0.34 255.255.255.224,peer-id 0,cipher AES-256-GCM'
+2021-08-10 19:58:38.665 +09:00 [DBG] >LOG:1628593118,,OPTIONS IMPORT: timers and/or timeouts modified
+2021-08-10 19:58:38.665 +09:00 [DBG] >LOG:1628593118,,OPTIONS IMPORT: --ifconfig/up options modified
+2021-08-10 19:58:38.665 +09:00 [DBG] >LOG:1628593118,,OPTIONS IMPORT: route options modified
+2021-08-10 19:58:38.666 +09:00 [DBG] >LOG:1628593118,,OPTIONS IMPORT: route-related options modified
+2021-08-10 19:58:38.666 +09:00 [DBG] >LOG:1628593118,,OPTIONS IMPORT: peer-id set
+2021-08-10 19:58:38.667 +09:00 [DBG] >LOG:1628593118,,OPTIONS IMPORT: adjusting link_mtu to 1624
+2021-08-10 19:58:38.668 +09:00 [DBG] >LOG:1628593118,,OPTIONS IMPORT: data channel crypto options modified
+2021-08-10 19:58:38.668 +09:00 [DBG] >LOG:1628593118,,Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-08-10 19:58:38.668 +09:00 [DBG] >LOG:1628593118,,Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-08-10 19:58:38.668 +09:00 [DBG] >LOG:1628593118,,ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=en7 HWADDR=64:4b:f0:2b:5b:1c
+2021-08-10 19:58:38.668 +09:00 [DBG] >LOG:1628593118,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-08-10 19:58:38.669 +09:00 [DBG] >LOG:1628593118,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-08-10 19:58:38.669 +09:00 [DBG] >LOG:1628593118,I,Opened utun device utun2
+2021-08-10 19:58:38.669 +09:00 [DBG] >LOG:1628593118,D,do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+2021-08-10 19:58:38.669 +09:00 [DBG] >LOG:1628593118,I,/sbin/ifconfig utun2 delete
+2021-08-10 19:58:38.672 +09:00 [DBG] >LOG:1628593118,I,NOTE: Tried to delete pre-existing tun/tap instance -- No Problem if failure
+2021-08-10 19:58:38.672 +09:00 [DBG] >LOG:1628593118,I,/sbin/ifconfig utun2 172.16.0.34 172.16.0.34 netmask 255.255.255.224 mtu 1500 up
+2021-08-10 19:58:38.677 +09:00 [DBG] >LOG:1628593118,,/sbin/route add -net 172.16.0.32 172.16.0.34 255.255.255.224
+2021-08-10 19:58:38.683 +09:00 [DBG] >LOG:1628593118,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.up utun2 1500 1552 172.16.0.34 255.255.255.224 init
+2021-08-10 19:58:40.948 +09:00 [DBG] >LOG:1628593120,,/sbin/route add -net 35.76.69.46 192.168.0.1 255.255.255.255
+2021-08-10 19:58:40.953 +09:00 [DBG] >LOG:1628593120,,/sbin/route add -net 0.0.0.0 172.16.0.33 128.0.0.0
+2021-08-10 19:58:40.959 +09:00 [DBG] >LOG:1628593120,,/sbin/route add -net 128.0.0.0 172.16.0.33 128.0.0.0
+2021-08-10 19:58:40.963 +09:00 [DBG] >LOG:1628593120,I,Initialization Sequence Completed
+2021-08-10 19:59:21.440 +09:00 [DBG] >LOG:1628593161,D,MANAGEMENT: CMD 'status'

@@ -1,0 +1,16 @@
+markdownlint-disable
+def
+markdownlint-restore
+try/except/else
+__main__
+for/else
+try/except/finally
+async/for/else
+GPL2
+public_static_method
+useRe
+AGPL
+function
+style
+script
+template

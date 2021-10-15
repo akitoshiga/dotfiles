@@ -1,0 +1,146 @@
+2021-09-01 14:26:25.630 +09:00 [DBG] >LOG:1630473985,D,MANAGEMENT: CMD ''
+2021-09-01 14:27:55.401 +09:00 [DBG] >LOG:1630474075,D,MANAGEMENT: CMD 'username "Auth" akitoshi.shiga'
+2021-09-01 14:27:55.408 +09:00 [DBG] >LOG:1630474075,D,MANAGEMENT: CMD ''
+2021-09-01 14:27:55.409 +09:00 [DBG] >LOG:1630474075,D,MANAGEMENT: CMD 'password [...]'
+2021-09-01 14:27:55.409 +09:00 [DBG] >LOG:1630474075,D,MANAGEMENT: CMD ''
+2021-09-01 14:27:55.569 +09:00 [DBG] >LOG:1630474075,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-09-01 14:27:55.569 +09:00 [DBG] >LOG:1630474075,I,TCP/UDP: Preserving recently used remote address: [AF_INET]3.113.103.179:443
+2021-09-01 14:27:55.569 +09:00 [DBG] >LOG:1630474075,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-09-01 14:27:55.569 +09:00 [DBG] >LOG:1630474075,I,UDP link local: (not bound)
+2021-09-01 14:27:55.570 +09:00 [DBG] >LOG:1630474075,I,UDP link remote: [AF_INET]3.113.103.179:443
+2021-09-01 14:27:55.580 +09:00 [DBG] >LOG:1630474075,,TLS: Initial packet from [AF_INET]3.113.103.179:443, sid=d827fda2 c737744c
+2021-09-01 14:27:55.580 +09:00 [DBG] >LOG:1630474075,W,WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+2021-09-01 14:27:55.593 +09:00 [DBG] >LOG:1630474075,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-09-01 14:27:55.593 +09:00 [DBG] >LOG:1630474075,,VERIFY KU OK
+2021-09-01 14:27:55.593 +09:00 [DBG] >LOG:1630474075,,Validating certificate extended key usage
+2021-09-01 14:27:55.593 +09:00 [DBG] >LOG:1630474075,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-09-01 14:27:55.593 +09:00 [DBG] >LOG:1630474075,,VERIFY EKU OK
+2021-09-01 14:27:55.593 +09:00 [DBG] >LOG:1630474075,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-09-01 14:27:55.613 +09:00 [DBG] >LOG:1630474075,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-09-01 14:27:55.613 +09:00 [DBG] >LOG:1630474075,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]3.113.103.179:443
+2021-09-01 14:27:56.945 +09:00 [DBG] >LOG:1630474076,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-09-01 14:27:59.257 +09:00 [DBG] >LOG:1630474076,,PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,route-gateway 172.16.1.33,topology subnet,ping 1,ping-restart 20,ifconfig 172.16.1.34 255.255.255.224,peer-id 0,cipher AES-256-GCM'
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,OPTIONS IMPORT: timers and/or timeouts modified
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,OPTIONS IMPORT: --ifconfig/up options modified
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,OPTIONS IMPORT: route options modified
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,OPTIONS IMPORT: route-related options modified
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,OPTIONS IMPORT: peer-id set
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,OPTIONS IMPORT: adjusting link_mtu to 1624
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,OPTIONS IMPORT: data channel crypto options modified
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=en9 HWADDR=80:3f:5d:01:8b:6f
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,I,Opened utun device utun2
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,D,do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,I,/sbin/ifconfig utun2 delete
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,I,NOTE: Tried to delete pre-existing tun/tap instance -- No Problem if failure
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,I,/sbin/ifconfig utun2 172.16.1.34 172.16.1.34 netmask 255.255.255.224 mtu 1500 up
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,,/sbin/route add -net 172.16.1.32 172.16.1.34 255.255.255.224
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474076,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.up utun2 1500 1552 172.16.1.34 255.255.255.224 init
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474079,,/sbin/route add -net 3.113.103.179 192.168.0.1 255.255.255.255
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474079,,/sbin/route add -net 0.0.0.0 172.16.1.33 128.0.0.0
+2021-09-01 14:27:59.258 +09:00 [DBG] >LOG:1630474079,,/sbin/route add -net 128.0.0.0 172.16.1.33 128.0.0.0
+2021-09-01 14:27:59.259 +09:00 [DBG] >LOG:1630474079,I,Initialization Sequence Completed
+2021-09-01 15:15:58.962 +09:00 [DBG] >LOG:1630476958,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17822 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:15:58.964 +09:00 [DBG] >LOG:1630476958,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17823 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.347 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17982 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.394 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17983 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.394 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17985 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.394 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17992 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.395 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17990 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.395 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17991 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.395 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17988 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.395 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17989 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.395 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17986 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.396 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17987 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.396 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17993 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.396 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17998 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.396 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17996 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.397 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17997 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.397 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17994 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:00.397 +09:00 [DBG] >LOG:1630476960,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #17995 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:12.963 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18188 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:12.978 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18187 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:12.978 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18191 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:12.979 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18189 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:12.980 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18190 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:13.015 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18195 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:13.016 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18196 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:13.016 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18193 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:13.016 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18194 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:13.017 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18192 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:13.017 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18199 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:13.017 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18198 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 15:16:13.017 +09:00 [DBG] >LOG:1630476972,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #18202 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-09-01 17:23:34.069 +09:00 [DBG] >LOG:1630484614,D,MANAGEMENT: CMD 'status'
+2021-09-01 18:48:10.753 +09:00 [DBG] >LOG:1630489690,D,MANAGEMENT: CMD ''
+2021-09-01 18:48:29.280 +09:00 [DBG] >LOG:1630489709,D,MANAGEMENT: CMD 'username "Auth" akitoshil.shiga'
+2021-09-01 18:48:29.282 +09:00 [DBG] >LOG:1630489709,D,MANAGEMENT: CMD ''
+2021-09-01 18:48:29.282 +09:00 [DBG] >LOG:1630489709,D,MANAGEMENT: CMD 'password [...]'
+2021-09-01 18:48:29.282 +09:00 [DBG] >LOG:1630489709,D,MANAGEMENT: CMD ''
+2021-09-01 18:48:29.355 +09:00 [DBG] >LOG:1630489709,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-09-01 18:48:29.356 +09:00 [DBG] >LOG:1630489709,I,TCP/UDP: Preserving recently used remote address: [AF_INET]52.69.181.7:443
+2021-09-01 18:48:29.356 +09:00 [DBG] >LOG:1630489709,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-09-01 18:48:29.356 +09:00 [DBG] >LOG:1630489709,I,UDP link local: (not bound)
+2021-09-01 18:48:29.356 +09:00 [DBG] >LOG:1630489709,I,UDP link remote: [AF_INET]52.69.181.7:443
+2021-09-01 18:48:29.364 +09:00 [DBG] >LOG:1630489709,,TLS: Initial packet from [AF_INET]52.69.181.7:443, sid=2dc32e5d 03dae24c
+2021-09-01 18:48:29.365 +09:00 [DBG] >LOG:1630489709,W,WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+2021-09-01 18:48:29.375 +09:00 [DBG] >LOG:1630489709,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-09-01 18:48:29.375 +09:00 [DBG] >LOG:1630489709,,VERIFY KU OK
+2021-09-01 18:48:29.375 +09:00 [DBG] >LOG:1630489709,,Validating certificate extended key usage
+2021-09-01 18:48:29.375 +09:00 [DBG] >LOG:1630489709,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-09-01 18:48:29.375 +09:00 [DBG] >LOG:1630489709,,VERIFY EKU OK
+2021-09-01 18:48:29.375 +09:00 [DBG] >LOG:1630489709,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-09-01 18:48:29.390 +09:00 [DBG] >LOG:1630489709,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-09-01 18:48:29.390 +09:00 [DBG] >LOG:1630489709,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]52.69.181.7:443
+2021-09-01 18:48:30.645 +09:00 [DBG] >LOG:1630489710,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-09-01 18:48:30.650 +09:00 [DBG] >LOG:1630489710,,AUTH: Received control message: AUTH_FAILED,Invalid username or password
+2021-09-01 18:48:31.321 +09:00 [DBG] >LOG:1630489711,D,MANAGEMENT: CMD ''
+2021-09-01 18:48:38.520 +09:00 [DBG] >LOG:1630489718,D,MANAGEMENT: CMD 'username "Auth" akitoshi.shiga'
+2021-09-01 18:48:38.520 +09:00 [DBG] >LOG:1630489718,D,MANAGEMENT: CMD ''
+2021-09-01 18:48:38.521 +09:00 [DBG] >LOG:1630489718,D,MANAGEMENT: CMD 'password [...]'
+2021-09-01 18:48:38.521 +09:00 [DBG] >LOG:1630489718,D,MANAGEMENT: CMD ''
+2021-09-01 18:48:38.680 +09:00 [DBG] >LOG:1630489718,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-09-01 18:48:38.680 +09:00 [DBG] >LOG:1630489718,I,TCP/UDP: Preserving recently used remote address: [AF_INET]52.69.181.7:443
+2021-09-01 18:48:38.680 +09:00 [DBG] >LOG:1630489718,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-09-01 18:48:38.680 +09:00 [DBG] >LOG:1630489718,I,UDP link local: (not bound)
+2021-09-01 18:48:38.680 +09:00 [DBG] >LOG:1630489718,I,UDP link remote: [AF_INET]52.69.181.7:443
+2021-09-01 18:48:38.685 +09:00 [DBG] >LOG:1630489718,,TLS: Initial packet from [AF_INET]52.69.181.7:443, sid=f67ec005 8737082b
+2021-09-01 18:48:38.685 +09:00 [DBG] >LOG:1630489718,W,WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+2021-09-01 18:48:38.692 +09:00 [DBG] >LOG:1630489718,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-09-01 18:48:38.692 +09:00 [DBG] >LOG:1630489718,,VERIFY KU OK
+2021-09-01 18:48:38.692 +09:00 [DBG] >LOG:1630489718,,Validating certificate extended key usage
+2021-09-01 18:48:38.692 +09:00 [DBG] >LOG:1630489718,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-09-01 18:48:38.692 +09:00 [DBG] >LOG:1630489718,,VERIFY EKU OK
+2021-09-01 18:48:38.692 +09:00 [DBG] >LOG:1630489718,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-09-01 18:48:38.702 +09:00 [DBG] >LOG:1630489718,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-09-01 18:48:38.703 +09:00 [DBG] >LOG:1630489718,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]52.69.181.7:443
+2021-09-01 18:48:39.903 +09:00 [DBG] >LOG:1630489719,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-09-01 18:48:45.185 +09:00 [DBG] >LOG:1630489725,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-09-01 18:48:47.522 +09:00 [DBG] >LOG:1630489725,,PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,route-gateway 172.16.0.129,topology subnet,ping 1,ping-restart 20,ifconfig 172.16.0.131 255.255.255.224,peer-id 1,cipher AES-256-GCM'
+2021-09-01 18:48:47.522 +09:00 [DBG] >LOG:1630489725,,OPTIONS IMPORT: timers and/or timeouts modified
+2021-09-01 18:48:47.522 +09:00 [DBG] >LOG:1630489725,,OPTIONS IMPORT: --ifconfig/up options modified
+2021-09-01 18:48:47.522 +09:00 [DBG] >LOG:1630489725,,OPTIONS IMPORT: route options modified
+2021-09-01 18:48:47.522 +09:00 [DBG] >LOG:1630489725,,OPTIONS IMPORT: route-related options modified
+2021-09-01 18:48:47.522 +09:00 [DBG] >LOG:1630489725,,OPTIONS IMPORT: peer-id set
+2021-09-01 18:48:47.522 +09:00 [DBG] >LOG:1630489725,,OPTIONS IMPORT: adjusting link_mtu to 1624
+2021-09-01 18:48:47.522 +09:00 [DBG] >LOG:1630489725,,OPTIONS IMPORT: data channel crypto options modified
+2021-09-01 18:48:47.522 +09:00 [DBG] >LOG:1630489725,,Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-09-01 18:48:47.522 +09:00 [DBG] >LOG:1630489725,,Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489725,,ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=en9 HWADDR=80:3f:5d:01:8b:6f
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489725,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489725,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489725,I,Opened utun device utun2
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489725,D,do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489725,I,/sbin/ifconfig utun2 delete
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489725,I,NOTE: Tried to delete pre-existing tun/tap instance -- No Problem if failure
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489725,I,/sbin/ifconfig utun2 172.16.0.131 172.16.0.131 netmask 255.255.255.224 mtu 1500 up
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489725,,/sbin/route add -net 172.16.0.128 172.16.0.131 255.255.255.224
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489725,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.up utun2 1500 1552 172.16.0.131 255.255.255.224 init
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489727,,/sbin/route add -net 52.69.181.7 192.168.0.1 255.255.255.255
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489727,,/sbin/route add -net 0.0.0.0 172.16.0.129 128.0.0.0
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489727,,/sbin/route add -net 128.0.0.0 172.16.0.129 128.0.0.0
+2021-09-01 18:48:47.523 +09:00 [DBG] >LOG:1630489727,I,Initialization Sequence Completed
+2021-09-01 18:53:26.285 +09:00 [DBG] >LOG:1630490006,D,MANAGEMENT: CMD 'status'

@@ -1,0 +1,36 @@
+client
+dev tun
+proto udp
+remote cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com 443
+remote-random-hostname
+resolv-retry infinite
+nobind
+remote-cert-tls server
+cipher AES-256-GCM
+verb 3
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIDQTCCAimgAwIBAgIJAOLTVxLr+BDdMA0GCSqGSIb3DQEBCwUAMBoxGDAWBgNV
+BAMMD2luc2lnaHQtaW5jLmJpejAeFw0yMTA0MjQwNDUxMTBaFw0zMTA0MjIwNDUx
+MTBaMBoxGDAWBgNVBAMMD2luc2lnaHQtaW5jLmJpejCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBAM3LjfeubefynlhK/cLPwBvvyznMTBK86rkQ1onSYupX
+iKWUn6AG4blrno6BkEwbuAmzNodlR9h/0vkHMGTl14PqMaPCK/Wad4DZz6WtaspB
+IivEM4vhBGYDIXzusxlFhnLnhisjZ1ng1RpSF+84HXzcvUsDPO3FQriTtPwkBOjp
+b1PHuscwhfEjHSNA1wwib0/jWSgCiGPv7fiwng0HSXx5iIeWNQE2apVV+l9eXAlX
+fWYC+XMZzKnAx9Vj7gqHHHdhLleTvmCMkKOxLjr0Wr47IW45AGnQd5ppuPs5XOXo
+UYXRgRNK8IZ9UM/CEqylAauznK6qZfhnCalf/ek+vu0CAwEAAaOBiTCBhjAdBgNV
+HQ4EFgQUW+kGC1txQGChP33FaCbL5t6oUdEwSgYDVR0jBEMwQYAUW+kGC1txQGCh
+P33FaCbL5t6oUdGhHqQcMBoxGDAWBgNVBAMMD2luc2lnaHQtaW5jLmJpeoIJAOLT
+VxLr+BDdMAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgEGMA0GCSqGSIb3DQEBCwUA
+A4IBAQCi0lMuqK7j16ZNTd9GBuFDGXEJiQ5C46d1wgwHjGSFT3PAc/8omt9Yosdy
+cNIK84+0JHXyIITRWZFwWTgqoUD9E+dOubGO6gK42vecnI6gITb6mm7P/DD7NS5D
+wdhMqvEYO/ITPOXThgws5TCdasBqc9KMWe+d+907/LkJxkGtol5BPhgSBBmyG7XH
+S3R0P+YLoa6b4FUqjzLqSsxBLWc+EIvl7oBZwFfnB3sUadjzdwEsemVznRVOZ2ZA
+npsHsO/wlxFMMy91hRMLW5Wuwrehbycs8X+6hBdwPPt7ZhcwI5LdZeZikOFdpNHX
+i67YRVeQVDLpxhg6Rez0yMxlZOms
+-----END CERTIFICATE-----
+
+</ca>
+auth-user-pass
+
+reneg-sec 0

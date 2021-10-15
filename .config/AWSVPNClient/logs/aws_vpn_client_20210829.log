@@ -1,0 +1,152 @@
+2021-08-29 00:14:13.654 +09:00 [DBG] Sending Metrics batches
+2021-08-29 00:14:13.706 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 00:14:13.723 +09:00 [DBG] is empty: True
+2021-08-29 00:14:13.723 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 00:14:13.723 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 00:14:13.727 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 00:14:13.728 +09:00 [DBG] is empty: True
+2021-08-29 00:14:13.728 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 01:14:13.639 +09:00 [DBG] Sending Metrics batches
+2021-08-29 01:14:13.652 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 01:14:13.653 +09:00 [DBG] is empty: True
+2021-08-29 01:14:13.653 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 01:14:13.654 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 01:14:13.655 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 01:14:13.656 +09:00 [DBG] is empty: True
+2021-08-29 01:14:13.656 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 02:14:13.628 +09:00 [DBG] Sending Metrics batches
+2021-08-29 02:14:13.664 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 02:14:13.665 +09:00 [DBG] is empty: True
+2021-08-29 02:14:13.665 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 02:14:13.665 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 02:14:13.668 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 02:14:13.685 +09:00 [DBG] is empty: True
+2021-08-29 02:14:13.685 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 10:03:31.641 +09:00 [DBG] Sending Metrics batches
+2021-08-29 10:03:31.647 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 10:03:31.658 +09:00 [DBG] is empty: True
+2021-08-29 10:03:31.658 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 10:03:31.658 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 10:03:31.662 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 10:03:31.663 +09:00 [DBG] is empty: True
+2021-08-29 10:03:31.663 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 11:03:31.589 +09:00 [DBG] Sending Metrics batches
+2021-08-29 11:03:31.595 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 11:03:31.596 +09:00 [DBG] is empty: True
+2021-08-29 11:03:31.596 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 11:03:31.596 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 11:03:31.597 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 11:03:31.599 +09:00 [DBG] is empty: True
+2021-08-29 11:03:31.599 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 12:03:31.568 +09:00 [DBG] Sending Metrics batches
+2021-08-29 12:03:36.031 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 12:03:36.033 +09:00 [DBG] is empty: True
+2021-08-29 12:03:36.033 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 12:03:36.033 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 12:03:36.036 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 12:03:36.038 +09:00 [DBG] is empty: True
+2021-08-29 12:03:36.038 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 13:03:35.946 +09:00 [DBG] Sending Metrics batches
+2021-08-29 13:03:35.965 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 13:03:35.967 +09:00 [DBG] is empty: True
+2021-08-29 13:03:35.967 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 13:03:35.967 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 13:03:35.971 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 13:03:35.972 +09:00 [DBG] is empty: True
+2021-08-29 13:03:35.972 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 14:03:35.943 +09:00 [DBG] Sending Metrics batches
+2021-08-29 14:03:35.948 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 14:03:35.949 +09:00 [DBG] is empty: True
+2021-08-29 14:03:35.949 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 14:03:35.949 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 14:03:35.951 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 14:03:35.952 +09:00 [DBG] is empty: True
+2021-08-29 14:03:35.952 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 15:03:35.864 +09:00 [DBG] Sending Metrics batches
+2021-08-29 15:03:35.870 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 15:03:35.872 +09:00 [DBG] is empty: True
+2021-08-29 15:03:35.872 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 15:03:35.872 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 15:03:35.876 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 15:03:35.877 +09:00 [DBG] is empty: True
+2021-08-29 15:03:35.877 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 16:35:21.141 +09:00 [DBG] Sending Metrics batches
+2021-08-29 16:35:21.157 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 16:35:21.158 +09:00 [DBG] is empty: True
+2021-08-29 16:35:21.158 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 16:35:21.158 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 16:35:21.162 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 16:35:21.163 +09:00 [DBG] is empty: True
+2021-08-29 16:35:21.163 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 17:35:22.338 +09:00 [DBG] Sending Metrics batches
+2021-08-29 17:35:22.365 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 17:35:22.367 +09:00 [DBG] is empty: True
+2021-08-29 17:35:22.367 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 17:35:22.367 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 17:35:22.370 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 17:35:22.372 +09:00 [DBG] is empty: True
+2021-08-29 17:35:22.372 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 19:40:49.215 +09:00 [DBG] Sending Metrics batches
+2021-08-29 19:40:49.224 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 19:40:49.225 +09:00 [DBG] is empty: True
+2021-08-29 19:40:49.226 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 19:40:49.226 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 19:40:49.229 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 19:40:49.230 +09:00 [DBG] is empty: True
+2021-08-29 19:40:49.230 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 21:25:56.816 +09:00 [DBG] Sending Metrics batches
+2021-08-29 21:25:56.821 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 21:25:56.822 +09:00 [DBG] is empty: True
+2021-08-29 21:25:56.822 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 21:25:56.822 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 21:25:56.824 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 21:25:56.824 +09:00 [DBG] is empty: True
+2021-08-29 21:25:56.825 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 22:25:56.777 +09:00 [DBG] Sending Metrics batches
+2021-08-29 22:25:56.783 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 22:25:56.787 +09:00 [DBG] is empty: True
+2021-08-29 22:25:56.788 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 22:25:56.788 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 22:25:56.791 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 22:25:56.792 +09:00 [DBG] is empty: True
+2021-08-29 22:25:56.792 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-29 23:25:25.323 +09:00 [DBG] AcvcHelperOutLog doesn't exist. Skipping
+2021-08-29 23:25:25.373 +09:00 [DBG] AcvcHelperErrLog doesn't exist. Skipping
+2021-08-29 23:25:25.857 +09:00 [DBG] Total logs size: 12158296 bytes
+2021-08-29 23:25:25.870 +09:00 [DBG] Inserted event LOG_DISK_USAGE 12158296 to MetricsTable
+2021-08-29 23:25:25.911 +09:00 [DBG] Inserted event LOG_DISK_USAGE 12158296 to AnalyticsTable
+2021-08-29 23:25:56.764 +09:00 [DBG] Sending Metrics batches
+2021-08-29 23:25:56.772 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 23:25:56.773 +09:00 [DBG] is empty: False
+2021-08-29 23:25:56.860 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-29 23:25:56.862 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-29 23:25:56.862 +09:00 [DBG] Sending metrics batch async
+2021-08-29 23:25:56.864 +09:00 [DBG] OS: MacOS
+2021-08-29 23:25:56.866 +09:00 [DBG] Metrics data request created
+2021-08-29 23:25:57.160 +09:00 [DBG] Sending Analytics Batches
+2021-08-29 23:25:57.166 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 23:25:57.167 +09:00 [DBG] is empty: False
+2021-08-29 23:25:57.170 +09:00 [DBG] Analytics event batch successfully created, sending analytics
+2021-08-29 23:25:57.171 +09:00 [DBG] Sending analytics batch async
+2021-08-29 23:25:57.171 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-29 23:25:57.208 +09:00 [DBG] Pinpoint endpoint ID already exists
+2021-08-29 23:25:57.208 +09:00 [DBG] OSVersion: Unix 19.6.0.0
+2021-08-29 23:25:57.209 +09:00 [DBG] OS: MacOS
+2021-08-29 23:25:57.209 +09:00 [DBG] Endpoint ID: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-29 23:25:57.209 +09:00 [DBG] Pinpoint endpoint id: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-29 23:25:57.209 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-29 23:25:57.209 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-29 23:25:57.668 +09:00 [DBG] Caching credentials.
+2021-08-29 23:25:58.024 +09:00 [DBG] CloudWatch response received
+2021-08-29 23:25:58.059 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-29 23:25:58.059 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-29 23:25:58.059 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-29 23:25:58.072 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-29 23:25:58.073 +09:00 [DBG] is empty: True
+2021-08-29 23:25:58.074 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-29 23:25:58.208 +09:00 [DBG] 2021/08/29 23:25:58 Accepted
+2021-08-29 23:25:58.208 +09:00 [DBG] successfully put analytics to pinpoint
+2021-08-29 23:25:58.208 +09:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2021-08-29 23:25:58.220 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-29 23:25:58.221 +09:00 [DBG] is empty: True
+2021-08-29 23:25:58.221 +09:00 [DBG] Finished sending batches of analytics to pinpoint.

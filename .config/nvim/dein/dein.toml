@@ -1,0 +1,716 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+
+[[plugins]]
+repo = 'roxma/nvim-yarp'
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+on_cmd = [
+    'Files',
+    'ProjectFiles',
+    'Buffers',
+    'BLines',
+    'History',
+    'Tags',
+    'BTags',
+    'GFiles',
+    'Ag',
+]
+hook_add = '''
+nnoremap <silent> ,a :<C-u>Ag<CR>
+nnoremap <silent> ,f :<C-u>ProjectFiles<CR>
+nnoremap <silent> ,b :<C-u>Buffers<CR>
+nnoremap <silent> ,m :<C-u>History<CR>
+set rtp+=~/.fzf
+'''
+hook_source = '''
+
+function! s:find_git_root()
+  " プロジェクトルートで開く
+  return system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
+endfunction
+
+command! ProjectFiles execute 'Files' s:find_git_root()
+" command! -bang -nargs=? -complete=dir Files
+"     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'head -20 {}']}, <bang>0)
+
+
+
+" Terminal buffer options for fzf
+autocmd! FileType fzf
+autocmd  FileType fzf set noshowmode noruler nonu
+
+if has('nvim')
+  function! s:create_float(hl, opts)
+    let buf = nvim_create_buf(v:false, v:true)
+    let opts = extend({'relative': 'editor', 'style': 'minimal'}, a:opts)
+    let win = nvim_open_win(buf, v:true, opts)
+    call setwinvar(win, '&winhighlight', 'NormalFloat:'.a:hl)
+    call setwinvar(win, '&colorcolumn', '')
+    return buf
+  endfunction
+
+  function! FloatingFZF()
+    " Size and position
+    let width = float2nr(&columns * 0.9)
+    let height = float2nr(&lines * 0.6)
+    let row = float2nr((&lines - height) / 2)
+    let col = float2nr((&columns - width) / 2)
+
+    " Border
+    let top = '╭' . repeat('─', width - 2) . '╮'
+    let mid = '│' . repeat(' ', width - 2) . '│'
+    let bot = '╰' . repeat('─', width - 2) . '╯'
+    let border = [top] + repeat([mid], height - 2) + [bot]
+
+    " Draw frame
+    let s:frame = s:create_float('Comment', {'row': row, 'col': col, 'width': width, 'height': height})
+    call nvim_buf_set_lines(s:frame, 0, -1, v:true, border)
+
+    " Draw viewport
+    call s:create_float('Normal', {'row': row + 1, 'col': col + 2, 'width': width - 4, 'height': height - 2})
+    autocmd BufWipeout <buffer> execute 'bwipeout' s:frame
+  endfunction
+
+  let g:fzf_layout = { 'window': 'call FloatingFZF()' }
+endif
+'''
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+hook_add = '''
+hi DefxIconsOpenedTreeIcon guifg=#FF0000
+'''
+[[plugins]]
+repo = 'kristijanhusak/defx-icons'
+[[plugins]]
+repo = 'kristijanhusak/defx-git'
+[[plugins]]
+repo = 'Shougo/defx.nvim'
+hook_add = '''
+
+" F4で呼び出し 
+nnoremap <silent> <F4> :<C-u> Defx <CR>
+
+" 見た目の設定
+call defx#custom#option('_', {
+\ 'columns': 'git:icons:indent:filename',
+\ 'winwidth': 45,
+\ 'split': 'vertical',
+\ 'direction': 'topleft',
+\ 'show_ignored_files': 1,
+\ 'buffer_name': 'exlorer',
+\ 'toggle': 1,
+\ 'resume': 1,
+\ })
+
+" Git用の見た目の設定
+call defx#custom#column('git', 'indicators', {
+  \ 'Modified'  : '✹',
+  \ 'Staged'    : '✚',
+  \ 'Untracked' : '✭',
+  \ 'Renamed'   : '➜',
+  \ 'Unmerged'  : '═',
+  \ 'Ignored'   : '☒',
+  \ 'Deleted'   : '✖',
+  \ 'Unknown'   : '?'
+  \ })
+
+"自動更新
+autocmd BufWritePost * call defx#redraw()
+autocmd BufEnter * call defx#redraw()
+
+"キーバインド
+autocmd FileType defx call s:defx_my_settings()
+function! s:defx_my_settings() abort
+  nnoremap <silent><buffer><expr> <CR>
+   \ defx#do_action('drop')
+  nnoremap <silent><buffer><expr> c
+  \ defx#do_action('copy')
+  nnoremap <silent><buffer><expr> m
+  \ defx#do_action('move')
+  nnoremap <silent><buffer><expr> p
+  \ defx#do_action('paste')
+  nnoremap <silent><buffer><expr> l
+  \ defx#do_action('drop')
+  nnoremap <silent><buffer><expr> t
+  \ defx#do_action('open','tabnew')
+  nnoremap <silent><buffer><expr> E
+  \ defx#do_action('drop', 'vsplit')
+  nnoremap <silent><buffer><expr> P
+  \ defx#do_action('drop', 'pedit')
+  nnoremap <silent><buffer><expr> o
+  \ defx#do_action('open_or_close_tree')
+  nnoremap <silent><buffer><expr> K
+  \ defx#do_action('new_directory')
+  nnoremap <silent><buffer><expr> N
+  \ defx#do_action('new_file')
+  nnoremap <silent><buffer><expr> M
+  \ defx#do_action('new_multiple_files')
+  nnoremap <silent><buffer><expr> C
+  \ defx#do_action('toggle_columns',
+  \                'mark:indent:icon:filename:type:size:time')
+  nnoremap <silent><buffer><expr> S
+  \ defx#do_action('toggle_sort', 'time')
+  nnoremap <silent><buffer><expr> d
+  \ defx#do_action('remove')
+  nnoremap <silent><buffer><expr> r
+  \ defx#do_action('rename')
+  nnoremap <silent><buffer><expr> !
+  \ defx#do_action('execute_command')
+  nnoremap <silent><buffer><expr> x
+  \ defx#do_action('execute_system')
+  nnoremap <silent><buffer><expr> yy
+  \ defx#do_action('yank_path')
+  nnoremap <silent><buffer><expr> .
+  \ defx#do_action('toggle_ignored_files')
+  nnoremap <silent><buffer><expr> ;
+  \ defx#do_action('repeat')
+  nnoremap <silent><buffer><expr> h
+  \ defx#do_action('cd', ['..'])
+  nnoremap <silent><buffer><expr> ~
+  \ defx#do_action('cd')
+  nnoremap <silent><buffer><expr> q
+  \ defx#do_action('quit')
+  nnoremap <silent><buffer><expr> <Space>
+  \ defx#do_action('toggle_select') . 'j'
+  nnoremap <silent><buffer><expr> *
+  \ defx#do_action('toggle_select_all')
+  nnoremap <silent><buffer><expr> j
+  \ line('.') == line('$') ? 'gg' : 'j'
+  nnoremap <silent><buffer><expr> k
+  \ line('.') == 1 ? 'G' : 'k'
+  nnoremap <silent><buffer><expr> <C-l>
+  \ defx#do_action('redraw')
+  nnoremap <silent><buffer><expr> <C-g>
+  \ defx#do_action('print')
+  nnoremap <silent><buffer><expr> cd
+  \ defx#do_action('change_vim_cwd')
+endfunction
+'''
+
+
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'mg979/vim-visual-multi'
+
+
+[[plugins]]
+repo = 'liuchengxu/vista.vim'
+hook_add = '''
+let g:vista_sidebar_width=40
+let g:vista_echo_cursor=0
+" デフォルトの情報ソースをctagsにする
+let g:vista_default_executive = 'ctags'
+" 特定の言語の場合vim-lspを利用した情報ソースを利用するようにする
+let g:vista_executive_for = {
+    \ 'go': 'vim_lsp',
+    \ 'python': 'vim_lsp',
+    \ }
+
+" トグル(アウトラインを非表示の場合は表示、表示済みの場合は非表示に)
+nnoremap <F5> :<C-u>Vista!!<CR>
+'''
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+hook_add = '''
+nmap [figitive] <Nop>
+map <Leader>g [figitive]
+nmap <silent> [figitive]s :<C-u>Gstatus<CR>
+" これめっちゃ便利
+nmap <silent> [figitive]d :<C-u>Gdiff<CR>
+nmap <silent> [figitive]b :<C-u>Gblame<CR>
+nmap <silent> [figitive]l :<C-u>Glog<CR>
+'''
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'kassio/neoterm'
+hook_add = '''
+" Tnew"
+" :1T command 
+let g:neoterm_default_mod='belowright'
+let g:neoterm_size=10
+let g:neoterm_autoscroll=1
+tnoremap <silent> <C-w> <C-\><C-n><C-w>
+'''
+
+[[plugins]]
+repo = 'dhruvasagar/vim-table-mode'
+hook_add = '''
+let g:table_mode_corner = '|'
+" :TableModeToggle
+'''
+[[plugins]]
+repo = 'reireias/vim-cheatsheet'
+hook_add = '''
+let g:cheatsheet#cheat_file = '~/.config/nvim/cheatsheet.md'
+" :Cheat "
+'''
+[[plugins]]
+repo = 'simeji/winresizer'
+hook_add = '''
+let g:winresizer_vert_resize = 1
+let g:winresizer_horiz_resize = 1
+
+let g:winresizer_start_key = '<Leader>e'
+'''
+
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build='make'
+hook_post_update = '''
+  if dein#util#_is_windows()
+    let cmd = 'tools\\update-dll-mingw'
+  elseif dein#util#_is_cygwin()
+    let cmd = 'make -f make_cygwin.mak'
+  elseif executable('gmake')
+    let cmd = 'gmake'
+  else
+    let cmd = 'make'
+  endif
+  let g:dein#plugin.build = cmd
+'''
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+hook_add = '''
+let g:quickrun_config = get(g:, 'quickrun_config', {})
+let g:quickrun_config._ = {
+      \ 'runner'    : 'vimproc',
+      \ 'runner/vimproc/updatetime' : 60,
+      \ 'outputter' : 'error',
+      \ 'outputter/error/success' : 'quickfix',
+      \ 'outputter/error/error'   : 'quickfix',
+      \ 'outputter/buffer/split'  : ':rightbelow 8sp',
+      \ 'outputter/buffer/close_on_empty' : 0,
+      \ }
+
+  nmap ,r :QuickRun -mode n
+  vmap ,r :QuickRun -mode v
+'''
+
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+hook_add ='''
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+nmap <Leader>s <Plug>(easymotion-overwin-f2)
+
+" Move to line
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+'''
+[[plugins]]
+repo = 'josa42/vim-lightline-coc'
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add ='''
+let s:black = [ '#232526', 233 ]
+let s:gray = [ '#333333', 244 ]
+let s:white = [ '#f8f8f2', 234 ]
+let s:cyan = [ '#00ffff', 161 ]
+let s:green = [ '#00ff00', 118 ]
+let s:orange = [ '#ef5939', 166 ]
+let s:pink = [ '#f92672', 161 ]
+let s:red = [ '#ff0000', 160 ]
+let s:yellow = [ '#ffff00', 11 ]
+let s:blue = [ '#00ffff', 11 ]
+
+let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}, 'command': {}}
+
+" let s:p.{mode}.{where} = [ [ {guifg}, {guibg}, {ctermfg}, {ctermbg} ], ... ]
+let s:p.normal.left = [ [ s:cyan, s:black ], [ s:black, s:cyan ] ]
+let s:p.normal.middle = [ [ s:black, s:cyan ] ]
+"let s:p.normal.middle = [ [ s:cyan, s:black ] ]
+let s:p.normal.right = [ [ s:pink, s:black ], [ s:black, s:pink ] ]
+let s:p.normal.error = [ [ s:red, s:black ] ]
+let s:p.normal.warning = [ [ s:yellow, s:black ] ]
+
+let s:p.insert.left = [ [ s:yellow, s:black ], [ s:black, s:yellow ] ]
+let s:p.insert.middle = [ [ s:black, s:yellow ] ]
+let s:p.insert.right = [ [ s:pink, s:black ], [ s:black, s:pink ] ]
+
+let s:p.visual.left = [ [ s:pink, s:black], [ s:black, s:pink] ]
+let s:p.visual.middle = [ [ s:black, s:pink] ]
+let s:p.visual.right = [ [ s:cyan, s:black ], [ s:black, s:cyan ] ]
+
+let s:p.replace.left = [ [ s:blue, s:black ], [ s:black, s:blue ] ]
+let s:p.replace.middle = [ [ s:black, s:blue ] ]
+let s:p.replace.right = [ [ s:pink, s:black ], [ s:black, s:pink ] ]
+
+let s:p.command.left = [ [ s:green, s:black ], [ s:black, s:green ] ]
+let s:p.command.middle = [ [ s:black, s:green ],]
+let s:p.command.right = [ [ s:pink, s:black ], [ s:black, s:pink ] ]
+
+let s:p.inactive.left =  [ [ s:pink, s:gray ], [ s:white, s:gray ] ]
+let s:p.inactive.middle = [ [ s:white, s:gray] ]
+let s:p.inactive.right = [ [ s:cyan, s:gray], [ s:gray, s:cyan] ]
+
+let s:p.tabline.left = [ [ s:cyan, s:black ] ]
+let s:p.tabline.middle = [ [ s:cyan, s:black] ]
+let s:p.tabline.right = copy(s:p.normal.right)
+let s:p.tabline.tabsel = [ [ s:black, s:pink ] ]
+
+let g:lightline#colorscheme#molokai#palette = lightline#colorscheme#flatten(s:p)
+set noshowmode
+
+" タブ
+
+let g:lightline#tab = {
+      \ 'active': [ 'tabnum', 'filename', 'modified' ],
+      \ 'inactive': [ 'tabnum', 'filename', 'modified' ]
+      \ }
+let g:lightline#tab_component_function = {
+      \ 'filename': 'LightlineTabFilename',
+      \ 'modified': 'lightline#tab#modified',
+      \ 'readonly': 'lightline#tab#readonly',
+      \ 'tabnum': 'lightline#tab#tabnum' }
+
+function! LightlineTabFilename(n) abort
+  let buflist = tabpagebuflist(a:n)
+  let winnr = tabpagewinnr(a:n)
+  let _ = pathshorten(expand('#'.buflist[winnr - 1].':f'))
+  return _ !=# '' ? _ : '[No Name]'
+endfunction
+
+
+"   'left':  [ ['mode', 'paste'], ['readonly', 'myfilename', 'method', 'modified'],[ 'coc_info', 'coc_hints', 'coc_errors', 'coc_warnings', 'coc_ok' ], [ 'coc_status'  ] ],
+" ['lsp_errors', 'lsp_warnings']
+let g:lightline = {
+    \ 'enable': { 'tabline': 1 },
+    \ 'colorscheme': 'molokai',
+    \ 'active': {
+    \   'left':  [ ['mode', 'paste'], ['readonly', 'myfilename', 'method', 'modified'] ,['coc_info', 'coc_hints', 'coc_errors', 'coc_warnings', 'coc_ok' ], [ 'coc_status']],
+    \   'right': [
+                    \ [ 'lineinfo' ],
+                    \ [ 'percent' ],
+                    \ ['char_code', 'fileformat', 'fileencoding', 'filetype' ],
+                \]
+    \ },
+    \ 'component_function': {
+    \   'myfilename': 'LightlineFilename',
+    \   'method': 'NearestMethodOrFunction',
+    \ },
+    \ 'component_expand': {
+              \   'lsp_errors'      : 'LightlineLSPErrors',
+              \   'lsp_warnings'    : 'LightlineLSPWarnings',
+              \   'linter_warnings' : 'lightline#coc#warnings',
+              \   'linter_errors'   : 'lightline#coc#errors',
+              \   'linter_info'     : 'lightline#coc#info',
+              \   'linter_hints'    : 'lightline#coc#hints',
+              \   'linter_ok'       : 'lightline#coc#ok',
+              \   'status'          : 'lightline#coc#status',
+    \ },
+    \ 'separator': { 'left': "\ue0c8 ", 'right': "\ue0ca " },
+    \ 'subseparator': { 'left': "", 'right': "\uf257" },
+    \ }
+function! LightlineLSPWarnings() abort
+    let l:counts = lsp#get_buffer_diagnostics_counts()
+    return l:counts.warning == 0 ? '' : printf('W:%d', l:counts.warning)
+endfunction
+
+function! LightlineLSPErrors() abort
+    let l:counts = lsp#get_buffer_diagnostics_counts()
+    return l:counts.error == 0 ? '' : printf('E:%d', l:counts.error)
+endfunction
+
+augroup lightlineAutocmd
+    autocmd!
+    autocmd User lsp_diagnostics_updated call lightline#update()
+
+function! LightlineFilename()
+    let l:p = expand('%:t')
+    if '' !=# l:p
+        return l:p
+    endif
+    return '[No Name]'
+endfunction
+
+function! NearestMethodOrFunction() abort
+    let l:func_name = get(b:, 'vista_nearest_method_or_function', '')
+    if l:func_name != ''
+        return ' ' . l:func_name
+    endif
+    return ''
+endfunction
+
+augroup LightLineOnVista
+    autocmd!
+    autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
+augroup END
+
+call lightline#coc#register()
+'''
+
+[[plugins]]
+repo = 'godlygeek/tabular'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+hook_add = '''
+'''
+
+
+[[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+hook_add='''
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+    disable = {}
+  }
+}
+
+EOF
+'''
+
+[[plugins]]
+repo = 'folke/tokyonight.nvim'
+
+[[plugins]]
+repo = 'stonefeld/nordokai'
+
+[[plugins]]
+repo = 'sainnhe/sonokai'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+hook_add = '''
+" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
+" unicode characters in the file autoload/float.vim
+set encoding=utf-8
+
+" TextEdit might fail if hidden is not set.
+set hidden
+
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("nvim-0.5.0") || has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+
+" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> to trigger completion.
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
+
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder.
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
+" Applying codeAction to the selected region.
+" Example: `<leader>aap` for current paragraph
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap keys for applying codeAction to the current buffer.
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Apply AutoFix to problem on the current line.
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" Map function and class text objects
+" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
+xmap if <Plug>(coc-funcobj-i)
+omap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap af <Plug>(coc-funcobj-a)
+xmap ic <Plug>(coc-classobj-i)
+omap ic <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
+
+" Remap <C-f> and <C-b> for scroll float windows/popups.
+if has('nvim-0.4.0') || has('patch-8.2.0750')
+  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+endif
+
+" Use CTRL-S for selections ranges.
+" Requires 'textDocument/selectionRange' support of language server.
+nmap <silent> <C-s> <Plug>(coc-range-select)
+xmap <silent> <C-s> <Plug>(coc-range-select)
+
+" Add `:Format` command to format current buffer.
+command! -nargs=0 Format :call CocAction('format')
+
+" Add `:Fold` command to fold current buffer.
+command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
+" Add `:OR` command for organize imports of the current buffer.
+command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+" Add (Neo)Vim's native statusline support.
+" NOTE: Please see `:h coc-status` for integrations with external plugins that
+" provide custom statusline: lightline.vim, vim-airline.
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+" Mappings for CoCList
+" Show all diagnostics.
+nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+" Manage extensions.
+nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+" Show commands.
+nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+" Find symbol of current document.
+nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+" Search workspace symbols.
+nnoremap <silent><nowait> <space>b  :<C-u>CocList -I symbols<cr>
+" Do default action for next item.
+nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+" Do default action for previous item.
+nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
+" Resume latest coc list.
+nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+'''
+
+[[plugins]]
+repo = 'neoclide/coc-java'
+hook_add = '''
+"java.configuration.runtimes": [ { "name": "JavaSE-8", "path": "/Users/insightshiga/.jenv/shims/java" } ]
+'''
+
+[[plugins]]
+repo ='neoclide/coc-rls'
+[[plugins]]
+repo = 'fannheyward/coc-pyright'
+
+[[plugins]]
+repo = 'neoclide/coc-snippets'
+[[plugins]]
+repo = 'neoclide/coc-tabnine'
+[[plugins]]
+repo = 'neoclide/coc-tsserver'
+[[plugins]]
+repo = 'neoclide/coc-python'
+[[plugins]]
+repo = 'neoclide/coc-prettier'
+[[plugins]]
+repo = 'neoclide/coc-git'
+[[plugins]]
+repo = 'neoclide/coc-yaml'
+[[plugins]]
+repo = 'neoclide/coc-json'
+[[plugins]]
+repo = 'neoclide/coc-css'
+[[plugins]]
+repo = 'neoclide/coc-wxml'
+[[plugins]]
+repo = 'marlonfan/coc-phpls'
+[[plugins]]
+repo = 'rcjsuen/dockerfile-language-server-nodejs'
+[[plugins]]
+repo = 'neoclide/coc-lists'
+[[plugins]]
+repo='bluz71/vim-moonfly-colors'
+[[plugins]]
+repo='bluz71/vim-nightfly-guicolors'
+[[plugins]]
+repo='haishanh/night-owl.vim'

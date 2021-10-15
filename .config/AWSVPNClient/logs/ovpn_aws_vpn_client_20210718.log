@@ -1,0 +1,607 @@
+2021-07-18 05:09:44.991 +09:00 [DBG] >LOG:1626552583,I,[vpn-server.insight-inc.biz] Inactivity timeout (--ping-restart), restarting
+2021-07-18 05:09:44.998 +09:00 [DBG] >LOG:1626552584,,/sbin/route delete -net 18.179.163.182 192.168.0.1 255.255.255.255
+2021-07-18 05:09:44.998 +09:00 [DBG] >LOG:1626552584,,/sbin/route delete -net 0.0.0.0 172.16.0.129 128.0.0.0
+2021-07-18 05:09:44.998 +09:00 [DBG] >LOG:1626552584,,/sbin/route delete -net 128.0.0.0 172.16.0.129 128.0.0.0
+2021-07-18 05:09:44.998 +09:00 [DBG] >LOG:1626552584,,Closing TUN/TAP interface
+2021-07-18 05:09:44.998 +09:00 [DBG] >LOG:1626552584,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.down utun2 1500 1552 172.16.0.130 255.255.255.224 init
+2021-07-18 05:09:45.522 +09:00 [DBG] >LOG:1626552585,I,SIGUSR1[soft,ping-restart] received, process restarting
+2021-07-18 05:09:45.582 +09:00 [DBG] >LOG:1626552585,,Restart pause, 5 second(s)
+2021-07-18 05:09:50.059 +09:00 [DBG] >LOG:1626552590,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 05:09:50.076 +09:00 [DBG] >LOG:1626552590,I,TCP/UDP: Preserving recently used remote address: [AF_INET]18.179.163.182:443
+2021-07-18 05:09:50.076 +09:00 [DBG] >LOG:1626552590,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 05:09:50.076 +09:00 [DBG] >LOG:1626552590,I,UDP link local: (not bound)
+2021-07-18 05:09:50.076 +09:00 [DBG] >LOG:1626552590,I,UDP link remote: [AF_INET]18.179.163.182:443
+2021-07-18 05:09:50.083 +09:00 [DBG] >LOG:1626552590,,TLS: Initial packet from [AF_INET]18.179.163.182:443, sid=8bf743ff 161b310a
+2021-07-18 05:09:50.087 +09:00 [DBG] >LOG:1626552590,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-07-18 05:09:50.104 +09:00 [DBG] >LOG:1626552590,,VERIFY KU OK
+2021-07-18 05:09:50.104 +09:00 [DBG] >LOG:1626552590,,Validating certificate extended key usage
+2021-07-18 05:09:50.104 +09:00 [DBG] >LOG:1626552590,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-07-18 05:09:50.105 +09:00 [DBG] >LOG:1626552590,,VERIFY EKU OK
+2021-07-18 05:09:50.105 +09:00 [DBG] >LOG:1626552590,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-07-18 05:09:50.116 +09:00 [DBG] >LOG:1626552590,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-07-18 05:09:50.116 +09:00 [DBG] >LOG:1626552590,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]18.179.163.182:443
+2021-07-18 05:09:51.401 +09:00 [DBG] >LOG:1626552591,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 05:10:18.001 +09:00 [DBG] >LOG:1626552617,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 05:10:18.040 +09:00 [DBG] >LOG:1626552617,I,[vpn-server.insight-inc.biz] Inactivity timeout (--ping-restart), restarting
+2021-07-18 05:10:18.042 +09:00 [DBG] >LOG:1626552617,I,SIGUSR1[soft,ping-restart] received, process restarting
+2021-07-18 05:10:22.740 +09:00 [DBG] >LOG:1626552617,,Restart pause, 5 second(s)
+2021-07-18 05:10:26.650 +09:00 [DBG] >LOG:1626552626,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 05:10:26.845 +09:00 [DBG] >LOG:1626552626,I,TCP/UDP: Preserving recently used remote address: [AF_INET]18.179.163.182:443
+2021-07-18 05:10:26.846 +09:00 [DBG] >LOG:1626552626,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 05:10:26.847 +09:00 [DBG] >LOG:1626552626,I,UDP link local: (not bound)
+2021-07-18 05:10:26.848 +09:00 [DBG] >LOG:1626552626,I,UDP link remote: [AF_INET]18.179.163.182:443
+2021-07-18 05:10:26.890 +09:00 [DBG] >LOG:1626552626,,TLS: Initial packet from [AF_INET]18.179.163.182:443, sid=2644f128 58a975fe
+2021-07-18 05:10:26.940 +09:00 [DBG] >LOG:1626552626,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-07-18 05:10:26.941 +09:00 [DBG] >LOG:1626552626,,VERIFY KU OK
+2021-07-18 05:10:26.986 +09:00 [DBG] >LOG:1626552626,,Validating certificate extended key usage
+2021-07-18 05:10:26.987 +09:00 [DBG] >LOG:1626552626,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-07-18 05:10:26.998 +09:00 [DBG] >LOG:1626552626,,VERIFY EKU OK
+2021-07-18 05:10:27.040 +09:00 [DBG] >LOG:1626552626,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-07-18 05:10:27.048 +09:00 [DBG] >LOG:1626552626,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-07-18 05:10:27.049 +09:00 [DBG] >LOG:1626552626,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]18.179.163.182:443
+2021-07-18 05:10:49.842 +09:00 [DBG] >LOG:1626552649,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 05:10:49.939 +09:00 [DBG] >LOG:1626552649,I,[vpn-server.insight-inc.biz] Inactivity timeout (--ping-restart), restarting
+2021-07-18 05:10:50.001 +09:00 [DBG] >LOG:1626552649,I,SIGUSR1[soft,ping-restart] received, process restarting
+2021-07-18 05:10:51.087 +09:00 [DBG] >LOG:1626552649,,Restart pause, 5 second(s)
+2021-07-18 05:10:54.147 +09:00 [DBG] >LOG:1626552654,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 05:10:54.147 +09:00 [DBG] >LOG:1626552654,I,TCP/UDP: Preserving recently used remote address: [AF_INET]35.73.84.179:443
+2021-07-18 05:10:54.149 +09:00 [DBG] >LOG:1626552654,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 05:10:54.151 +09:00 [DBG] >LOG:1626552654,I,UDP link local: (not bound)
+2021-07-18 05:10:54.152 +09:00 [DBG] >LOG:1626552654,I,UDP link remote: [AF_INET]35.73.84.179:443
+2021-07-18 05:10:54.194 +09:00 [DBG] >LOG:1626552654,,TLS: Initial packet from [AF_INET]35.73.84.179:443, sid=3cf1bd73 33a1dff6
+2021-07-18 05:10:54.195 +09:00 [DBG] >LOG:1626552654,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-07-18 05:10:54.196 +09:00 [DBG] >LOG:1626552654,,VERIFY KU OK
+2021-07-18 05:10:54.198 +09:00 [DBG] >LOG:1626552654,,Validating certificate extended key usage
+2021-07-18 05:10:54.201 +09:00 [DBG] >LOG:1626552654,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-07-18 05:10:54.201 +09:00 [DBG] >LOG:1626552654,,VERIFY EKU OK
+2021-07-18 05:10:54.214 +09:00 [DBG] >LOG:1626552654,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-07-18 05:10:54.220 +09:00 [DBG] >LOG:1626552654,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-07-18 05:10:54.220 +09:00 [DBG] >LOG:1626552654,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]35.73.84.179:443
+2021-07-18 05:10:55.433 +09:00 [DBG] >LOG:1626552655,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 05:11:00.311 +09:00 [DBG] >LOG:1626552660,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 05:11:00.322 +09:00 [DBG] >LOG:1626552660,,PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,route-gateway 172.16.1.33,topology subnet,ping 1,ping-restart 20,ifconfig 172.16.1.34 255.255.255.224,peer-id 0,cipher AES-256-GCM'
+2021-07-18 05:11:00.354 +09:00 [DBG] >LOG:1626552660,,OPTIONS IMPORT: timers and/or timeouts modified
+2021-07-18 05:11:00.365 +09:00 [DBG] >LOG:1626552660,,OPTIONS IMPORT: --ifconfig/up options modified
+2021-07-18 05:11:00.365 +09:00 [DBG] >LOG:1626552660,,OPTIONS IMPORT: route options modified
+2021-07-18 05:11:00.367 +09:00 [DBG] >LOG:1626552660,,OPTIONS IMPORT: route-related options modified
+2021-07-18 05:11:00.367 +09:00 [DBG] >LOG:1626552660,,OPTIONS IMPORT: peer-id set
+2021-07-18 05:11:00.368 +09:00 [DBG] >LOG:1626552660,,OPTIONS IMPORT: adjusting link_mtu to 1624
+2021-07-18 05:11:00.369 +09:00 [DBG] >LOG:1626552660,,OPTIONS IMPORT: data channel crypto options modified
+2021-07-18 05:11:00.369 +09:00 [DBG] >LOG:1626552660,,Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-07-18 05:11:00.383 +09:00 [DBG] >LOG:1626552660,,Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-07-18 05:11:00.387 +09:00 [DBG] >LOG:1626552660,,ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=en7 HWADDR=64:4b:f0:2b:5b:1c
+2021-07-18 05:11:00.388 +09:00 [DBG] >LOG:1626552660,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-07-18 05:11:00.388 +09:00 [DBG] >LOG:1626552660,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-07-18 05:11:00.389 +09:00 [DBG] >LOG:1626552660,I,Opened utun device utun2
+2021-07-18 05:11:00.390 +09:00 [DBG] >LOG:1626552660,D,do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+2021-07-18 05:11:00.392 +09:00 [DBG] >LOG:1626552660,I,/sbin/ifconfig utun2 delete
+2021-07-18 05:11:00.409 +09:00 [DBG] >LOG:1626552660,I,NOTE: Tried to delete pre-existing tun/tap instance -- No Problem if failure
+2021-07-18 05:11:00.410 +09:00 [DBG] >LOG:1626552660,I,/sbin/ifconfig utun2 172.16.1.34 172.16.1.34 netmask 255.255.255.224 mtu 1500 up
+2021-07-18 05:11:00.410 +09:00 [DBG] >LOG:1626552660,,/sbin/route add -net 172.16.1.32 172.16.1.34 255.255.255.224
+2021-07-18 05:11:00.418 +09:00 [DBG] >LOG:1626552660,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.up utun2 1500 1552 172.16.1.34 255.255.255.224 init
+2021-07-18 05:11:03.102 +09:00 [DBG] >LOG:1626552663,,/sbin/route add -net 35.73.84.179 192.168.0.1 255.255.255.255
+2021-07-18 05:11:03.106 +09:00 [DBG] >LOG:1626552663,,/sbin/route add -net 0.0.0.0 172.16.1.33 128.0.0.0
+2021-07-18 05:11:03.116 +09:00 [DBG] >LOG:1626552663,,/sbin/route add -net 128.0.0.0 172.16.1.33 128.0.0.0
+2021-07-18 05:11:03.123 +09:00 [DBG] >LOG:1626552663,I,Initialization Sequence Completed
+2021-07-18 05:50:39.306 +09:00 [DBG] >LOG:1626555038,I,[vpn-server.insight-inc.biz] Inactivity timeout (--ping-restart), restarting
+2021-07-18 05:50:39.306 +09:00 [DBG] >LOG:1626555038,,/sbin/route delete -net 35.73.84.179 192.168.0.1 255.255.255.255
+2021-07-18 05:50:39.306 +09:00 [DBG] >LOG:1626555038,,/sbin/route delete -net 0.0.0.0 172.16.1.33 128.0.0.0
+2021-07-18 05:50:39.307 +09:00 [DBG] >LOG:1626555038,,/sbin/route delete -net 128.0.0.0 172.16.1.33 128.0.0.0
+2021-07-18 05:50:39.308 +09:00 [DBG] >LOG:1626555038,,Closing TUN/TAP interface
+2021-07-18 05:50:39.308 +09:00 [DBG] >LOG:1626555038,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.down utun2 1500 1552 172.16.1.34 255.255.255.224 init
+2021-07-18 05:50:40.674 +09:00 [DBG] >LOG:1626555040,I,SIGUSR1[soft,ping-restart] received, process restarting
+2021-07-18 05:50:40.844 +09:00 [DBG] >LOG:1626555040,,Restart pause, 5 second(s)
+2021-07-18 05:50:45.063 +09:00 [DBG] >LOG:1626555045,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 05:50:45.066 +09:00 [DBG] >LOG:1626555045,I,TCP/UDP: Preserving recently used remote address: [AF_INET]35.73.84.179:443
+2021-07-18 05:50:45.067 +09:00 [DBG] >LOG:1626555045,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 05:50:45.067 +09:00 [DBG] >LOG:1626555045,I,UDP link local: (not bound)
+2021-07-18 05:50:45.067 +09:00 [DBG] >LOG:1626555045,I,UDP link remote: [AF_INET]35.73.84.179:443
+2021-07-18 05:50:45.079 +09:00 [DBG] >LOG:1626555045,,TLS: Initial packet from [AF_INET]35.73.84.179:443, sid=8d65f33b 4f85045c
+2021-07-18 05:50:45.084 +09:00 [DBG] >LOG:1626555045,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-07-18 05:50:45.088 +09:00 [DBG] >LOG:1626555045,,VERIFY KU OK
+2021-07-18 05:50:45.088 +09:00 [DBG] >LOG:1626555045,,Validating certificate extended key usage
+2021-07-18 05:50:45.088 +09:00 [DBG] >LOG:1626555045,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-07-18 05:50:45.088 +09:00 [DBG] >LOG:1626555045,,VERIFY EKU OK
+2021-07-18 05:50:45.088 +09:00 [DBG] >LOG:1626555045,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-07-18 05:50:45.099 +09:00 [DBG] >LOG:1626555045,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-07-18 05:50:45.100 +09:00 [DBG] >LOG:1626555045,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]35.73.84.179:443
+2021-07-18 05:50:46.458 +09:00 [DBG] >LOG:1626555046,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 05:51:12.550 +09:00 [DBG] >LOG:1626555071,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 05:51:12.553 +09:00 [DBG] >LOG:1626555071,I,[vpn-server.insight-inc.biz] Inactivity timeout (--ping-restart), restarting
+2021-07-18 05:51:12.659 +09:00 [DBG] >LOG:1626555071,I,SIGUSR1[soft,ping-restart] received, process restarting
+2021-07-18 05:51:15.147 +09:00 [DBG] >LOG:1626555071,,Restart pause, 5 second(s)
+2021-07-18 05:51:21.702 +09:00 [DBG] >LOG:1626555081,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 05:51:21.902 +09:00 [DBG] >LOG:1626555081,I,TCP/UDP: Preserving recently used remote address: [AF_INET]35.73.84.179:443
+2021-07-18 05:51:21.904 +09:00 [DBG] >LOG:1626555081,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 05:51:21.905 +09:00 [DBG] >LOG:1626555081,I,UDP link local: (not bound)
+2021-07-18 05:51:21.906 +09:00 [DBG] >LOG:1626555081,I,UDP link remote: [AF_INET]35.73.84.179:443
+2021-07-18 05:51:21.910 +09:00 [DBG] >LOG:1626555081,,TLS: Initial packet from [AF_INET]35.73.84.179:443, sid=30c4d3db 6d8b171a
+2021-07-18 05:51:21.958 +09:00 [DBG] >LOG:1626555081,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-07-18 05:51:21.960 +09:00 [DBG] >LOG:1626555081,,VERIFY KU OK
+2021-07-18 05:51:21.961 +09:00 [DBG] >LOG:1626555081,,Validating certificate extended key usage
+2021-07-18 05:51:22.148 +09:00 [DBG] >LOG:1626555081,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-07-18 05:51:22.149 +09:00 [DBG] >LOG:1626555081,,VERIFY EKU OK
+2021-07-18 05:51:22.156 +09:00 [DBG] >LOG:1626555081,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-07-18 05:51:22.157 +09:00 [DBG] >LOG:1626555081,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-07-18 05:51:22.158 +09:00 [DBG] >LOG:1626555081,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]35.73.84.179:443
+2021-07-18 10:52:09.268 +09:00 [DBG] >LOG:1626573128,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 10:52:09.268 +09:00 [DBG] >LOG:1626573128,I,[vpn-server.insight-inc.biz] Inactivity timeout (--ping-restart), restarting
+2021-07-18 10:52:09.268 +09:00 [DBG] >LOG:1626573128,I,SIGUSR1[soft,ping-restart] received, process restarting
+2021-07-18 10:52:10.838 +09:00 [DBG] >LOG:1626573128,,Restart pause, 5 second(s)
+2021-07-18 10:52:13.819 +09:00 [DBG] >LOG:1626573133,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 10:52:13.820 +09:00 [DBG] >LOG:1626573133,I,TCP/UDP: Preserving recently used remote address: [AF_INET]18.179.163.182:443
+2021-07-18 10:52:13.820 +09:00 [DBG] >LOG:1626573133,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 10:52:13.820 +09:00 [DBG] >LOG:1626573133,I,UDP link local: (not bound)
+2021-07-18 10:52:13.820 +09:00 [DBG] >LOG:1626573133,I,UDP link remote: [AF_INET]18.179.163.182:443
+2021-07-18 10:52:13.820 +09:00 [DBG] >LOG:1626573133,N,write UDP: Network is unreachable (code=51)
+2021-07-18 10:52:13.820 +09:00 [DBG] >LOG:1626573133,I,Network unreachable, restarting
+2021-07-18 10:52:13.820 +09:00 [DBG] >LOG:1626573133,I,SIGUSR1[soft,network-unreachable] received, process restarting
+2021-07-18 10:52:13.843 +09:00 [DBG] >LOG:1626573133,,Restart pause, 5 second(s)
+2021-07-18 10:52:18.228 +09:00 [DBG] >LOG:1626573138,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 10:52:18.321 +09:00 [DBG] >LOG:1626573138,I,TCP/UDP: Preserving recently used remote address: [AF_INET]35.73.84.179:443
+2021-07-18 10:52:18.321 +09:00 [DBG] >LOG:1626573138,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 10:52:18.321 +09:00 [DBG] >LOG:1626573138,I,UDP link local: (not bound)
+2021-07-18 10:52:18.321 +09:00 [DBG] >LOG:1626573138,I,UDP link remote: [AF_INET]35.73.84.179:443
+2021-07-18 10:52:18.328 +09:00 [DBG] >LOG:1626573138,,TLS: Initial packet from [AF_INET]35.73.84.179:443, sid=a82d43f9 2b6b942d
+2021-07-18 10:52:18.336 +09:00 [DBG] >LOG:1626573138,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-07-18 10:52:18.336 +09:00 [DBG] >LOG:1626573138,,VERIFY KU OK
+2021-07-18 10:52:18.336 +09:00 [DBG] >LOG:1626573138,,Validating certificate extended key usage
+2021-07-18 10:52:18.336 +09:00 [DBG] >LOG:1626573138,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-07-18 10:52:18.338 +09:00 [DBG] >LOG:1626573138,,VERIFY EKU OK
+2021-07-18 10:52:18.339 +09:00 [DBG] >LOG:1626573138,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-07-18 10:52:18.348 +09:00 [DBG] >LOG:1626573138,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-07-18 10:52:18.349 +09:00 [DBG] >LOG:1626573138,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]35.73.84.179:443
+2021-07-18 10:52:22.598 +09:00 [DBG] >LOG:1626573139,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 10:53:05.636 +09:00 [DBG] >LOG:1626573161,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 10:53:05.637 +09:00 [DBG] >LOG:1626573161,I,[vpn-server.insight-inc.biz] Inactivity timeout (--ping-restart), restarting
+2021-07-18 10:53:05.638 +09:00 [DBG] >LOG:1626573161,I,SIGUSR1[soft,ping-restart] received, process restarting
+2021-07-18 10:53:09.246 +09:00 [DBG] >LOG:1626573161,,Restart pause, 5 second(s)
+2021-07-18 10:53:09.250 +09:00 [DBG] >LOG:1626573176,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 10:53:09.256 +09:00 [DBG] >LOG:1626573176,I,TCP/UDP: Preserving recently used remote address: [AF_INET]18.179.163.182:443
+2021-07-18 10:53:09.258 +09:00 [DBG] >LOG:1626573176,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 10:53:09.259 +09:00 [DBG] >LOG:1626573176,I,UDP link local: (not bound)
+2021-07-18 10:53:09.260 +09:00 [DBG] >LOG:1626573176,I,UDP link remote: [AF_INET]18.179.163.182:443
+2021-07-18 10:53:09.267 +09:00 [DBG] >LOG:1626573176,,TLS: Initial packet from [AF_INET]18.179.163.182:443, sid=aad36494 5d2512f6
+2021-07-18 10:53:09.268 +09:00 [DBG] >LOG:1626573176,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-07-18 10:53:09.271 +09:00 [DBG] >LOG:1626573176,,VERIFY KU OK
+2021-07-18 10:53:09.277 +09:00 [DBG] >LOG:1626573176,,Validating certificate extended key usage
+2021-07-18 10:53:09.279 +09:00 [DBG] >LOG:1626573176,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-07-18 10:53:09.280 +09:00 [DBG] >LOG:1626573176,,VERIFY EKU OK
+2021-07-18 10:53:09.482 +09:00 [DBG] >LOG:1626573176,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-07-18 10:53:09.483 +09:00 [DBG] >LOG:1626573177,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-07-18 10:53:09.492 +09:00 [DBG] >LOG:1626573177,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]18.179.163.182:443
+2021-07-18 10:53:23.771 +09:00 [DBG] >LOG:1626573199,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 10:53:23.772 +09:00 [DBG] >LOG:1626573199,I,[vpn-server.insight-inc.biz] Inactivity timeout (--ping-restart), restarting
+2021-07-18 10:53:23.773 +09:00 [DBG] >LOG:1626573199,I,SIGUSR1[soft,ping-restart] received, process restarting
+2021-07-18 10:53:24.055 +09:00 [DBG] >LOG:1626573199,,Restart pause, 5 second(s)
+2021-07-18 10:53:24.055 +09:00 [DBG] >LOG:1626573204,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 10:53:24.216 +09:00 [DBG] >LOG:1626573204,I,TCP/UDP: Preserving recently used remote address: [AF_INET]18.179.163.182:443
+2021-07-18 10:53:24.221 +09:00 [DBG] >LOG:1626573204,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 10:53:24.222 +09:00 [DBG] >LOG:1626573204,I,UDP link local: (not bound)
+2021-07-18 10:53:24.222 +09:00 [DBG] >LOG:1626573204,I,UDP link remote: [AF_INET]18.179.163.182:443
+2021-07-18 10:53:24.233 +09:00 [DBG] >LOG:1626573204,,TLS: Initial packet from [AF_INET]18.179.163.182:443, sid=ddec699b 50e5b501
+2021-07-18 10:53:24.242 +09:00 [DBG] >LOG:1626573204,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-07-18 10:53:24.242 +09:00 [DBG] >LOG:1626573204,,VERIFY KU OK
+2021-07-18 10:53:24.243 +09:00 [DBG] >LOG:1626573204,,Validating certificate extended key usage
+2021-07-18 10:53:24.243 +09:00 [DBG] >LOG:1626573204,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-07-18 10:53:24.243 +09:00 [DBG] >LOG:1626573204,,VERIFY EKU OK
+2021-07-18 10:53:24.243 +09:00 [DBG] >LOG:1626573204,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-07-18 10:53:24.261 +09:00 [DBG] >LOG:1626573204,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-07-18 10:53:24.262 +09:00 [DBG] >LOG:1626573204,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]18.179.163.182:443
+2021-07-18 10:53:25.494 +09:00 [DBG] >LOG:1626573205,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 10:53:30.441 +09:00 [DBG] >LOG:1626573210,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 10:53:30.449 +09:00 [DBG] >LOG:1626573210,,PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,route-gateway 172.16.0.161,topology subnet,ping 1,ping-restart 20,ifconfig 172.16.0.162 255.255.255.224,peer-id 0,cipher AES-256-GCM'
+2021-07-18 10:53:30.449 +09:00 [DBG] >LOG:1626573210,,OPTIONS IMPORT: timers and/or timeouts modified
+2021-07-18 10:53:30.449 +09:00 [DBG] >LOG:1626573210,,OPTIONS IMPORT: --ifconfig/up options modified
+2021-07-18 10:53:30.450 +09:00 [DBG] >LOG:1626573210,,OPTIONS IMPORT: route options modified
+2021-07-18 10:53:30.450 +09:00 [DBG] >LOG:1626573210,,OPTIONS IMPORT: route-related options modified
+2021-07-18 10:53:30.450 +09:00 [DBG] >LOG:1626573210,,OPTIONS IMPORT: peer-id set
+2021-07-18 10:53:30.450 +09:00 [DBG] >LOG:1626573210,,OPTIONS IMPORT: adjusting link_mtu to 1624
+2021-07-18 10:53:30.450 +09:00 [DBG] >LOG:1626573210,,OPTIONS IMPORT: data channel crypto options modified
+2021-07-18 10:53:30.450 +09:00 [DBG] >LOG:1626573210,,Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-07-18 10:53:30.450 +09:00 [DBG] >LOG:1626573210,,Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-07-18 10:53:30.451 +09:00 [DBG] >LOG:1626573210,,ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=en7 HWADDR=64:4b:f0:2b:5b:1c
+2021-07-18 10:53:30.451 +09:00 [DBG] >LOG:1626573210,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-07-18 10:53:30.451 +09:00 [DBG] >LOG:1626573210,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-07-18 10:53:30.451 +09:00 [DBG] >LOG:1626573210,I,Opened utun device utun2
+2021-07-18 10:53:30.451 +09:00 [DBG] >LOG:1626573210,D,do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+2021-07-18 10:53:30.451 +09:00 [DBG] >LOG:1626573210,I,/sbin/ifconfig utun2 delete
+2021-07-18 10:53:30.480 +09:00 [DBG] >LOG:1626573210,I,NOTE: Tried to delete pre-existing tun/tap instance -- No Problem if failure
+2021-07-18 10:53:30.481 +09:00 [DBG] >LOG:1626573210,I,/sbin/ifconfig utun2 172.16.0.162 172.16.0.162 netmask 255.255.255.224 mtu 1500 up
+2021-07-18 10:53:30.486 +09:00 [DBG] >LOG:1626573210,,/sbin/route add -net 172.16.0.160 172.16.0.162 255.255.255.224
+2021-07-18 10:53:30.493 +09:00 [DBG] >LOG:1626573210,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.up utun2 1500 1552 172.16.0.162 255.255.255.224 init
+2021-07-18 10:53:33.603 +09:00 [DBG] >LOG:1626573213,,/sbin/route add -net 18.179.163.182 192.168.0.1 255.255.255.255
+2021-07-18 10:53:33.612 +09:00 [DBG] >LOG:1626573213,,/sbin/route add -net 0.0.0.0 172.16.0.161 128.0.0.0
+2021-07-18 10:53:33.621 +09:00 [DBG] >LOG:1626573213,,/sbin/route add -net 128.0.0.0 172.16.0.161 128.0.0.0
+2021-07-18 10:53:33.630 +09:00 [DBG] >LOG:1626573213,I,Initialization Sequence Completed
+2021-07-18 18:48:57.283 +09:00 [DBG] >LOG:1626601736,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.287 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.287 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.289 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.289 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.289 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.289 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.289 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.289 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.291 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.292 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.292 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.292 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.292 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.292 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.322 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.356 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.399 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.402 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.417 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.441 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.476 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.478 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.478 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.478 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.666 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.672 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.713 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.779 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.781 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.840 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.988 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:57.990 +09:00 [DBG] >LOG:1626601737,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:58.129 +09:00 [DBG] >LOG:1626601738,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:58.219 +09:00 [DBG] >LOG:1626601738,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:58.224 +09:00 [DBG] >LOG:1626601738,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:58.226 +09:00 [DBG] >LOG:1626601738,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:58.229 +09:00 [DBG] >LOG:1626601738,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:58.436 +09:00 [DBG] >LOG:1626601738,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:58.437 +09:00 [DBG] >LOG:1626601738,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:58.444 +09:00 [DBG] >LOG:1626601738,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:58.454 +09:00 [DBG] >LOG:1626601738,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:48:58.663 +09:00 [DBG] >LOG:1626601738,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 18:49:16.319 +09:00 [DBG] >LOG:1626601756,I,[vpn-server.insight-inc.biz] Inactivity timeout (--ping-restart), restarting
+2021-07-18 18:49:16.322 +09:00 [DBG] >LOG:1626601756,,/sbin/route delete -net 18.179.163.182 192.168.0.1 255.255.255.255
+2021-07-18 18:49:16.322 +09:00 [DBG] >LOG:1626601756,,/sbin/route delete -net 0.0.0.0 172.16.0.161 128.0.0.0
+2021-07-18 18:49:16.326 +09:00 [DBG] >LOG:1626601756,,/sbin/route delete -net 128.0.0.0 172.16.0.161 128.0.0.0
+2021-07-18 18:49:16.330 +09:00 [DBG] >LOG:1626601756,,Closing TUN/TAP interface
+2021-07-18 18:49:16.332 +09:00 [DBG] >LOG:1626601756,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.down utun2 1500 1552 172.16.0.162 255.255.255.224 init
+2021-07-18 18:49:17.814 +09:00 [DBG] >LOG:1626601757,I,SIGUSR1[soft,ping-restart] received, process restarting
+2021-07-18 18:49:18.869 +09:00 [DBG] >LOG:1626601757,,Restart pause, 5 second(s)
+2021-07-18 18:49:22.086 +09:00 [DBG] >LOG:1626601762,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:49:22.088 +09:00 [DBG] >LOG:1626601762,I,TCP/UDP: Preserving recently used remote address: [AF_INET]18.179.163.182:443
+2021-07-18 18:49:22.089 +09:00 [DBG] >LOG:1626601762,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 18:49:22.089 +09:00 [DBG] >LOG:1626601762,I,UDP link local: (not bound)
+2021-07-18 18:49:22.089 +09:00 [DBG] >LOG:1626601762,I,UDP link remote: [AF_INET]18.179.163.182:443
+2021-07-18 18:49:22.091 +09:00 [DBG] >LOG:1626601762,N,write UDP: Network is unreachable (code=51)
+2021-07-18 18:49:22.091 +09:00 [DBG] >LOG:1626601762,I,Network unreachable, restarting
+2021-07-18 18:49:22.092 +09:00 [DBG] >LOG:1626601762,I,SIGUSR1[soft,network-unreachable] received, process restarting
+2021-07-18 18:49:22.139 +09:00 [DBG] >LOG:1626601762,,Restart pause, 5 second(s)
+2021-07-18 18:49:27.829 +09:00 [DBG] >LOG:1626601767,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:49:27.830 +09:00 [DBG] >LOG:1626601767,I,TCP/UDP: Preserving recently used remote address: [AF_INET]35.73.84.179:443
+2021-07-18 18:49:27.831 +09:00 [DBG] >LOG:1626601767,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 18:49:27.831 +09:00 [DBG] >LOG:1626601767,I,UDP link local: (not bound)
+2021-07-18 18:49:27.831 +09:00 [DBG] >LOG:1626601767,I,UDP link remote: [AF_INET]35.73.84.179:443
+2021-07-18 18:49:27.831 +09:00 [DBG] >LOG:1626601767,N,write UDP: Network is unreachable (code=51)
+2021-07-18 18:49:27.831 +09:00 [DBG] >LOG:1626601767,I,Network unreachable, restarting
+2021-07-18 18:49:27.832 +09:00 [DBG] >LOG:1626601767,I,SIGUSR1[soft,network-unreachable] received, process restarting
+2021-07-18 18:49:27.878 +09:00 [DBG] >LOG:1626601767,,Restart pause, 5 second(s)
+2021-07-18 18:49:32.424 +09:00 [DBG] >LOG:1626601772,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:49:32.443 +09:00 [DBG] >LOG:1626601772,N,RESOLVE: Cannot resolve host address: 868bcc608528.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:49:32.444 +09:00 [DBG] >LOG:1626601772,N,RESOLVE: Cannot resolve host address: 5ed28196a40d.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:49:32.444 +09:00 [DBG] >LOG:1626601772,W,Could not determine IPv4/IPv6 protocol
+2021-07-18 18:49:32.444 +09:00 [DBG] >LOG:1626601772,I,SIGUSR1[soft,init_instance] received, process restarting
+2021-07-18 18:49:32.565 +09:00 [DBG] >LOG:1626601772,,Restart pause, 5 second(s)
+2021-07-18 18:49:37.040 +09:00 [DBG] >LOG:1626601777,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:49:37.044 +09:00 [DBG] >LOG:1626601777,N,RESOLVE: Cannot resolve host address: 64964c941244.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:49:37.045 +09:00 [DBG] >LOG:1626601777,N,RESOLVE: Cannot resolve host address: c3f47ffbcb17.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:49:37.045 +09:00 [DBG] >LOG:1626601777,W,Could not determine IPv4/IPv6 protocol
+2021-07-18 18:49:37.046 +09:00 [DBG] >LOG:1626601777,I,SIGUSR1[soft,init_instance] received, process restarting
+2021-07-18 18:49:37.085 +09:00 [DBG] >LOG:1626601777,,Restart pause, 5 second(s)
+2021-07-18 18:49:42.784 +09:00 [DBG] >LOG:1626601782,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:49:42.788 +09:00 [DBG] >LOG:1626601782,N,RESOLVE: Cannot resolve host address: 7df9a0b849ad.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:49:42.790 +09:00 [DBG] >LOG:1626601782,N,RESOLVE: Cannot resolve host address: 435a6a11d2dd.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:49:42.791 +09:00 [DBG] >LOG:1626601782,W,Could not determine IPv4/IPv6 protocol
+2021-07-18 18:49:42.791 +09:00 [DBG] >LOG:1626601782,I,SIGUSR1[soft,init_instance] received, process restarting
+2021-07-18 18:49:42.838 +09:00 [DBG] >LOG:1626601782,,Restart pause, 5 second(s)
+2021-07-18 18:49:47.382 +09:00 [DBG] >LOG:1626601787,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:49:47.393 +09:00 [DBG] >LOG:1626601787,N,RESOLVE: Cannot resolve host address: 0681b4420ccb.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:49:47.394 +09:00 [DBG] >LOG:1626601787,N,RESOLVE: Cannot resolve host address: 5df247c0144e.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:49:47.394 +09:00 [DBG] >LOG:1626601787,W,Could not determine IPv4/IPv6 protocol
+2021-07-18 18:49:47.394 +09:00 [DBG] >LOG:1626601787,I,SIGUSR1[soft,init_instance] received, process restarting
+2021-07-18 18:49:47.455 +09:00 [DBG] >LOG:1626601787,,Restart pause, 5 second(s)
+2021-07-18 18:49:53.122 +09:00 [DBG] >LOG:1626601793,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:49:53.125 +09:00 [DBG] >LOG:1626601793,N,RESOLVE: Cannot resolve host address: 62655b244921.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:49:53.127 +09:00 [DBG] >LOG:1626601793,N,RESOLVE: Cannot resolve host address: ba7b3843d191.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:49:53.127 +09:00 [DBG] >LOG:1626601793,W,Could not determine IPv4/IPv6 protocol
+2021-07-18 18:49:53.127 +09:00 [DBG] >LOG:1626601793,I,SIGUSR1[soft,init_instance] received, process restarting
+2021-07-18 18:49:53.164 +09:00 [DBG] >LOG:1626601793,,Restart pause, 10 second(s)
+2021-07-18 18:50:03.292 +09:00 [DBG] >LOG:1626601803,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:50:03.296 +09:00 [DBG] >LOG:1626601803,N,RESOLVE: Cannot resolve host address: 37c911a5c58a.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:50:03.298 +09:00 [DBG] >LOG:1626601803,N,RESOLVE: Cannot resolve host address: c0a8587c6875.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:50:03.298 +09:00 [DBG] >LOG:1626601803,W,Could not determine IPv4/IPv6 protocol
+2021-07-18 18:50:03.298 +09:00 [DBG] >LOG:1626601803,I,SIGUSR1[soft,init_instance] received, process restarting
+2021-07-18 18:50:03.339 +09:00 [DBG] >LOG:1626601803,,Restart pause, 20 second(s)
+2021-07-18 18:50:23.648 +09:00 [DBG] >LOG:1626601823,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:50:23.652 +09:00 [DBG] >LOG:1626601823,N,RESOLVE: Cannot resolve host address: fba5f607a9b3.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:50:23.654 +09:00 [DBG] >LOG:1626601823,N,RESOLVE: Cannot resolve host address: 28a36a4bced8.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:50:23.654 +09:00 [DBG] >LOG:1626601823,W,Could not determine IPv4/IPv6 protocol
+2021-07-18 18:50:23.654 +09:00 [DBG] >LOG:1626601823,I,SIGUSR1[soft,init_instance] received, process restarting
+2021-07-18 18:50:23.701 +09:00 [DBG] >LOG:1626601823,,Restart pause, 40 second(s)
+2021-07-18 18:51:03.447 +09:00 [DBG] >LOG:1626601863,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:51:03.453 +09:00 [DBG] >LOG:1626601863,N,RESOLVE: Cannot resolve host address: 3ebf4e4466b4.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:51:03.457 +09:00 [DBG] >LOG:1626601863,N,RESOLVE: Cannot resolve host address: fcfb9dde3016.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:51:03.457 +09:00 [DBG] >LOG:1626601863,W,Could not determine IPv4/IPv6 protocol
+2021-07-18 18:51:03.458 +09:00 [DBG] >LOG:1626601863,I,SIGUSR1[soft,init_instance] received, process restarting
+2021-07-18 18:51:03.497 +09:00 [DBG] >LOG:1626601863,,Restart pause, 80 second(s)
+2021-07-18 18:53:42.782 +09:00 [DBG] >LOG:1626602021,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:53:42.829 +09:00 [DBG] >LOG:1626602022,N,RESOLVE: Cannot resolve host address: b4bf807c2a6a.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:53:42.830 +09:00 [DBG] >LOG:1626602022,N,RESOLVE: Cannot resolve host address: 7826f36229e2.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:53:42.830 +09:00 [DBG] >LOG:1626602022,W,Could not determine IPv4/IPv6 protocol
+2021-07-18 18:53:42.830 +09:00 [DBG] >LOG:1626602022,I,SIGUSR1[soft,init_instance] received, process restarting
+2021-07-18 18:53:42.875 +09:00 [DBG] >LOG:1626602022,,Restart pause, 160 second(s)
+2021-07-18 18:58:42.845 +09:00 [DBG] >LOG:1626602322,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 18:58:43.008 +09:00 [DBG] >LOG:1626602323,N,RESOLVE: Cannot resolve host address: 861e01198ca0.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:58:43.018 +09:00 [DBG] >LOG:1626602323,N,RESOLVE: Cannot resolve host address: 0fbad6bd72df.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 18:58:43.018 +09:00 [DBG] >LOG:1626602323,W,Could not determine IPv4/IPv6 protocol
+2021-07-18 18:58:43.019 +09:00 [DBG] >LOG:1626602323,I,SIGUSR1[soft,init_instance] received, process restarting
+2021-07-18 18:58:43.096 +09:00 [DBG] >LOG:1626602323,,Restart pause, 300 second(s)
+2021-07-18 19:03:43.032 +09:00 [DBG] >LOG:1626602623,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 19:03:43.037 +09:00 [DBG] >LOG:1626602623,N,RESOLVE: Cannot resolve host address: 6e4eeee073e9.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 19:03:43.040 +09:00 [DBG] >LOG:1626602623,N,RESOLVE: Cannot resolve host address: 57d26a8371b1.cvpn-endpoint-044838f1bdd0460ed.prod.clientvpn.ap-northeast-1.amazonaws.com:443 (nodename nor servname provided, or not known)
+2021-07-18 19:03:43.040 +09:00 [DBG] >LOG:1626602623,W,Could not determine IPv4/IPv6 protocol
+2021-07-18 19:03:43.041 +09:00 [DBG] >LOG:1626602623,I,SIGUSR1[soft,init_instance] received, process restarting
+2021-07-18 19:03:43.069 +09:00 [DBG] >LOG:1626602623,,Restart pause, 300 second(s)
+2021-07-18 19:08:43.851 +09:00 [DBG] >LOG:1626602923,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-07-18 19:08:43.966 +09:00 [DBG] >LOG:1626602923,I,TCP/UDP: Preserving recently used remote address: [AF_INET]35.73.84.179:443
+2021-07-18 19:08:43.966 +09:00 [DBG] >LOG:1626602923,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-07-18 19:08:43.966 +09:00 [DBG] >LOG:1626602923,I,UDP link local: (not bound)
+2021-07-18 19:08:43.968 +09:00 [DBG] >LOG:1626602923,I,UDP link remote: [AF_INET]35.73.84.179:443
+2021-07-18 19:08:43.999 +09:00 [DBG] >LOG:1626602923,,TLS: Initial packet from [AF_INET]35.73.84.179:443, sid=8a8e40eb 180c0181
+2021-07-18 19:08:44.001 +09:00 [DBG] >LOG:1626602923,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-07-18 19:08:44.001 +09:00 [DBG] >LOG:1626602923,,VERIFY KU OK
+2021-07-18 19:08:44.001 +09:00 [DBG] >LOG:1626602923,,Validating certificate extended key usage
+2021-07-18 19:08:44.002 +09:00 [DBG] >LOG:1626602923,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-07-18 19:08:44.002 +09:00 [DBG] >LOG:1626602923,,VERIFY EKU OK
+2021-07-18 19:08:44.002 +09:00 [DBG] >LOG:1626602923,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-07-18 19:08:44.046 +09:00 [DBG] >LOG:1626602924,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-07-18 19:08:44.047 +09:00 [DBG] >LOG:1626602924,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]35.73.84.179:443
+2021-07-18 19:08:45.185 +09:00 [DBG] >LOG:1626602925,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-07-18 19:08:45.196 +09:00 [DBG] >LOG:1626602925,,PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,route-gateway 172.16.1.33,topology subnet,ping 1,ping-restart 20,ifconfig 172.16.1.34 255.255.255.224,peer-id 0,cipher AES-256-GCM'
+2021-07-18 19:08:45.198 +09:00 [DBG] >LOG:1626602925,,OPTIONS IMPORT: timers and/or timeouts modified
+2021-07-18 19:08:45.198 +09:00 [DBG] >LOG:1626602925,,OPTIONS IMPORT: --ifconfig/up options modified
+2021-07-18 19:08:45.198 +09:00 [DBG] >LOG:1626602925,,OPTIONS IMPORT: route options modified
+2021-07-18 19:08:45.199 +09:00 [DBG] >LOG:1626602925,,OPTIONS IMPORT: route-related options modified
+2021-07-18 19:08:45.199 +09:00 [DBG] >LOG:1626602925,,OPTIONS IMPORT: peer-id set
+2021-07-18 19:08:45.200 +09:00 [DBG] >LOG:1626602925,,OPTIONS IMPORT: adjusting link_mtu to 1624
+2021-07-18 19:08:45.200 +09:00 [DBG] >LOG:1626602925,,OPTIONS IMPORT: data channel crypto options modified
+2021-07-18 19:08:45.200 +09:00 [DBG] >LOG:1626602925,,Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-07-18 19:08:45.200 +09:00 [DBG] >LOG:1626602925,,Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-07-18 19:08:45.200 +09:00 [DBG] >LOG:1626602925,,ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=en0 HWADDR=14:7d:da:32:f3:77
+2021-07-18 19:08:45.201 +09:00 [DBG] >LOG:1626602925,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-07-18 19:08:45.201 +09:00 [DBG] >LOG:1626602925,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-07-18 19:08:45.201 +09:00 [DBG] >LOG:1626602925,I,Opened utun device utun2
+2021-07-18 19:08:45.201 +09:00 [DBG] >LOG:1626602925,D,do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+2021-07-18 19:08:45.201 +09:00 [DBG] >LOG:1626602925,I,/sbin/ifconfig utun2 delete
+2021-07-18 19:08:45.214 +09:00 [DBG] >LOG:1626602925,I,NOTE: Tried to delete pre-existing tun/tap instance -- No Problem if failure
+2021-07-18 19:08:45.215 +09:00 [DBG] >LOG:1626602925,I,/sbin/ifconfig utun2 172.16.1.34 172.16.1.34 netmask 255.255.255.224 mtu 1500 up
+2021-07-18 19:08:45.222 +09:00 [DBG] >LOG:1626602925,,/sbin/route add -net 172.16.1.32 172.16.1.34 255.255.255.224
+2021-07-18 19:08:45.227 +09:00 [DBG] >LOG:1626602925,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.up utun2 1500 1552 172.16.1.34 255.255.255.224 init
+2021-07-18 19:08:47.544 +09:00 [DBG] >LOG:1626602927,,/sbin/route add -net 35.73.84.179 192.168.0.1 255.255.255.255
+2021-07-18 19:08:47.548 +09:00 [DBG] >LOG:1626602927,,/sbin/route add -net 0.0.0.0 172.16.1.33 128.0.0.0
+2021-07-18 19:08:47.552 +09:00 [DBG] >LOG:1626602927,,/sbin/route add -net 128.0.0.0 172.16.1.33 128.0.0.0
+2021-07-18 19:08:47.557 +09:00 [DBG] >LOG:1626602927,I,Initialization Sequence Completed
+2021-07-18 19:08:55.658 +09:00 [DBG] >LOG:1626602935,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #137 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:09:04.376 +09:00 [DBG] >LOG:1626602944,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #146 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:09:12.124 +09:00 [DBG] >LOG:1626602952,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #154 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:09:19.658 +09:00 [DBG] >LOG:1626602959,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #805 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:09:27.845 +09:00 [DBG] >LOG:1626602967,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #2132 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:09:36.061 +09:00 [DBG] >LOG:1626602976,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #6862 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:09:44.333 +09:00 [DBG] >LOG:1626602984,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #7393 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:09:53.224 +09:00 [DBG] >LOG:1626602993,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #7538 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:10:01.432 +09:00 [DBG] >LOG:1626603001,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #7604 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:10:09.172 +09:00 [DBG] >LOG:1626603009,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #7654 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:10:17.224 +09:00 [DBG] >LOG:1626603017,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #7686 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:10:25.198 +09:00 [DBG] >LOG:1626603025,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #7809 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:10:33.511 +09:00 [DBG] >LOG:1626603033,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #7925 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:10:41.940 +09:00 [DBG] >LOG:1626603041,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #8012 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:10:49.848 +09:00 [DBG] >LOG:1626603049,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #8315 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:10:58.180 +09:00 [DBG] >LOG:1626603058,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #8486 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:11:06.179 +09:00 [DBG] >LOG:1626603066,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #8537 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:11:14.397 +09:00 [DBG] >LOG:1626603074,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #8725 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:11:22.709 +09:00 [DBG] >LOG:1626603082,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #8769 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:11:31.359 +09:00 [DBG] >LOG:1626603091,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #8818 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:11:38.996 +09:00 [DBG] >LOG:1626603098,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #8849 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:11:55.738 +09:00 [DBG] >LOG:1626603115,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #9180 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:12:04.252 +09:00 [DBG] >LOG:1626603124,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #9384 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:12:12.189 +09:00 [DBG] >LOG:1626603132,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #9424 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:12:20.264 +09:00 [DBG] >LOG:1626603140,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #9520 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:12:29.497 +09:00 [DBG] >LOG:1626603149,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #9555 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:12:37.388 +09:00 [DBG] >LOG:1626603157,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #9580 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:12:44.519 +09:00 [DBG] >LOG:1626603164,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #9665 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:12:47.360 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.382 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.383 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.383 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.383 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.383 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.384 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.384 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.385 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.385 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.385 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.385 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.385 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.385 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.385 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.386 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.387 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.584 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.587 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.588 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.588 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.592 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.592 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.593 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.594 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.599 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.602 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.606 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.607 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.609 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.612 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.613 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.613 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.619 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.631 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.644 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.652 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.746 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.753 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.766 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.772 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.784 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.785 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.825 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.835 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.839 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.846 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.857 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.859 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.860 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.866 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.874 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.875 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.879 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.882 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.891 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.904 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.914 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.922 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.937 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.937 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.937 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.954 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.968 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.992 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:47.998 +09:00 [DBG] >LOG:1626603167,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.027 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.047 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.059 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.082 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.091 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.130 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.170 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.186 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.188 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.189 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.205 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.209 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.227 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.228 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.239 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.247 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.265 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.273 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.298 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.314 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.320 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.336 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.337 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.347 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.370 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.371 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.372 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.384 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.401 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.440 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.446 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.491 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.520 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.536 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.537 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.579 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.612 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.615 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.623 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.641 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.642 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.644 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.681 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.688 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.722 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.722 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.748 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.764 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.778 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.799 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.812 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.874 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.919 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:48.950 +09:00 [DBG] >LOG:1626603168,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.022 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.024 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.025 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.025 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.036 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.089 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.167 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.232 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.284 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.289 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.294 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.322 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.336 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.338 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.339 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.358 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.430 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.469 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.497 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.497 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.498 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.530 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.537 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.537 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.543 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.555 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.561 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.588 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.653 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.677 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.686 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.809 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.903 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.930 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:49.968 +09:00 [DBG] >LOG:1626603169,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.121 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.121 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.121 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.244 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.245 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.303 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.419 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.488 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.505 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.506 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.507 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.537 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.537 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.561 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.600 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.649 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.667 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.668 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.724 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.756 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:50.821 +09:00 [DBG] >LOG:1626603170,N,write UDP: Can't assign requested address (code=49)
+2021-07-18 19:12:52.788 +09:00 [DBG] >LOG:1626603172,N,AEAD Decrypt error: bad packet ID (may be a replay): [ #9939 ] -- see the man page entry for --no-replay and --replay-window for more info or silence this warning with --mute-replay-warnings
+2021-07-18 19:12:54.638 +09:00 [DBG] >LOG:1626603174,D,MANAGEMENT: CMD 'status'

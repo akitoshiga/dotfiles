@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/insightshiga/.config'
+let g:netrw_dirhist_3='/Users/insightshiga/.config/nvim'
+let g:netrw_dirhist_2='/Users/insightshiga/Documents/sandbox/object'
+let g:netrw_dirhist_1='/Users/insightshiga/Desktop'
+let g:netrw_dirhist_0='/Users/insightshiga/Documents/sandbox/2021kadai/web/config'
+let g:netrw_dirhist_9='/Users/insightshiga/Documents/sandbox/2021kadai/web'
+let g:netrw_dirhist_8='/Users/insightshiga/Documents/sandbox/2021kadai/client/src/services'
+let g:netrw_dirhist_7='/Users/insightshiga/Documents/internship/choco-mint/docker/containers/nginx'
+let g:netrw_dirhist_6='/Users/insightshiga/Desktop'
+let g:netrw_dirhist_5='/Users/insightshiga/Documents/sandbox/2021kadai'

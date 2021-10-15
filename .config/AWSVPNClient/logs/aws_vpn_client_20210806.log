@@ -1,0 +1,666 @@
+2021-08-06 00:51:51.521 +09:00 [DBG] Sending Metrics batches
+2021-08-06 00:51:51.878 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 00:51:51.880 +09:00 [DBG] is empty: True
+2021-08-06 00:51:51.880 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 00:51:51.880 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 00:51:51.926 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 00:51:51.927 +09:00 [DBG] is empty: True
+2021-08-06 00:51:51.929 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 10:50:13.534 +09:00 [DBG] Sending Metrics batches
+2021-08-06 10:50:13.601 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 10:50:13.603 +09:00 [DBG] is empty: True
+2021-08-06 10:50:13.603 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 10:50:13.603 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 10:50:13.611 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 10:50:13.612 +09:00 [DBG] is empty: True
+2021-08-06 10:50:13.612 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 11:50:13.545 +09:00 [DBG] Sending Metrics batches
+2021-08-06 11:50:13.605 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 11:50:13.605 +09:00 [DBG] is empty: True
+2021-08-06 11:50:13.605 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 11:50:13.606 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 11:50:13.606 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 11:50:13.607 +09:00 [DBG] is empty: True
+2021-08-06 11:50:13.607 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 12:50:20.626 +09:00 [DBG] Sending Metrics batches
+2021-08-06 12:50:20.678 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 12:50:20.681 +09:00 [DBG] is empty: True
+2021-08-06 12:50:20.681 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 12:50:20.682 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 12:50:20.686 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 12:50:20.688 +09:00 [DBG] is empty: True
+2021-08-06 12:50:20.688 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 13:01:00.751 +09:00 [DBG] Total logs size: 13680834 bytes
+2021-08-06 13:01:00.845 +09:00 [DBG] Inserted event LOG_DISK_USAGE 13680834 to MetricsTable
+2021-08-06 13:01:00.887 +09:00 [DBG] Inserted event LOG_DISK_USAGE 13680834 to AnalyticsTable
+2021-08-06 13:50:20.749 +09:00 [DBG] Sending Metrics batches
+2021-08-06 13:50:20.766 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 13:50:20.768 +09:00 [DBG] is empty: False
+2021-08-06 13:50:20.780 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-06 13:50:20.782 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 13:50:20.782 +09:00 [DBG] Sending metrics batch async
+2021-08-06 13:50:20.784 +09:00 [DBG] OS: MacOS
+2021-08-06 13:50:20.786 +09:00 [DBG] Metrics data request created
+2021-08-06 13:50:20.868 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 13:50:20.876 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 13:50:20.878 +09:00 [DBG] is empty: False
+2021-08-06 13:50:20.882 +09:00 [DBG] Analytics event batch successfully created, sending analytics
+2021-08-06 13:50:20.883 +09:00 [DBG] Sending analytics batch async
+2021-08-06 13:50:20.883 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 13:50:20.884 +09:00 [DBG] Pinpoint endpoint ID already exists
+2021-08-06 13:50:20.886 +09:00 [DBG] OSVersion: Unix 19.6.0.0
+2021-08-06 13:50:20.886 +09:00 [DBG] OS: MacOS
+2021-08-06 13:50:20.887 +09:00 [DBG] Endpoint ID: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-06 13:50:20.889 +09:00 [DBG] Pinpoint endpoint id: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-06 13:50:20.889 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 13:50:20.891 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 13:50:21.027 +09:00 [DBG] Caching credentials.
+2021-08-06 13:50:21.232 +09:00 [DBG] CloudWatch response received
+2021-08-06 13:50:21.233 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-06 13:50:21.233 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-06 13:50:21.233 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-06 13:50:21.241 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 13:50:21.241 +09:00 [DBG] is empty: True
+2021-08-06 13:50:21.241 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 13:50:21.357 +09:00 [DBG] 2021/08/06 13:50:21 Accepted
+2021-08-06 13:50:21.357 +09:00 [DBG] successfully put analytics to pinpoint
+2021-08-06 13:50:21.357 +09:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2021-08-06 13:50:21.364 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 13:50:21.364 +09:00 [DBG] is empty: True
+2021-08-06 13:50:21.364 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 14:50:20.989 +09:00 [DBG] Sending Metrics batches
+2021-08-06 14:50:21.039 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 14:50:21.041 +09:00 [DBG] is empty: True
+2021-08-06 14:50:21.041 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 14:50:21.041 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 14:50:21.046 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 14:50:21.049 +09:00 [DBG] is empty: True
+2021-08-06 14:50:21.049 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 15:50:30.761 +09:00 [DBG] Sending Metrics batches
+2021-08-06 15:50:30.849 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 15:50:30.852 +09:00 [DBG] is empty: True
+2021-08-06 15:50:30.852 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 15:50:30.852 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 15:50:30.856 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 15:50:30.857 +09:00 [DBG] is empty: True
+2021-08-06 15:50:30.858 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 16:50:40.913 +09:00 [DBG] Sending Metrics batches
+2021-08-06 16:50:41.106 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 16:50:41.108 +09:00 [DBG] is empty: True
+2021-08-06 16:50:41.108 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 16:50:41.110 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 16:50:41.158 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 16:50:41.159 +09:00 [DBG] is empty: True
+2021-08-06 16:50:41.161 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 17:23:44.119 +09:00 [DBG] Caught exception when getting connection status. Exception information: System.TimeoutException: The message did not respond within the expected timeframe or was cancelled
+  at ACVC.Core.OpenVpn.OvpnConnectionManager.SendMessage (System.String message, System.Int32 timeout, System.Threading.CancellationToken cancellationToken) [0x001ca] in <31f17d339caa4e67b9ad9d7f4a1b866a>:0 
+  at ACVC.Core.OpenVpn.OvpnConnectionManager.GetConnectionStatus () [0x0007c] in <31f17d339caa4e67b9ad9d7f4a1b866a>:0 
+  at ACVC.Core.Metrics.MetricsClient.RecordBytesMetricsAndAnalytics (ACVC.Core.IConnectionManager connectionManager) [0x00077] in <31f17d339caa4e67b9ad9d7f4a1b866a>:0 
+2021-08-06 17:23:44.154 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-06 17:23:44.160 +09:00 [INF] Terminating connection
+2021-08-06 17:23:44.160 +09:00 [DBG] 🏞 Ending connection details reporting.
+2021-08-06 17:23:44.161 +09:00 [WRN] We are calling GracefulKill in a method that is not supposed to change Connection state.
+2021-08-06 17:23:44.162 +09:00 [DBG] GracefulKill
+2021-08-06 17:23:44.164 +09:00 [DBG] Cancelling socket listen token
+2021-08-06 17:23:44.164 +09:00 [DBG] Dispose socket
+2021-08-06 17:23:44.166 +09:00 [DBG] Signal process kill with helper tool.
+2021-08-06 17:23:44.167 +09:00 [DBG] Starting process
+2021-08-06 17:23:44.187 +09:00 [DBG] Shutting down metrics agent
+2021-08-06 17:23:44.188 +09:00 [DBG] Metrics agent shut down
+2021-08-06 17:23:44.188 +09:00 [DBG] Start to read process output
+2021-08-06 17:34:09.270 +09:00 [INF] Logger initialized
+2021-08-06 17:34:09.703 +09:00 [INF] Current OS Information:
+2021-08-06 17:34:09.706 +09:00 [INF] Platform: "Unix"
+2021-08-06 17:34:09.713 +09:00 [INF] Version String: Unix 19.6.0.0
+2021-08-06 17:34:09.715 +09:00 [INF] OS description: Unix 19.6.0.0
+2021-08-06 17:34:09.716 +09:00 [INF] OSX detected.
+2021-08-06 17:34:20.766 +09:00 [INF] Loading attributes file from /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-06 17:34:21.056 +09:00 [DBG] Metrics attributes saved to file: /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-06 17:34:21.058 +09:00 [DBG] Database path: /Users/insightshiga/.config/AWSVPNClient/awsvpnclientmetrics.db
+2021-08-06 17:34:21.060 +09:00 [INF] Loading profile store from /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-06 17:34:21.225 +09:00 [INF] Saving profile store to /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-06 17:34:21.244 +09:00 [DBG] Auto culture: ja-JP Auto UI culture: ja-JP
+2021-08-06 17:34:21.248 +09:00 [DBG] Can successfully read and write app data folder.
+2021-08-06 17:34:21.253 +09:00 [DBG] openVpnExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/acvc-openvpn
+2021-08-06 17:34:21.253 +09:00 [DBG] helperToolExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/AWS VPN Client/Contents/MacOS/ACVCHelperTool
+2021-08-06 17:34:21.482 +09:00 [DBG] macOS viewDidLoad
+2021-08-06 17:34:21.585 +09:00 [INF] Loading preferences file from /Users/insightshiga/.config/AWSVPNClient/Preferences
+2021-08-06 17:34:21.991 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-06 17:34:22.559 +09:00 [DBG] Inserted event APPLICATION_CRASH_DETECTED 0 to MetricsTable
+2021-08-06 17:34:22.560 +09:00 [DBG] Current preferences schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-06 17:34:22.570 +09:00 [DBG] Metric agent started
+2021-08-06 17:34:22.573 +09:00 [DBG] Sending Metrics batches
+2021-08-06 17:34:22.595 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 17:34:22.603 +09:00 [DBG] is empty: False
+2021-08-06 17:34:22.634 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-06 17:34:22.715 +09:00 [DBG] Inserted event PROFILE_CONFIGURATION_VERSION 1 to AnalyticsTable
+2021-08-06 17:34:22.716 +09:00 [DBG] Current metadata schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-06 17:34:22.771 +09:00 [DBG] Inserted event CLICK_LAUNCH_DESKTOP_APP 1 to AnalyticsTable
+2021-08-06 17:34:22.847 +09:00 [DBG] AcvcHelperOutLog doesn't exist. Skipping
+2021-08-06 17:34:22.847 +09:00 [DBG] AcvcHelperErrLog doesn't exist. Skipping
+2021-08-06 17:34:22.876 +09:00 [DBG] Total logs size: 13038286 bytes
+2021-08-06 17:34:22.892 +09:00 [DBG] Inserted event LOG_DISK_USAGE 13038286 to MetricsTable
+2021-08-06 17:34:22.903 +09:00 [DBG] Inserted event LOG_DISK_USAGE 13038286 to AnalyticsTable
+2021-08-06 17:34:23.325 +09:00 [DBG] /usr/bin/dig stdout: 
+; <<>> DiG 9.10.6 <<>> pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 2089
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 4, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. IN A
+
+;; ANSWER SECTION:
+pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. 900 IN CNAME pinpoint.ap-northeast-1.amazonaws.com.
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.225.174.27
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.225.174.69
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.225.174.104
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.225.174.125
+
+;; AUTHORITY SECTION:
+pinpoint.ap-northeast-1.amazonaws.com. 79068 IN	NS ns-1113.awsdns-11.org.
+pinpoint.ap-northeast-1.amazonaws.com. 79068 IN	NS ns-1796.awsdns-32.co.uk.
+pinpoint.ap-northeast-1.amazonaws.com. 79068 IN	NS ns-205.awsdns-25.com.
+pinpoint.ap-northeast-1.amazonaws.com. 79068 IN	NS ns-523.awsdns-01.net.
+
+;; Query time: 158 msec
+;; SERVER: 2404:1a8:7f01:b::3#53(2404:1a8:7f01:b::3)
+;; WHEN: Fri Aug 06 17:34:23 JST 2021
+;; MSG SIZE  rcvd: 321
+
+
+2021-08-06 17:34:23.330 +09:00 [DBG] /usr/bin/dig stderr: 
+2021-08-06 17:34:23.331 +09:00 [DBG] /usr/bin/dig exit code: 0
+2021-08-06 17:34:23.332 +09:00 [DBG] Error: 
+2021-08-06 17:34:23.333 +09:00 [DBG] dig command result: pinpoint.ap-northeast-1.amazonaws.com.
+2021-08-06 17:34:23.338 +09:00 [DBG] Storing metrics region ap-northeast-1 in app
+2021-08-06 17:34:23.338 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:34:23.339 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:34:23.339 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:34:23.339 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:34:24.345 +09:00 [DBG] Fetching cached identity id.
+2021-08-06 17:34:24.346 +09:00 [DBG] Looking up current region
+2021-08-06 17:34:24.346 +09:00 [DBG] Current region is: ap-northeast-1
+2021-08-06 17:34:24.347 +09:00 [DBG] Setting identityId and temporaryCredentials file paths.
+2021-08-06 17:34:24.434 +09:00 [DBG] Caching identity id.
+2021-08-06 17:34:24.436 +09:00 [DBG] Fetching cached credentials.
+2021-08-06 17:34:24.436 +09:00 [DBG] Reading cached credentials file.
+2021-08-06 17:34:24.507 +09:00 [DBG] Initializing credentials provider.
+2021-08-06 17:34:24.508 +09:00 [DBG] Sending metrics batch async
+2021-08-06 17:34:24.509 +09:00 [DBG] OS: MacOS
+2021-08-06 17:34:24.509 +09:00 [DBG] OS: MacOS
+2021-08-06 17:34:24.509 +09:00 [DBG] OS: MacOS
+2021-08-06 17:34:24.509 +09:00 [DBG] Metrics data request created
+2021-08-06 17:34:25.623 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 17:34:25.740 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 17:34:25.740 +09:00 [DBG] is empty: False
+2021-08-06 17:34:25.748 +09:00 [DBG] Analytics event batch successfully created, sending analytics
+2021-08-06 17:34:25.750 +09:00 [DBG] Sending analytics batch async
+2021-08-06 17:34:25.750 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:34:25.751 +09:00 [DBG] Pinpoint endpoint ID already exists
+2021-08-06 17:34:25.751 +09:00 [DBG] OSVersion: Unix 19.6.0.0
+2021-08-06 17:34:25.751 +09:00 [DBG] OS: MacOS
+2021-08-06 17:34:25.752 +09:00 [DBG] Endpoint ID: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-06 17:34:25.752 +09:00 [DBG] Pinpoint endpoint id: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-06 17:34:25.761 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:34:25.767 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:34:25.767 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:34:25.767 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:34:26.028 +09:00 [DBG] Caching credentials.
+2021-08-06 17:34:26.351 +09:00 [DBG] CloudWatch response received
+2021-08-06 17:34:26.352 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-06 17:34:26.352 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-06 17:34:26.352 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-06 17:34:26.380 +09:00 [DBG] 2021/08/06 17:34:26 Accepted
+2021-08-06 17:34:26.380 +09:00 [DBG] successfully put analytics to pinpoint
+2021-08-06 17:34:26.381 +09:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2021-08-06 17:34:26.418 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 17:34:26.419 +09:00 [DBG] is empty: False
+2021-08-06 17:34:26.453 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 17:34:26.453 +09:00 [DBG] is empty: True
+2021-08-06 17:34:26.453 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 17:34:26.493 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-06 17:34:26.493 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:34:26.493 +09:00 [DBG] Sending metrics batch async
+2021-08-06 17:34:26.493 +09:00 [DBG] OS: MacOS
+2021-08-06 17:34:26.493 +09:00 [DBG] Metrics data request created
+2021-08-06 17:34:26.560 +09:00 [DBG] CloudWatch response received
+2021-08-06 17:34:26.561 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-06 17:34:26.561 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-06 17:34:26.561 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-06 17:34:26.617 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 17:34:26.617 +09:00 [DBG] is empty: True
+2021-08-06 17:34:26.617 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 17:37:22.250 +09:00 [INF] Logger initialized
+2021-08-06 17:37:22.729 +09:00 [INF] Current OS Information:
+2021-08-06 17:37:22.733 +09:00 [INF] Platform: "Unix"
+2021-08-06 17:37:22.739 +09:00 [INF] Version String: Unix 19.6.0.0
+2021-08-06 17:37:22.748 +09:00 [INF] OS description: Unix 19.6.0.0
+2021-08-06 17:37:22.749 +09:00 [INF] OSX detected.
+2021-08-06 17:37:24.190 +09:00 [INF] Loading attributes file from /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-06 17:37:24.563 +09:00 [DBG] Metrics attributes saved to file: /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-06 17:37:24.565 +09:00 [DBG] Database path: /Users/insightshiga/.config/AWSVPNClient/awsvpnclientmetrics.db
+2021-08-06 17:37:24.568 +09:00 [INF] Loading profile store from /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-06 17:37:24.659 +09:00 [INF] Saving profile store to /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-06 17:37:24.696 +09:00 [DBG] Auto culture: ja-JP Auto UI culture: ja-JP
+2021-08-06 17:37:24.799 +09:00 [DBG] Can successfully read and write app data folder.
+2021-08-06 17:37:24.802 +09:00 [DBG] openVpnExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/acvc-openvpn
+2021-08-06 17:37:24.802 +09:00 [DBG] helperToolExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/AWS VPN Client/Contents/MacOS/ACVCHelperTool
+2021-08-06 17:37:25.078 +09:00 [DBG] macOS viewDidLoad
+2021-08-06 17:37:25.100 +09:00 [INF] Loading preferences file from /Users/insightshiga/.config/AWSVPNClient/Preferences
+2021-08-06 17:37:25.503 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-06 17:37:26.311 +09:00 [DBG] Inserted event APPLICATION_CRASH_DETECTED 0 to MetricsTable
+2021-08-06 17:37:26.312 +09:00 [DBG] Current preferences schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-06 17:37:26.422 +09:00 [DBG] Metric agent started
+2021-08-06 17:37:26.424 +09:00 [DBG] Sending Metrics batches
+2021-08-06 17:37:26.429 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 17:37:26.436 +09:00 [DBG] is empty: False
+2021-08-06 17:37:26.467 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-06 17:37:26.624 +09:00 [DBG] Inserted event PROFILE_CONFIGURATION_VERSION 1 to AnalyticsTable
+2021-08-06 17:37:26.624 +09:00 [DBG] Current metadata schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-06 17:37:26.651 +09:00 [DBG] Inserted event CLICK_LAUNCH_DESKTOP_APP 1 to AnalyticsTable
+2021-08-06 17:37:26.660 +09:00 [DBG] AcvcHelperOutLog doesn't exist. Skipping
+2021-08-06 17:37:26.660 +09:00 [DBG] AcvcHelperErrLog doesn't exist. Skipping
+2021-08-06 17:37:26.700 +09:00 [DBG] Total logs size: 13047193 bytes
+2021-08-06 17:37:26.752 +09:00 [DBG] Inserted event LOG_DISK_USAGE 13047193 to MetricsTable
+2021-08-06 17:37:26.790 +09:00 [DBG] Inserted event LOG_DISK_USAGE 13047193 to AnalyticsTable
+2021-08-06 17:37:27.010 +09:00 [DBG] /usr/bin/dig stdout: 
+; <<>> DiG 9.10.6 <<>> pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 14695
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 4, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. IN A
+
+;; ANSWER SECTION:
+pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. 899 IN CNAME pinpoint.ap-northeast-1.amazonaws.com.
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.35.49.115
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.35.49.77
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.35.49.126
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.35.49.105
+
+;; AUTHORITY SECTION:
+pinpoint.ap-northeast-1.amazonaws.com. 47855 IN	NS ns-205.awsdns-25.com.
+pinpoint.ap-northeast-1.amazonaws.com. 47855 IN	NS ns-523.awsdns-01.net.
+pinpoint.ap-northeast-1.amazonaws.com. 47855 IN	NS ns-1113.awsdns-11.org.
+pinpoint.ap-northeast-1.amazonaws.com. 47855 IN	NS ns-1796.awsdns-32.co.uk.
+
+;; Query time: 206 msec
+;; SERVER: 2404:1a8:7f01:b::3#53(2404:1a8:7f01:b::3)
+;; WHEN: Fri Aug 06 17:37:27 JST 2021
+;; MSG SIZE  rcvd: 321
+
+
+2021-08-06 17:37:27.016 +09:00 [DBG] /usr/bin/dig stderr: 
+2021-08-06 17:37:27.017 +09:00 [DBG] /usr/bin/dig exit code: 0
+2021-08-06 17:37:27.018 +09:00 [DBG] Error: 
+2021-08-06 17:37:27.019 +09:00 [DBG] dig command result: pinpoint.ap-northeast-1.amazonaws.com.
+2021-08-06 17:37:27.024 +09:00 [DBG] Storing metrics region ap-northeast-1 in app
+2021-08-06 17:37:27.024 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:37:27.025 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:37:27.025 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:37:27.025 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:37:27.732 +09:00 [DBG] Fetching cached identity id.
+2021-08-06 17:37:27.733 +09:00 [DBG] Looking up current region
+2021-08-06 17:37:27.734 +09:00 [DBG] Current region is: ap-northeast-1
+2021-08-06 17:37:27.734 +09:00 [DBG] Setting identityId and temporaryCredentials file paths.
+2021-08-06 17:37:27.755 +09:00 [DBG] Caching identity id.
+2021-08-06 17:37:27.758 +09:00 [DBG] Fetching cached credentials.
+2021-08-06 17:37:27.758 +09:00 [DBG] Reading cached credentials file.
+2021-08-06 17:37:27.798 +09:00 [DBG] Initializing credentials provider.
+2021-08-06 17:37:27.799 +09:00 [DBG] Sending metrics batch async
+2021-08-06 17:37:27.801 +09:00 [DBG] OS: MacOS
+2021-08-06 17:37:27.802 +09:00 [DBG] OS: MacOS
+2021-08-06 17:37:27.802 +09:00 [DBG] Metrics data request created
+2021-08-06 17:37:28.857 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 17:37:28.864 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 17:37:28.864 +09:00 [DBG] is empty: False
+2021-08-06 17:37:28.871 +09:00 [DBG] Analytics event batch successfully created, sending analytics
+2021-08-06 17:37:28.873 +09:00 [DBG] Sending analytics batch async
+2021-08-06 17:37:28.873 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:37:28.873 +09:00 [DBG] Pinpoint endpoint ID already exists
+2021-08-06 17:37:28.874 +09:00 [DBG] OSVersion: Unix 19.6.0.0
+2021-08-06 17:37:28.874 +09:00 [DBG] OS: MacOS
+2021-08-06 17:37:28.874 +09:00 [DBG] Endpoint ID: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-06 17:37:28.874 +09:00 [DBG] Pinpoint endpoint id: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-06 17:37:28.890 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:37:28.937 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:37:28.937 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:37:28.937 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:37:29.422 +09:00 [DBG] 2021/08/06 17:37:29 Accepted
+2021-08-06 17:37:29.422 +09:00 [DBG] successfully put analytics to pinpoint
+2021-08-06 17:37:29.422 +09:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2021-08-06 17:37:29.430 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 17:37:29.431 +09:00 [DBG] is empty: True
+2021-08-06 17:37:29.431 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 17:37:29.439 +09:00 [DBG] CloudWatch response received
+2021-08-06 17:37:29.439 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-06 17:37:29.439 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-06 17:37:29.440 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-06 17:37:29.479 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 17:37:29.480 +09:00 [DBG] is empty: False
+2021-08-06 17:37:29.482 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-06 17:37:29.482 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 17:37:29.482 +09:00 [DBG] Sending metrics batch async
+2021-08-06 17:37:29.482 +09:00 [DBG] OS: MacOS
+2021-08-06 17:37:29.482 +09:00 [DBG] Metrics data request created
+2021-08-06 17:37:29.558 +09:00 [DBG] CloudWatch response received
+2021-08-06 17:37:29.558 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-06 17:37:29.558 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-06 17:37:29.558 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-06 17:37:29.589 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 17:37:29.590 +09:00 [DBG] is empty: True
+2021-08-06 17:37:29.590 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 18:37:28.931 +09:00 [DBG] Sending Metrics batches
+2021-08-06 18:37:28.956 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 18:37:28.957 +09:00 [DBG] is empty: True
+2021-08-06 18:37:28.957 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 18:37:28.958 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 18:37:28.962 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 18:37:28.963 +09:00 [DBG] is empty: True
+2021-08-06 18:37:28.963 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 18:49:05.721 +09:00 [DBG] Caught exception when getting connection status. Exception information: System.TimeoutException: The message did not respond within the expected timeframe or was cancelled
+  at ACVC.Core.OpenVpn.OvpnConnectionManager.SendMessage (System.String message, System.Int32 timeout, System.Threading.CancellationToken cancellationToken) [0x001ca] in <31f17d339caa4e67b9ad9d7f4a1b866a>:0 
+  at ACVC.Core.OpenVpn.OvpnConnectionManager.GetConnectionStatus () [0x0007c] in <31f17d339caa4e67b9ad9d7f4a1b866a>:0 
+  at ACVC.Core.Metrics.MetricsClient.RecordBytesMetricsAndAnalytics (ACVC.Core.IConnectionManager connectionManager) [0x00077] in <31f17d339caa4e67b9ad9d7f4a1b866a>:0 
+2021-08-06 18:49:05.727 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-06 18:49:05.729 +09:00 [INF] Terminating connection
+2021-08-06 18:49:05.729 +09:00 [DBG] 🏞 Ending connection details reporting.
+2021-08-06 18:49:05.730 +09:00 [WRN] We are calling GracefulKill in a method that is not supposed to change Connection state.
+2021-08-06 18:49:05.730 +09:00 [DBG] GracefulKill
+2021-08-06 18:49:05.732 +09:00 [DBG] Cancelling socket listen token
+2021-08-06 18:49:05.733 +09:00 [DBG] Dispose socket
+2021-08-06 18:49:05.733 +09:00 [DBG] Signal process kill with helper tool.
+2021-08-06 18:49:05.734 +09:00 [DBG] Starting process
+2021-08-06 18:49:05.742 +09:00 [DBG] Start to read process output
+2021-08-06 18:49:05.746 +09:00 [DBG] Shutting down metrics agent
+2021-08-06 18:49:05.757 +09:00 [DBG] Metrics agent shut down
+2021-08-06 18:51:41.622 +09:00 [INF] Logger initialized
+2021-08-06 18:51:42.096 +09:00 [INF] Current OS Information:
+2021-08-06 18:51:42.100 +09:00 [INF] Platform: "Unix"
+2021-08-06 18:51:42.149 +09:00 [INF] Version String: Unix 19.6.0.0
+2021-08-06 18:51:42.152 +09:00 [INF] OS description: Unix 19.6.0.0
+2021-08-06 18:51:42.153 +09:00 [INF] OSX detected.
+2021-08-06 18:51:43.212 +09:00 [INF] Loading attributes file from /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-06 18:51:43.601 +09:00 [DBG] Metrics attributes saved to file: /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-06 18:51:43.603 +09:00 [DBG] Database path: /Users/insightshiga/.config/AWSVPNClient/awsvpnclientmetrics.db
+2021-08-06 18:51:43.605 +09:00 [INF] Loading profile store from /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-06 18:51:43.726 +09:00 [INF] Saving profile store to /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-06 18:51:43.750 +09:00 [DBG] Auto culture: ja-JP Auto UI culture: ja-JP
+2021-08-06 18:51:43.785 +09:00 [DBG] Can successfully read and write app data folder.
+2021-08-06 18:51:43.790 +09:00 [DBG] openVpnExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/acvc-openvpn
+2021-08-06 18:51:43.790 +09:00 [DBG] helperToolExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/AWS VPN Client/Contents/MacOS/ACVCHelperTool
+2021-08-06 18:51:44.070 +09:00 [DBG] macOS viewDidLoad
+2021-08-06 18:51:44.163 +09:00 [INF] Loading preferences file from /Users/insightshiga/.config/AWSVPNClient/Preferences
+2021-08-06 18:51:44.489 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-06 18:51:45.330 +09:00 [DBG] Inserted event APPLICATION_CRASH_DETECTED 0 to MetricsTable
+2021-08-06 18:51:45.331 +09:00 [DBG] Current preferences schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-06 18:51:45.352 +09:00 [DBG] Metric agent started
+2021-08-06 18:51:45.355 +09:00 [DBG] Sending Metrics batches
+2021-08-06 18:51:45.361 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 18:51:45.368 +09:00 [DBG] is empty: False
+2021-08-06 18:51:45.449 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-06 18:51:45.552 +09:00 [DBG] Inserted event PROFILE_CONFIGURATION_VERSION 1 to AnalyticsTable
+2021-08-06 18:51:45.553 +09:00 [DBG] Current metadata schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-06 18:51:45.652 +09:00 [DBG] Inserted event CLICK_LAUNCH_DESKTOP_APP 1 to AnalyticsTable
+2021-08-06 18:51:45.664 +09:00 [DBG] AcvcHelperOutLog doesn't exist. Skipping
+2021-08-06 18:51:45.692 +09:00 [DBG] AcvcHelperErrLog doesn't exist. Skipping
+2021-08-06 18:51:45.723 +09:00 [DBG] Total logs size: 13058112 bytes
+2021-08-06 18:51:45.749 +09:00 [DBG] Inserted event LOG_DISK_USAGE 13058112 to MetricsTable
+2021-08-06 18:51:45.763 +09:00 [DBG] Inserted event LOG_DISK_USAGE 13058112 to AnalyticsTable
+2021-08-06 18:51:47.486 +09:00 [DBG] /usr/bin/dig stdout: 
+; <<>> DiG 9.10.6 <<>> pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 37701
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 4, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. IN A
+
+;; ANSWER SECTION:
+pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. 900 IN CNAME pinpoint.ap-northeast-1.amazonaws.com.
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.35.49.115
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.35.49.126
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.35.49.77
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	13.35.49.105
+
+;; AUTHORITY SECTION:
+pinpoint.ap-northeast-1.amazonaws.com. 7349 IN NS ns-523.awsdns-01.net.
+pinpoint.ap-northeast-1.amazonaws.com. 7349 IN NS ns-1113.awsdns-11.org.
+pinpoint.ap-northeast-1.amazonaws.com. 7349 IN NS ns-1796.awsdns-32.co.uk.
+pinpoint.ap-northeast-1.amazonaws.com. 7349 IN NS ns-205.awsdns-25.com.
+
+;; Query time: 1492 msec
+;; SERVER: 2404:1a8:7f01:b::3#53(2404:1a8:7f01:b::3)
+;; WHEN: Fri Aug 06 18:51:47 JST 2021
+;; MSG SIZE  rcvd: 321
+
+
+2021-08-06 18:51:47.493 +09:00 [DBG] /usr/bin/dig stderr: 
+2021-08-06 18:51:47.494 +09:00 [DBG] /usr/bin/dig exit code: 0
+2021-08-06 18:51:47.495 +09:00 [DBG] Error: 
+2021-08-06 18:51:47.496 +09:00 [DBG] dig command result: pinpoint.ap-northeast-1.amazonaws.com.
+2021-08-06 18:51:47.501 +09:00 [DBG] Storing metrics region ap-northeast-1 in app
+2021-08-06 18:51:47.502 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 18:51:47.503 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 18:51:47.503 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 18:51:47.503 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 18:51:47.994 +09:00 [DBG] Fetching cached identity id.
+2021-08-06 18:51:47.995 +09:00 [DBG] Looking up current region
+2021-08-06 18:51:47.996 +09:00 [DBG] Current region is: ap-northeast-1
+2021-08-06 18:51:47.996 +09:00 [DBG] Setting identityId and temporaryCredentials file paths.
+2021-08-06 18:51:48.041 +09:00 [DBG] Caching identity id.
+2021-08-06 18:51:48.053 +09:00 [DBG] Fetching cached credentials.
+2021-08-06 18:51:48.054 +09:00 [DBG] Reading cached credentials file.
+2021-08-06 18:51:48.087 +09:00 [DBG] Initializing credentials provider.
+2021-08-06 18:51:48.117 +09:00 [DBG] Sending metrics batch async
+2021-08-06 18:51:48.120 +09:00 [DBG] OS: MacOS
+2021-08-06 18:51:48.121 +09:00 [DBG] OS: MacOS
+2021-08-06 18:51:48.121 +09:00 [DBG] OS: MacOS
+2021-08-06 18:51:48.121 +09:00 [DBG] Metrics data request created
+2021-08-06 18:51:48.756 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 18:51:48.768 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 18:51:48.768 +09:00 [DBG] is empty: False
+2021-08-06 18:51:48.770 +09:00 [DBG] Analytics event batch successfully created, sending analytics
+2021-08-06 18:51:48.776 +09:00 [DBG] Sending analytics batch async
+2021-08-06 18:51:48.776 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 18:51:48.777 +09:00 [DBG] Pinpoint endpoint ID already exists
+2021-08-06 18:51:48.778 +09:00 [DBG] OSVersion: Unix 19.6.0.0
+2021-08-06 18:51:48.778 +09:00 [DBG] OS: MacOS
+2021-08-06 18:51:48.778 +09:00 [DBG] Endpoint ID: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-06 18:51:48.909 +09:00 [DBG] Pinpoint endpoint id: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-06 18:51:48.924 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 18:51:48.931 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 18:51:48.932 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 18:51:48.932 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 18:51:49.340 +09:00 [DBG] Caching credentials.
+2021-08-06 18:51:49.592 +09:00 [DBG] 2021/08/06 18:51:49 Accepted
+2021-08-06 18:51:49.592 +09:00 [DBG] successfully put analytics to pinpoint
+2021-08-06 18:51:49.593 +09:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2021-08-06 18:51:49.627 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 18:51:49.627 +09:00 [DBG] is empty: True
+2021-08-06 18:51:49.628 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 18:51:49.752 +09:00 [DBG] CloudWatch response received
+2021-08-06 18:51:49.752 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-06 18:51:49.752 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-06 18:51:49.753 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-06 18:51:49.772 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 18:51:49.772 +09:00 [DBG] is empty: False
+2021-08-06 18:51:49.779 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-06 18:51:49.779 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 18:51:49.779 +09:00 [DBG] Sending metrics batch async
+2021-08-06 18:51:49.779 +09:00 [DBG] OS: MacOS
+2021-08-06 18:51:49.779 +09:00 [DBG] Metrics data request created
+2021-08-06 18:51:49.857 +09:00 [DBG] CloudWatch response received
+2021-08-06 18:51:49.857 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-06 18:51:49.857 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-06 18:51:49.857 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-06 18:51:49.902 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 18:51:49.902 +09:00 [DBG] is empty: True
+2021-08-06 18:51:49.902 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 19:00:18.786 +09:00 [INF] Logger initialized
+2021-08-06 19:00:19.183 +09:00 [INF] Current OS Information:
+2021-08-06 19:00:19.188 +09:00 [INF] Platform: "Unix"
+2021-08-06 19:00:19.258 +09:00 [INF] Version String: Unix 19.6.0.0
+2021-08-06 19:00:19.261 +09:00 [INF] OS description: Unix 19.6.0.0
+2021-08-06 19:00:19.262 +09:00 [INF] OSX detected.
+2021-08-06 19:00:21.577 +09:00 [INF] Loading attributes file from /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-06 19:00:21.855 +09:00 [DBG] Metrics attributes saved to file: /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-06 19:00:21.857 +09:00 [DBG] Database path: /Users/insightshiga/.config/AWSVPNClient/awsvpnclientmetrics.db
+2021-08-06 19:00:21.859 +09:00 [INF] Loading profile store from /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-06 19:00:21.912 +09:00 [INF] Saving profile store to /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-06 19:00:21.929 +09:00 [DBG] Auto culture: ja-JP Auto UI culture: ja-JP
+2021-08-06 19:00:22.122 +09:00 [DBG] Can successfully read and write app data folder.
+2021-08-06 19:00:22.126 +09:00 [DBG] openVpnExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/acvc-openvpn
+2021-08-06 19:00:22.127 +09:00 [DBG] helperToolExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/AWS VPN Client/Contents/MacOS/ACVCHelperTool
+2021-08-06 19:00:22.584 +09:00 [DBG] macOS viewDidLoad
+2021-08-06 19:00:22.603 +09:00 [INF] Loading preferences file from /Users/insightshiga/.config/AWSVPNClient/Preferences
+2021-08-06 19:00:23.049 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-06 19:00:24.001 +09:00 [DBG] Inserted event APPLICATION_CRASH_DETECTED 0 to MetricsTable
+2021-08-06 19:00:24.002 +09:00 [DBG] Current preferences schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-06 19:00:24.136 +09:00 [DBG] Metric agent started
+2021-08-06 19:00:24.139 +09:00 [DBG] Sending Metrics batches
+2021-08-06 19:00:24.145 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 19:00:24.152 +09:00 [DBG] is empty: False
+2021-08-06 19:00:24.188 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-06 19:00:24.376 +09:00 [DBG] Inserted event PROFILE_CONFIGURATION_VERSION 1 to AnalyticsTable
+2021-08-06 19:00:24.393 +09:00 [DBG] Current metadata schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-06 19:00:24.483 +09:00 [DBG] Inserted event CLICK_LAUNCH_DESKTOP_APP 1 to AnalyticsTable
+2021-08-06 19:00:24.495 +09:00 [DBG] AcvcHelperOutLog doesn't exist. Skipping
+2021-08-06 19:00:24.495 +09:00 [DBG] AcvcHelperErrLog doesn't exist. Skipping
+2021-08-06 19:00:24.538 +09:00 [DBG] Total logs size: 13067010 bytes
+2021-08-06 19:00:24.563 +09:00 [DBG] Inserted event LOG_DISK_USAGE 13067010 to MetricsTable
+2021-08-06 19:00:24.580 +09:00 [DBG] Inserted event LOG_DISK_USAGE 13067010 to AnalyticsTable
+2021-08-06 19:00:28.118 +09:00 [DBG] /usr/bin/dig stdout: 
+; <<>> DiG 9.10.6 <<>> pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 35693
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 4, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. IN A
+
+;; ANSWER SECTION:
+pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. 382 IN CNAME pinpoint.ap-northeast-1.amazonaws.com.
+pinpoint.ap-northeast-1.amazonaws.com. 27 IN A	13.35.49.126
+pinpoint.ap-northeast-1.amazonaws.com. 27 IN A	13.35.49.115
+pinpoint.ap-northeast-1.amazonaws.com. 27 IN A	13.35.49.77
+pinpoint.ap-northeast-1.amazonaws.com. 27 IN A	13.35.49.105
+
+;; AUTHORITY SECTION:
+pinpoint.ap-northeast-1.amazonaws.com. 6831 IN NS ns-1796.awsdns-32.co.uk.
+pinpoint.ap-northeast-1.amazonaws.com. 6831 IN NS ns-205.awsdns-25.com.
+pinpoint.ap-northeast-1.amazonaws.com. 6831 IN NS ns-523.awsdns-01.net.
+pinpoint.ap-northeast-1.amazonaws.com. 6831 IN NS ns-1113.awsdns-11.org.
+
+;; Query time: 3519 msec
+;; SERVER: 2404:1a8:7f01:b::3#53(2404:1a8:7f01:b::3)
+;; WHEN: Fri Aug 06 19:00:28 JST 2021
+;; MSG SIZE  rcvd: 321
+
+
+2021-08-06 19:00:28.124 +09:00 [DBG] /usr/bin/dig stderr: 
+2021-08-06 19:00:28.126 +09:00 [DBG] /usr/bin/dig exit code: 0
+2021-08-06 19:00:28.126 +09:00 [DBG] Error: 
+2021-08-06 19:00:28.127 +09:00 [DBG] dig command result: pinpoint.ap-northeast-1.amazonaws.com.
+2021-08-06 19:00:28.132 +09:00 [DBG] Storing metrics region ap-northeast-1 in app
+2021-08-06 19:00:28.133 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 19:00:28.134 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 19:00:28.134 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 19:00:28.134 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 19:00:28.756 +09:00 [DBG] Fetching cached identity id.
+2021-08-06 19:00:28.757 +09:00 [DBG] Looking up current region
+2021-08-06 19:00:28.758 +09:00 [DBG] Current region is: ap-northeast-1
+2021-08-06 19:00:28.758 +09:00 [DBG] Setting identityId and temporaryCredentials file paths.
+2021-08-06 19:00:28.844 +09:00 [DBG] Caching identity id.
+2021-08-06 19:00:28.872 +09:00 [DBG] Fetching cached credentials.
+2021-08-06 19:00:28.873 +09:00 [DBG] Reading cached credentials file.
+2021-08-06 19:00:28.889 +09:00 [DBG] Initializing credentials provider.
+2021-08-06 19:00:28.890 +09:00 [DBG] Sending metrics batch async
+2021-08-06 19:00:28.891 +09:00 [DBG] OS: MacOS
+2021-08-06 19:00:28.892 +09:00 [DBG] OS: MacOS
+2021-08-06 19:00:28.892 +09:00 [DBG] Metrics data request created
+2021-08-06 19:00:29.442 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 19:00:29.448 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 19:00:29.448 +09:00 [DBG] is empty: False
+2021-08-06 19:00:29.456 +09:00 [DBG] Analytics event batch successfully created, sending analytics
+2021-08-06 19:00:29.459 +09:00 [DBG] Sending analytics batch async
+2021-08-06 19:00:29.459 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 19:00:29.459 +09:00 [DBG] Pinpoint endpoint ID already exists
+2021-08-06 19:00:29.460 +09:00 [DBG] OSVersion: Unix 19.6.0.0
+2021-08-06 19:00:29.460 +09:00 [DBG] OS: MacOS
+2021-08-06 19:00:29.461 +09:00 [DBG] Endpoint ID: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-06 19:00:29.461 +09:00 [DBG] Pinpoint endpoint id: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-06 19:00:29.474 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 19:00:29.482 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 19:00:29.482 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 19:00:29.482 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 19:00:29.826 +09:00 [DBG] 2021/08/06 19:00:29 Accepted
+2021-08-06 19:00:29.826 +09:00 [DBG] successfully put analytics to pinpoint
+2021-08-06 19:00:29.827 +09:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2021-08-06 19:00:29.832 +09:00 [DBG] CloudWatch response received
+2021-08-06 19:00:29.833 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-06 19:00:29.833 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-06 19:00:29.833 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-06 19:00:29.834 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 19:00:29.835 +09:00 [DBG] is empty: True
+2021-08-06 19:00:29.835 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 19:00:29.840 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 19:00:29.840 +09:00 [DBG] is empty: False
+2021-08-06 19:00:29.842 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-06 19:00:29.842 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-06 19:00:29.842 +09:00 [DBG] Sending metrics batch async
+2021-08-06 19:00:29.842 +09:00 [DBG] OS: MacOS
+2021-08-06 19:00:29.842 +09:00 [DBG] Metrics data request created
+2021-08-06 19:00:29.909 +09:00 [DBG] CloudWatch response received
+2021-08-06 19:00:29.909 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-06 19:00:29.909 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-06 19:00:29.909 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-06 19:00:29.966 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 19:00:29.967 +09:00 [DBG] is empty: True
+2021-08-06 19:00:29.967 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 20:00:37.014 +09:00 [DBG] Sending Metrics batches
+2021-08-06 20:00:37.070 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 20:00:37.073 +09:00 [DBG] is empty: True
+2021-08-06 20:00:37.073 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 20:00:37.073 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 20:00:37.077 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 20:00:37.078 +09:00 [DBG] is empty: True
+2021-08-06 20:00:37.078 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 21:00:36.984 +09:00 [DBG] Sending Metrics batches
+2021-08-06 21:00:36.998 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 21:00:37.000 +09:00 [DBG] is empty: True
+2021-08-06 21:00:37.000 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 21:00:37.000 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 21:00:37.002 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 21:00:37.003 +09:00 [DBG] is empty: True
+2021-08-06 21:00:37.003 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 22:08:57.097 +09:00 [DBG] Sending Metrics batches
+2021-08-06 22:08:57.114 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 22:08:57.116 +09:00 [DBG] is empty: True
+2021-08-06 22:08:57.116 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 22:08:57.116 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 22:08:57.143 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 22:08:57.144 +09:00 [DBG] is empty: True
+2021-08-06 22:08:57.144 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-06 23:08:57.099 +09:00 [DBG] Sending Metrics batches
+2021-08-06 23:08:57.110 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-06 23:08:57.112 +09:00 [DBG] is empty: True
+2021-08-06 23:08:57.112 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-06 23:08:57.112 +09:00 [DBG] Sending Analytics Batches
+2021-08-06 23:08:57.115 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-06 23:08:57.116 +09:00 [DBG] is empty: True
+2021-08-06 23:08:57.116 +09:00 [DBG] Finished sending batches of analytics to pinpoint.

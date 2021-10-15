@@ -1,0 +1,992 @@
+2021-08-31 13:46:59.535 +09:00 [INF] Logger initialized
+2021-08-31 13:46:59.644 +09:00 [INF] Current OS Information:
+2021-08-31 13:46:59.645 +09:00 [INF] Platform: "Unix"
+2021-08-31 13:46:59.649 +09:00 [INF] Version String: Unix 19.6.0.0
+2021-08-31 13:46:59.650 +09:00 [INF] OS description: Unix 19.6.0.0
+2021-08-31 13:46:59.651 +09:00 [INF] OSX detected.
+2021-08-31 13:46:59.958 +09:00 [INF] Loading attributes file from /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-31 13:47:00.060 +09:00 [DBG] Metrics attributes saved to file: /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-31 13:47:00.061 +09:00 [DBG] Database path: /Users/insightshiga/.config/AWSVPNClient/awsvpnclientmetrics.db
+2021-08-31 13:47:00.063 +09:00 [INF] Loading profile store from /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-31 13:47:00.090 +09:00 [INF] Saving profile store to /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-31 13:47:00.104 +09:00 [DBG] Auto culture: ja-JP Auto UI culture: ja-JP
+2021-08-31 13:47:00.105 +09:00 [DBG] Can successfully read and write app data folder.
+2021-08-31 13:47:00.107 +09:00 [DBG] openVpnExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/acvc-openvpn
+2021-08-31 13:47:00.107 +09:00 [DBG] helperToolExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/AWS VPN Client/Contents/MacOS/ACVCHelperTool
+2021-08-31 13:47:00.219 +09:00 [DBG] macOS viewDidLoad
+2021-08-31 13:47:00.230 +09:00 [INF] Loading preferences file from /Users/insightshiga/.config/AWSVPNClient/Preferences
+2021-08-31 13:47:00.325 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-31 13:47:00.794 +09:00 [DBG] Inserted event APPLICATION_CRASH_DETECTED 0 to MetricsTable
+2021-08-31 13:47:00.795 +09:00 [DBG] Current preferences schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-31 13:47:00.800 +09:00 [DBG] Metric agent started
+2021-08-31 13:47:00.802 +09:00 [DBG] Sending Metrics batches
+2021-08-31 13:47:00.805 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 13:47:00.810 +09:00 [DBG] is empty: False
+2021-08-31 13:47:00.827 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-31 13:47:00.853 +09:00 [DBG] Inserted event PROFILE_CONFIGURATION_VERSION 1 to AnalyticsTable
+2021-08-31 13:47:00.853 +09:00 [DBG] Current metadata schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-31 13:47:00.855 +09:00 [DBG] Inserted event CLICK_LAUNCH_DESKTOP_APP 1 to AnalyticsTable
+2021-08-31 13:47:00.865 +09:00 [DBG] AcvcHelperOutLog doesn't exist. Skipping
+2021-08-31 13:47:00.865 +09:00 [DBG] AcvcHelperErrLog doesn't exist. Skipping
+2021-08-31 13:47:00.881 +09:00 [DBG] Total logs size: 11724172 bytes
+2021-08-31 13:47:00.883 +09:00 [DBG] Inserted event LOG_DISK_USAGE 11724172 to MetricsTable
+2021-08-31 13:47:00.885 +09:00 [DBG] Inserted event LOG_DISK_USAGE 11724172 to AnalyticsTable
+2021-08-31 13:47:00.978 +09:00 [DBG] /usr/bin/dig stdout: 
+; <<>> DiG 9.10.6 <<>> pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47782
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 4, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. IN A
+
+;; ANSWER SECTION:
+pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. 900 IN CNAME pinpoint.ap-northeast-1.amazonaws.com.
+pinpoint.ap-northeast-1.amazonaws.com. 29 IN A	65.9.42.23
+pinpoint.ap-northeast-1.amazonaws.com. 29 IN A	65.9.42.63
+pinpoint.ap-northeast-1.amazonaws.com. 29 IN A	65.9.42.66
+pinpoint.ap-northeast-1.amazonaws.com. 29 IN A	65.9.42.70
+
+;; AUTHORITY SECTION:
+pinpoint.ap-northeast-1.amazonaws.com. 8868 IN NS ns-205.awsdns-25.com.
+pinpoint.ap-northeast-1.amazonaws.com. 8868 IN NS ns-523.awsdns-01.net.
+pinpoint.ap-northeast-1.amazonaws.com. 8868 IN NS ns-1113.awsdns-11.org.
+pinpoint.ap-northeast-1.amazonaws.com. 8868 IN NS ns-1796.awsdns-32.co.uk.
+
+;; Query time: 103 msec
+;; SERVER: 2404:1a8:7f01:b::3#53(2404:1a8:7f01:b::3)
+;; WHEN: Tue Aug 31 13:47:00 JST 2021
+;; MSG SIZE  rcvd: 321
+
+
+2021-08-31 13:47:00.983 +09:00 [DBG] /usr/bin/dig stderr: 
+2021-08-31 13:47:00.984 +09:00 [DBG] /usr/bin/dig exit code: 0
+2021-08-31 13:47:00.984 +09:00 [DBG] Error: 
+2021-08-31 13:47:00.985 +09:00 [DBG] dig command result: pinpoint.ap-northeast-1.amazonaws.com.
+2021-08-31 13:47:00.988 +09:00 [DBG] Storing metrics region ap-northeast-1 in app
+2021-08-31 13:47:00.989 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:47:00.989 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:47:00.989 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:47:00.989 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:47:01.107 +09:00 [DBG] Fetching cached identity id.
+2021-08-31 13:47:01.107 +09:00 [DBG] Looking up current region
+2021-08-31 13:47:01.108 +09:00 [DBG] Current region is: ap-northeast-1
+2021-08-31 13:47:01.108 +09:00 [DBG] Setting identityId and temporaryCredentials file paths.
+2021-08-31 13:47:01.109 +09:00 [DBG] Caching identity id.
+2021-08-31 13:47:01.111 +09:00 [DBG] Fetching cached credentials.
+2021-08-31 13:47:01.111 +09:00 [DBG] Reading cached credentials file.
+2021-08-31 13:47:01.115 +09:00 [DBG] Initializing credentials provider.
+2021-08-31 13:47:01.116 +09:00 [DBG] Sending metrics batch async
+2021-08-31 13:47:01.117 +09:00 [DBG] OS: MacOS
+2021-08-31 13:47:01.117 +09:00 [DBG] OS: MacOS
+2021-08-31 13:47:01.117 +09:00 [DBG] OS: MacOS
+2021-08-31 13:47:01.117 +09:00 [DBG] Metrics data request created
+2021-08-31 13:47:01.231 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 13:47:01.237 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 13:47:01.238 +09:00 [DBG] is empty: False
+2021-08-31 13:47:01.239 +09:00 [DBG] Analytics event batch successfully created, sending analytics
+2021-08-31 13:47:01.240 +09:00 [DBG] Sending analytics batch async
+2021-08-31 13:47:01.241 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:47:01.241 +09:00 [DBG] Pinpoint endpoint ID already exists
+2021-08-31 13:47:01.241 +09:00 [DBG] OSVersion: Unix 19.6.0.0
+2021-08-31 13:47:01.241 +09:00 [DBG] OS: MacOS
+2021-08-31 13:47:01.242 +09:00 [DBG] Endpoint ID: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-31 13:47:01.242 +09:00 [DBG] Pinpoint endpoint id: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-31 13:47:01.248 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:47:01.250 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:47:01.251 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:47:01.251 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:47:01.478 +09:00 [DBG] Caching credentials.
+2021-08-31 13:47:01.618 +09:00 [DBG] CloudWatch response received
+2021-08-31 13:47:01.618 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-31 13:47:01.619 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-31 13:47:01.619 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-31 13:47:01.622 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 13:47:01.623 +09:00 [DBG] is empty: False
+2021-08-31 13:47:01.624 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-31 13:47:01.624 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:47:01.624 +09:00 [DBG] Sending metrics batch async
+2021-08-31 13:47:01.624 +09:00 [DBG] OS: MacOS
+2021-08-31 13:47:01.624 +09:00 [DBG] Metrics data request created
+2021-08-31 13:47:01.652 +09:00 [DBG] 2021/08/31 13:47:01 Accepted
+2021-08-31 13:47:01.652 +09:00 [DBG] successfully put analytics to pinpoint
+2021-08-31 13:47:01.653 +09:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2021-08-31 13:47:01.657 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 13:47:01.657 +09:00 [DBG] is empty: True
+2021-08-31 13:47:01.657 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-31 13:47:01.747 +09:00 [DBG] CloudWatch response received
+2021-08-31 13:47:01.747 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-31 13:47:01.747 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-31 13:47:01.747 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-31 13:47:01.752 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 13:47:01.753 +09:00 [DBG] is empty: True
+2021-08-31 13:47:01.753 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 13:47:36.777 +09:00 [INF] Saving profile store to /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-31 13:47:36.785 +09:00 [DBG] Inserted event CLICK_APP_CONNECT 1 to AnalyticsTable
+2021-08-31 13:47:36.789 +09:00 [INF] Connecting /Users/insightshiga/.config/AWSVPNClient/OpenVpnConfigs/InsightStandardVPN 
+2021-08-31 13:47:36.794 +09:00 [DBG] validationString: /Users/insightshiga/.config/AWSVPNClient/OpenVpnConfigs/InsightStandardVPN
+1630385266
+2021-08-31 13:47:36.797 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_ATTEMPT 1 to AnalyticsTable
+2021-08-31 13:47:36.797 +09:00 [DBG] Shutting down metrics agent
+2021-08-31 13:47:36.798 +09:00 [DBG] Metrics agent shut down
+2021-08-31 13:47:36.802 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-31 13:47:36.997 +09:00 [INF] Starting OpenVpn process
+2021-08-31 13:47:36.999 +09:00 [DBG] Starting process
+2021-08-31 13:47:37.005 +09:00 [DBG] Start to read process output
+2021-08-31 13:47:37.097 +09:00 [DBG] End reading process output
+2021-08-31 13:47:37.116 +09:00 [DBG] Helper app --init output: Kill success.
+2021-08-31 13:47:37.116 +09:00 [DBG] Connecting using command /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/AWS VPN Client/Contents/MacOS/ACVCHelperTool --start -c "/Users/insightshiga/.config/AWSVPNClient/OpenVpnConfigs/current_connection.txt" -p "/Users/insightshiga/.config/AWSVPNClient/acvc-8096.txt"
+2021-08-31 13:47:37.116 +09:00 [DBG] Starting process
+2021-08-31 13:47:37.119 +09:00 [DBG] Start to read process output
+2021-08-31 13:47:37.339 +09:00 [DBG] End reading process output
+2021-08-31 13:47:37.421 +09:00 [DBG] Helper app --start output: Start success.
+2021-08-31 13:47:37.423 +09:00 [INF] Connecting to management interface... host 127.0.0.1, port 8096
+2021-08-31 13:47:37.424 +09:00 [DBG] Socket connected
+2021-08-31 13:47:37.425 +09:00 [DBG] Starting to listen to management port
+2021-08-31 13:47:37.425 +09:00 [DBG] Called isAliveProcess
+2021-08-31 13:47:37.428 +09:00 [INF] Received bytes: 15
+2021-08-31 13:47:37.430 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:47:37.431 +09:00 [DBG] CM received: ENTER PASSWORD:
+2021-08-31 13:47:37.433 +09:00 [INF] Validating schema for OpenVPN config: /Users/insightshiga/.config/AWSVPNClient/OpenVpnConfigs/InsightStandardVPN
+2021-08-31 13:47:37.434 +09:00 [DBG] CM processsing: ENTER PASSWORD:
+2021-08-31 13:47:37.434 +09:00 [DBG] Port needs password to connect
+2021-08-31 13:47:37.434 +09:00 [DBG] Sending port password
+2021-08-31 13:47:37.435 +09:00 [INF] Begin receive init again
+2021-08-31 13:47:37.435 +09:00 [INF] Received bytes: 105
+2021-08-31 13:47:37.435 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:47:37.435 +09:00 [DBG] CM received: SUCCESS: password is correct
+>INFO:OpenVPN Management Interface Version 1 -- type 'help' for more info
+
+2021-08-31 13:47:37.435 +09:00 [DBG] CM processsing: SUCCESS: password is correct
+2021-08-31 13:47:37.435 +09:00 [DBG] 🥶 ONE lineSUCCESS: password is correct
+2021-08-31 13:47:37.435 +09:00 [DBG] CM processsing: >INFO:OpenVPN Management Interface Version 1 -- type 'help' for more info
+2021-08-31 13:47:37.437 +09:00 [DBG] Asking for real-time state and log notifications.
+2021-08-31 13:47:37.437 +09:00 [DBG] Waiting fixed time for response.
+2021-08-31 13:47:37.438 +09:00 [DBG] CM processsing: 
+2021-08-31 13:47:37.438 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:47:37.438 +09:00 [INF] Begin receive init again
+2021-08-31 13:47:37.438 +09:00 [INF] Received bytes: 175
+2021-08-31 13:47:37.438 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:47:37.438 +09:00 [DBG] CM received: >PASSWORD:Need 'Auth' username/password
+SUCCESS: real-time state notification set to ON
+SUCCESS: real-time log notification set to ON
+>LOG:1630385257,D,MANAGEMENT: CMD ''
+
+2021-08-31 13:47:37.438 +09:00 [DBG] CM processsing: >PASSWORD:Need 'Auth' username/password
+2021-08-31 13:47:37.442 +09:00 [DBG] CM received user/pass request: >PASSWORD:Need 'Auth' username/password
+2021-08-31 13:47:37.442 +09:00 [DBG] No MFA configured.
+2021-08-31 13:47:37.443 +09:00 [INF] Successfully validated /Users/insightshiga/.config/AWSVPNClient/OpenVpnConfigs/InsightStandardVPN
+2021-08-31 13:47:37.446 +09:00 [DBG] Inserted event CONNECTION_PROFILE_TYPE 1 to AnalyticsTable
+2021-08-31 13:47:37.483 +09:00 [DBG] Challenge echo received in login view: 
+2021-08-31 13:47:37.514 +09:00 [DBG] CM processsing: SUCCESS: real-time state notification set to ON
+2021-08-31 13:47:37.514 +09:00 [DBG] Response recieved for: state on
+2021-08-31 13:47:37.514 +09:00 [DBG] Assume real-time state notifications are on. Received: SUCCESS: real-time state notification set to ON
+2021-08-31 13:47:37.514 +09:00 [DBG] CM processsing: SUCCESS: real-time log notification set to ON
+2021-08-31 13:47:37.514 +09:00 [DBG] Response recieved for: log on
+2021-08-31 13:47:37.514 +09:00 [DBG] CM processsing: >LOG:1630385257,D,MANAGEMENT: CMD ''
+2021-08-31 13:47:37.517 +09:00 [DBG] CM processsing: 
+2021-08-31 13:47:37.517 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:47:37.517 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:19.340 +09:00 [DBG] Login ok button clicked.
+2021-08-31 13:48:19.343 +09:00 [DBG] Sending username for login.
+2021-08-31 13:48:19.348 +09:00 [INF] Received bytes: 68
+2021-08-31 13:48:19.348 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:19.349 +09:00 [DBG] CM received: >LOG:1630385299,D,MANAGEMENT: CMD 'username "Auth" akitoshi.shiga'
+
+2021-08-31 13:48:19.349 +09:00 [DBG] CM processsing: >LOG:1630385299,D,MANAGEMENT: CMD 'username "Auth" akitoshi.shiga'
+2021-08-31 13:48:19.349 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:19.350 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:19.350 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:19.355 +09:00 [INF] Received bytes: 94
+2021-08-31 13:48:19.355 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:19.355 +09:00 [DBG] CM received: SUCCESS: 'Auth' username entered, but not yet verified
+>LOG:1630385299,D,MANAGEMENT: CMD ''
+
+2021-08-31 13:48:19.355 +09:00 [DBG] CM processsing: SUCCESS: 'Auth' username entered, but not yet verified
+2021-08-31 13:48:19.355 +09:00 [DBG] 🥶 ONE lineSUCCESS: 'Auth' username entered, but not yet verified
+2021-08-31 13:48:19.355 +09:00 [DBG] Sending password for login.
+2021-08-31 13:48:19.356 +09:00 [DBG] CM processsing: >LOG:1630385299,D,MANAGEMENT: CMD ''
+2021-08-31 13:48:19.356 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:19.356 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:19.356 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:19.356 +09:00 [INF] Received bytes: 146
+2021-08-31 13:48:19.356 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:19.357 +09:00 [DBG] CM received: >LOG:1630385299,D,MANAGEMENT: CMD 'password [...]'
+SUCCESS: 'Auth' password entered, but not yet verified
+>LOG:1630385299,D,MANAGEMENT: CMD ''
+
+2021-08-31 13:48:19.357 +09:00 [DBG] CM processsing: >LOG:1630385299,D,MANAGEMENT: CMD 'password [...]'
+2021-08-31 13:48:19.357 +09:00 [DBG] CM processsing: SUCCESS: 'Auth' password entered, but not yet verified
+2021-08-31 13:48:19.357 +09:00 [DBG] 🥶 ONE lineSUCCESS: 'Auth' password entered, but not yet verified
+2021-08-31 13:48:19.357 +09:00 [DBG] CM processsing: >LOG:1630385299,D,MANAGEMENT: CMD ''
+2021-08-31 13:48:19.357 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:19.357 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:19.357 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:19.523 +09:00 [INF] Received bytes: 575
+2021-08-31 13:48:19.523 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:19.523 +09:00 [DBG] CM received: >LOG:1630385299,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+>LOG:1630385299,,MANAGEMENT: >STATE:1630385299,RESOLVE,,,,,,
+>STATE:1630385299,RESOLVE,,,,,,
+>LOG:1630385299,I,TCP/UDP: Preserving recently used remote address: [AF_INET]52.69.181.7:443
+>LOG:1630385299,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+>LOG:1630385299,I,UDP link local: (not bound)
+>LOG:1630385299,I,UDP link remote: [AF_INET]52.69.181.7:443
+>LOG:1630385299,,MANAGEMENT: >STATE:1630385299,WAIT,,,,,,
+>STATE:1630385299,WAIT,,,,,,
+
+2021-08-31 13:48:19.524 +09:00 [DBG] CM processsing: >LOG:1630385299,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-08-31 13:48:19.524 +09:00 [DBG] CM processsing: >LOG:1630385299,,MANAGEMENT: >STATE:1630385299,RESOLVE,,,,,,
+2021-08-31 13:48:19.524 +09:00 [DBG] CM received state: >LOG:1630385299,,MANAGEMENT: >STATE:1630385299,RESOLVE,,,,,,
+2021-08-31 13:48:19.524 +09:00 [DBG] CM processsing: >STATE:1630385299,RESOLVE,,,,,,
+2021-08-31 13:48:19.524 +09:00 [DBG] CM received state: >STATE:1630385299,RESOLVE,,,,,,
+2021-08-31 13:48:19.524 +09:00 [DBG] CM processsing: >LOG:1630385299,I,TCP/UDP: Preserving recently used remote address: [AF_INET]52.69.181.7:443
+2021-08-31 13:48:19.524 +09:00 [DBG] CM processsing: >LOG:1630385299,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-08-31 13:48:19.524 +09:00 [DBG] CM processsing: >LOG:1630385299,I,UDP link local: (not bound)
+2021-08-31 13:48:19.524 +09:00 [DBG] CM processsing: >LOG:1630385299,I,UDP link remote: [AF_INET]52.69.181.7:443
+2021-08-31 13:48:19.524 +09:00 [DBG] CM processsing: >LOG:1630385299,,MANAGEMENT: >STATE:1630385299,WAIT,,,,,,
+2021-08-31 13:48:19.524 +09:00 [DBG] CM received state: >LOG:1630385299,,MANAGEMENT: >STATE:1630385299,WAIT,,,,,,
+2021-08-31 13:48:19.525 +09:00 [DBG] CM processsing: >STATE:1630385299,WAIT,,,,,,
+2021-08-31 13:48:19.525 +09:00 [DBG] CM received state: >STATE:1630385299,WAIT,,,,,,
+2021-08-31 13:48:19.525 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:19.525 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:19.525 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:19.533 +09:00 [INF] Received bytes: 180
+2021-08-31 13:48:19.533 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:19.533 +09:00 [DBG] CM received: >LOG:1630385299,,MANAGEMENT: >STATE:1630385299,AUTH,,,,,,
+>STATE:1630385299,AUTH,,,,,,
+>LOG:1630385299,,TLS: Initial packet from [AF_INET]52.69.181.7:443, sid=01db5c86 431d9cd3
+
+2021-08-31 13:48:19.533 +09:00 [DBG] CM processsing: >LOG:1630385299,,MANAGEMENT: >STATE:1630385299,AUTH,,,,,,
+2021-08-31 13:48:19.533 +09:00 [DBG] CM received state: >LOG:1630385299,,MANAGEMENT: >STATE:1630385299,AUTH,,,,,,
+2021-08-31 13:48:19.533 +09:00 [DBG] CM processsing: >STATE:1630385299,AUTH,,,,,,
+2021-08-31 13:48:19.533 +09:00 [DBG] CM received state: >STATE:1630385299,AUTH,,,,,,
+2021-08-31 13:48:19.533 +09:00 [DBG] CM processsing: >LOG:1630385299,,TLS: Initial packet from [AF_INET]52.69.181.7:443, sid=01db5c86 431d9cd3
+2021-08-31 13:48:19.533 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:19.534 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:19.534 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:19.534 +09:00 [INF] Received bytes: 124
+2021-08-31 13:48:19.534 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:19.534 +09:00 [DBG] CM received: >LOG:1630385299,W,WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+
+2021-08-31 13:48:19.534 +09:00 [DBG] CM processsing: >LOG:1630385299,W,WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+2021-08-31 13:48:19.534 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:19.534 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:19.534 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:19.544 +09:00 [INF] Received bytes: 364
+2021-08-31 13:48:19.544 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:19.544 +09:00 [DBG] CM received: >LOG:1630385299,,VERIFY OK: depth=1, CN=insight-inc.biz
+>LOG:1630385299,,VERIFY KU OK
+>LOG:1630385299,,Validating certificate extended key usage
+>LOG:1630385299,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+>LOG:1630385299,,VERIFY EKU OK
+>LOG:1630385299,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+
+2021-08-31 13:48:19.544 +09:00 [DBG] CM processsing: >LOG:1630385299,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-08-31 13:48:19.544 +09:00 [DBG] CM processsing: >LOG:1630385299,,VERIFY KU OK
+2021-08-31 13:48:19.544 +09:00 [DBG] CM processsing: >LOG:1630385299,,Validating certificate extended key usage
+2021-08-31 13:48:19.544 +09:00 [DBG] CM processsing: >LOG:1630385299,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-08-31 13:48:19.544 +09:00 [DBG] CM processsing: >LOG:1630385299,,VERIFY EKU OK
+2021-08-31 13:48:19.544 +09:00 [DBG] CM processsing: >LOG:1630385299,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-08-31 13:48:19.544 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:19.544 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:19.544 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:19.555 +09:00 [INF] Received bytes: 209
+2021-08-31 13:48:19.555 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:19.556 +09:00 [DBG] CM received: >LOG:1630385299,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+>LOG:1630385299,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]52.69.181.7:443
+
+2021-08-31 13:48:19.556 +09:00 [DBG] CM processsing: >LOG:1630385299,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-08-31 13:48:19.556 +09:00 [DBG] CM processsing: >LOG:1630385299,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]52.69.181.7:443
+2021-08-31 13:48:19.556 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:19.556 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:19.556 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:20.699 +09:00 [INF] Received bytes: 188
+2021-08-31 13:48:20.699 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:20.700 +09:00 [DBG] CM received: >LOG:1630385300,,MANAGEMENT: >STATE:1630385300,GET_CONFIG,,,,,,
+>STATE:1630385300,GET_CONFIG,,,,,,
+>LOG:1630385300,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+
+2021-08-31 13:48:20.700 +09:00 [DBG] CM processsing: >LOG:1630385300,,MANAGEMENT: >STATE:1630385300,GET_CONFIG,,,,,,
+2021-08-31 13:48:20.700 +09:00 [DBG] CM received state: >LOG:1630385300,,MANAGEMENT: >STATE:1630385300,GET_CONFIG,,,,,,
+2021-08-31 13:48:20.700 +09:00 [DBG] CM processsing: >STATE:1630385300,GET_CONFIG,,,,,,
+2021-08-31 13:48:20.700 +09:00 [DBG] CM received state: >STATE:1630385300,GET_CONFIG,,,,,,
+2021-08-31 13:48:20.700 +09:00 [DBG] CM processsing: >LOG:1630385300,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-08-31 13:48:20.700 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:20.700 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:20.700 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:25.824 +09:00 [INF] Received bytes: 87
+2021-08-31 13:48:25.824 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:25.824 +09:00 [DBG] CM received: >LOG:1630385305,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+
+2021-08-31 13:48:25.824 +09:00 [DBG] CM processsing: >LOG:1630385305,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-08-31 13:48:25.824 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:25.824 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:25.824 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:28.964 +09:00 [INF] Received bytes: 2032
+2021-08-31 13:48:28.965 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:28.965 +09:00 [DBG] CM received: >LOG:1630385305,,PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,route-gateway 172.16.0.161,topology subnet,ping 1,ping-restart 20,ifconfig 172.16.0.162 255.255.255.224,peer-id 0,cipher AES-256-GCM'
+>LOG:1630385305,,OPTIONS IMPORT: timers and/or timeouts modified
+>LOG:1630385305,,OPTIONS IMPORT: --ifconfig/up options modified
+>LOG:1630385305,,OPTIONS IMPORT: route options modified
+>LOG:1630385305,,OPTIONS IMPORT: route-related options modified
+>LOG:1630385305,,OPTIONS IMPORT: peer-id set
+>LOG:1630385305,,OPTIONS IMPORT: adjusting link_mtu to 1624
+>LOG:1630385305,,OPTIONS IMPORT: data channel crypto options modified
+>LOG:1630385305,,Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+>LOG:1630385305,,Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+>LOG:1630385305,,ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=en9 HWADDR=80:3f:5d:01:8b:6f
+>LOG:1630385305,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+>LOG:1630385305,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+>LOG:1630385305,I,Opened utun device utun2
+>LOG:1630385305,D,do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+>LOG:1630385305,,MANAGEMENT: >STATE:1630385305,ASSIGN_IP,,172.16.0.162,,,,
+>STATE:1630385305,ASSIGN_IP,,172.16.0.162,,,,
+>LOG:1630385305,I,/sbin/ifconfig utun2 delete
+>LOG:1630385305,I,NOTE: Tried to delete pre-existing tun/tap instance -- No Problem if failure
+>LOG:1630385305,I,/sbin/ifconfig utun2 172.16.0.162 172.16.0.162 netmask 255.255.255.224 mtu 1500 up
+>LOG:1630385305,,/sbin/route add -net 172.16.0.160 172.16.0.162 255.255.255.224
+>LOG:1630385306,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.up utun2 1500 1552 172.16.0.162 255.255.255.224 init
+>LOG:1630385308,,/sbin/route add -net 52.69.181.7 192.168.0.1 255.255.255.255
+>LOG:1630385308,,/sbin/route add -net 0.0.0.0 172.16.0.161 128.0.0.0
+>LOG:1630385308,,/sbin/route add -net 128.0.0.0 172.16.0.161 128.0.0.0
+
+2021-08-31 13:48:28.965 +09:00 [DBG] CM processsing: >LOG:1630385305,,PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,route-gateway 172.16.0.161,topology subnet,ping 1,ping-restart 20,ifconfig 172.16.0.162 255.255.255.224,peer-id 0,cipher AES-256-GCM'
+2021-08-31 13:48:28.965 +09:00 [DBG] CM processsing: >LOG:1630385305,,OPTIONS IMPORT: timers and/or timeouts modified
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,,OPTIONS IMPORT: --ifconfig/up options modified
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,,OPTIONS IMPORT: route options modified
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,,OPTIONS IMPORT: route-related options modified
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,,OPTIONS IMPORT: peer-id set
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,,OPTIONS IMPORT: adjusting link_mtu to 1624
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,,OPTIONS IMPORT: data channel crypto options modified
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,,Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,,Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,,ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=en9 HWADDR=80:3f:5d:01:8b:6f
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,I,Opened utun device utun2
+2021-08-31 13:48:28.966 +09:00 [DBG] CM processsing: >LOG:1630385305,D,do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+2021-08-31 13:48:28.967 +09:00 [DBG] CM processsing: >LOG:1630385305,,MANAGEMENT: >STATE:1630385305,ASSIGN_IP,,172.16.0.162,,,,
+2021-08-31 13:48:28.967 +09:00 [DBG] CM received state: >LOG:1630385305,,MANAGEMENT: >STATE:1630385305,ASSIGN_IP,,172.16.0.162,,,,
+2021-08-31 13:48:28.967 +09:00 [DBG] CM processsing: >STATE:1630385305,ASSIGN_IP,,172.16.0.162,,,,
+2021-08-31 13:48:28.967 +09:00 [DBG] CM received state: >STATE:1630385305,ASSIGN_IP,,172.16.0.162,,,,
+2021-08-31 13:48:28.967 +09:00 [DBG] CM processsing: >LOG:1630385305,I,/sbin/ifconfig utun2 delete
+2021-08-31 13:48:28.967 +09:00 [DBG] CM processsing: >LOG:1630385305,I,NOTE: Tried to delete pre-existing tun/tap instance -- No Problem if failure
+2021-08-31 13:48:28.967 +09:00 [DBG] CM processsing: >LOG:1630385305,I,/sbin/ifconfig utun2 172.16.0.162 172.16.0.162 netmask 255.255.255.224 mtu 1500 up
+2021-08-31 13:48:28.967 +09:00 [DBG] CM processsing: >LOG:1630385305,,/sbin/route add -net 172.16.0.160 172.16.0.162 255.255.255.224
+2021-08-31 13:48:28.967 +09:00 [DBG] CM processsing: >LOG:1630385306,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.up utun2 1500 1552 172.16.0.162 255.255.255.224 init
+2021-08-31 13:48:28.967 +09:00 [DBG] CM processsing: >LOG:1630385308,,/sbin/route add -net 52.69.181.7 192.168.0.1 255.255.255.255
+2021-08-31 13:48:28.967 +09:00 [DBG] CM processsing: >LOG:1630385308,,/sbin/route add -net 0.0.0.0 172.16.0.161 128.0.0.0
+2021-08-31 13:48:28.967 +09:00 [DBG] CM processsing: >LOG:1630385308,,/sbin/route add -net 128.0.0.0 172.16.0.161 128.0.0.0
+2021-08-31 13:48:28.967 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:28.967 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:28.967 +09:00 [INF] Begin receive init again
+2021-08-31 13:48:28.968 +09:00 [INF] Received bytes: 218
+2021-08-31 13:48:28.968 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:48:28.968 +09:00 [DBG] CM received: >LOG:1630385308,I,Initialization Sequence Completed
+>LOG:1630385308,,MANAGEMENT: >STATE:1630385308,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+>STATE:1630385308,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+
+2021-08-31 13:48:28.968 +09:00 [DBG] CM processsing: >LOG:1630385308,I,Initialization Sequence Completed
+2021-08-31 13:48:28.968 +09:00 [DBG] CM processsing: >LOG:1630385308,,MANAGEMENT: >STATE:1630385308,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+2021-08-31 13:48:28.968 +09:00 [DBG] CM received state: >LOG:1630385308,,MANAGEMENT: >STATE:1630385308,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+2021-08-31 13:48:28.972 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_SUCCESS 1 to AnalyticsTable
+2021-08-31 13:48:28.974 +09:00 [DBG] Inserted event CONNECTION_START_TIME 1630385308 to AnalyticsTable
+2021-08-31 13:48:28.978 +09:00 [DBG] Inserted event CONNECTION_INITIALIZATION_TIME 52 to MetricsTable
+2021-08-31 13:48:28.980 +09:00 [DBG] Inserted event CONNECTION_INITIALIZATION_TIME 52 to AnalyticsTable
+2021-08-31 13:48:28.983 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-31 13:48:28.984 +09:00 [DBG] Management port password authenticated.
+2021-08-31 13:48:28.984 +09:00 [DBG] CM processsing: >STATE:1630385308,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+2021-08-31 13:48:28.984 +09:00 [DBG] CM received state: >STATE:1630385308,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+2021-08-31 13:48:28.992 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_SUCCESS 1 to AnalyticsTable
+2021-08-31 13:48:28.995 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-31 13:48:28.995 +09:00 [DBG] Management port password authenticated.
+2021-08-31 13:48:28.995 +09:00 [DBG] Destroyed management port password file on authentication.
+2021-08-31 13:48:28.995 +09:00 [DBG] CM processsing: 
+2021-08-31 13:48:28.995 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:48:28.995 +09:00 [INF] Begin receive init again
+2021-08-31 13:49:15.299 +09:00 [DBG] Inserted event CLICK_APP_DISCONNECT 1 to AnalyticsTable
+2021-08-31 13:49:15.303 +09:00 [INF] Received bytes: 237
+2021-08-31 13:49:15.303 +09:00 [DBG] Message marshalling complete
+2021-08-31 13:49:15.303 +09:00 [DBG] CM received: >LOG:1630385355,D,MANAGEMENT: CMD 'status'
+OpenVPN STATISTICS
+Updated,Tue Aug 31 13:49:15 2021
+TUN/TAP read bytes,104812
+TUN/TAP write bytes,375533
+TCP/UDP read bytes,394568
+TCP/UDP write bytes,123534
+Auth read bytes,376189
+END
+
+2021-08-31 13:49:15.303 +09:00 [DBG] CM processsing: >LOG:1630385355,D,MANAGEMENT: CMD 'status'
+2021-08-31 13:49:15.303 +09:00 [DBG] CM processsing: OpenVPN STATISTICS
+2021-08-31 13:49:15.303 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:49:15.303 +09:00 [DBG] CM processsing: Updated,Tue Aug 31 13:49:15 2021
+2021-08-31 13:49:15.303 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:49:15.303 +09:00 [DBG] CM processsing: TUN/TAP read bytes,104812
+2021-08-31 13:49:15.303 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:49:15.303 +09:00 [DBG] CM processsing: TUN/TAP write bytes,375533
+2021-08-31 13:49:15.303 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:49:15.303 +09:00 [DBG] CM processsing: TCP/UDP read bytes,394568
+2021-08-31 13:49:15.304 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:49:15.304 +09:00 [DBG] CM processsing: TCP/UDP write bytes,123534
+2021-08-31 13:49:15.304 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:49:15.304 +09:00 [DBG] CM processsing: Auth read bytes,376189
+2021-08-31 13:49:15.304 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:49:15.304 +09:00 [DBG] CM processsing: END
+2021-08-31 13:49:15.304 +09:00 [DBG] 🥶 END
+2021-08-31 13:49:15.304 +09:00 [DBG] CM processsing: 
+2021-08-31 13:49:15.304 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 13:49:15.304 +09:00 [INF] Begin receive init again
+2021-08-31 13:49:15.308 +09:00 [DBG] Already received bytes: 394568
+2021-08-31 13:49:15.308 +09:00 [DBG] Already sent bytes: 123534
+2021-08-31 13:49:15.311 +09:00 [DBG] Inserted event CONNECTION_BYTES_SENT 123534 to AnalyticsTable
+2021-08-31 13:49:15.314 +09:00 [DBG] Inserted event CONNECTION_BYTES_RECEIVED 394568 to AnalyticsTable
+2021-08-31 13:49:15.318 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-31 13:49:15.320 +09:00 [INF] Terminating connection
+2021-08-31 13:49:15.320 +09:00 [DBG] 🏞 Ending connection details reporting.
+2021-08-31 13:49:15.320 +09:00 [WRN] We are calling GracefulKill in a method that is not supposed to change Connection state.
+2021-08-31 13:49:15.321 +09:00 [DBG] GracefulKill
+2021-08-31 13:49:15.323 +09:00 [DBG] Cancelling socket listen token
+2021-08-31 13:49:15.324 +09:00 [DBG] Dispose socket
+2021-08-31 13:49:15.325 +09:00 [DBG] Signal process kill with helper tool.
+2021-08-31 13:49:15.325 +09:00 [DBG] Starting process
+2021-08-31 13:49:15.329 +09:00 [DBG] Start to read process output
+2021-08-31 13:49:15.331 +09:00 [DBG] Cancellation requested
+2021-08-31 13:49:17.436 +09:00 [DBG] End reading process output
+2021-08-31 13:49:17.443 +09:00 [DBG] Helper app --kill output: Kill success.
+2021-08-31 13:49:17.443 +09:00 [DBG] Release process manager start lock
+2021-08-31 13:49:17.443 +09:00 [DBG] Release process manager stop lock
+2021-08-31 13:49:17.444 +09:00 [DBG] Disconnected
+2021-08-31 13:49:17.444 +09:00 [DBG] Metric agent started
+2021-08-31 13:49:17.444 +09:00 [DBG] Sending Metrics batches
+2021-08-31 13:49:17.461 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 13:49:17.461 +09:00 [DBG] is empty: False
+2021-08-31 13:49:17.462 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-31 13:49:17.462 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:49:17.462 +09:00 [DBG] Sending metrics batch async
+2021-08-31 13:49:17.462 +09:00 [DBG] OS: MacOS
+2021-08-31 13:49:17.463 +09:00 [DBG] OS: MacOS
+2021-08-31 13:49:17.463 +09:00 [DBG] OS: MacOS
+2021-08-31 13:49:17.463 +09:00 [DBG] OS: MacOS
+2021-08-31 13:49:17.463 +09:00 [DBG] OS: MacOS
+2021-08-31 13:49:17.463 +09:00 [DBG] Metrics data request created
+2021-08-31 13:49:17.466 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 13:49:17.467 +09:00 [DBG] Inserted event CONNECTION_END_TIME 1630385357 to AnalyticsTable
+2021-08-31 13:49:17.469 +09:00 [DBG] Inserted event CONNECTION_DURATION 49 to AnalyticsTable
+2021-08-31 13:49:17.471 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-31 13:49:17.528 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 13:49:17.528 +09:00 [DBG] is empty: False
+2021-08-31 13:49:17.529 +09:00 [DBG] Analytics event batch successfully created, sending analytics
+2021-08-31 13:49:17.529 +09:00 [DBG] Sending analytics batch async
+2021-08-31 13:49:17.529 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:49:17.529 +09:00 [DBG] Pinpoint endpoint ID already exists
+2021-08-31 13:49:17.529 +09:00 [DBG] OSVersion: Unix 19.6.0.0
+2021-08-31 13:49:17.529 +09:00 [DBG] OS: MacOS
+2021-08-31 13:49:17.529 +09:00 [DBG] Endpoint ID: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-31 13:49:17.530 +09:00 [DBG] Pinpoint endpoint id: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-31 13:49:17.530 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:49:17.530 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:49:17.626 +09:00 [DBG] CloudWatch response received
+2021-08-31 13:49:17.627 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-31 13:49:17.627 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-31 13:49:17.627 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-31 13:49:17.630 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 13:49:17.630 +09:00 [DBG] is empty: False
+2021-08-31 13:49:17.631 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-31 13:49:17.631 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 13:49:17.631 +09:00 [DBG] Sending metrics batch async
+2021-08-31 13:49:17.631 +09:00 [DBG] OS: MacOS
+2021-08-31 13:49:17.631 +09:00 [DBG] Metrics data request created
+2021-08-31 13:49:17.691 +09:00 [DBG] CloudWatch response received
+2021-08-31 13:49:17.691 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-31 13:49:17.691 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-31 13:49:17.691 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-31 13:49:17.695 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 13:49:17.695 +09:00 [DBG] is empty: True
+2021-08-31 13:49:17.695 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 13:49:17.792 +09:00 [DBG] 2021/08/31 13:49:17 Accepted
+2021-08-31 13:49:17.792 +09:00 [DBG] successfully put analytics to pinpoint
+2021-08-31 13:49:17.792 +09:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2021-08-31 13:49:17.796 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 13:49:17.796 +09:00 [DBG] is empty: True
+2021-08-31 13:49:17.796 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-31 14:49:17.481 +09:00 [DBG] Sending Metrics batches
+2021-08-31 14:49:17.486 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 14:49:17.487 +09:00 [DBG] is empty: True
+2021-08-31 14:49:17.487 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 14:49:17.488 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 14:49:17.489 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 14:49:17.490 +09:00 [DBG] is empty: True
+2021-08-31 14:49:17.490 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-31 15:49:17.465 +09:00 [DBG] Sending Metrics batches
+2021-08-31 15:49:17.520 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 15:49:17.521 +09:00 [DBG] is empty: True
+2021-08-31 15:49:17.521 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 15:49:17.521 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 15:49:17.525 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 15:49:17.526 +09:00 [DBG] is empty: True
+2021-08-31 15:49:17.526 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-31 16:49:17.443 +09:00 [DBG] Sending Metrics batches
+2021-08-31 16:49:17.461 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 16:49:17.464 +09:00 [DBG] is empty: True
+2021-08-31 16:49:17.464 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 16:49:17.464 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 16:49:17.470 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 16:49:17.471 +09:00 [DBG] is empty: True
+2021-08-31 16:49:17.472 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-31 17:49:17.442 +09:00 [DBG] Sending Metrics batches
+2021-08-31 17:49:17.480 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 17:49:17.482 +09:00 [DBG] is empty: True
+2021-08-31 17:49:17.483 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 17:49:17.483 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 17:49:17.488 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 17:49:17.489 +09:00 [DBG] is empty: True
+2021-08-31 17:49:17.489 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-31 18:36:58.061 +09:00 [INF] Saving profile store to /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-31 18:36:58.078 +09:00 [DBG] Inserted event CLICK_APP_CONNECT 1 to AnalyticsTable
+2021-08-31 18:36:58.080 +09:00 [INF] Connecting /Users/insightshiga/.config/AWSVPNClient/OpenVpnConfigs/InsightStandardVPN 
+2021-08-31 18:36:58.083 +09:00 [DBG] validationString: /Users/insightshiga/.config/AWSVPNClient/OpenVpnConfigs/InsightStandardVPN
+1630402628
+2021-08-31 18:36:58.087 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_ATTEMPT 1 to AnalyticsTable
+2021-08-31 18:36:58.087 +09:00 [DBG] Shutting down metrics agent
+2021-08-31 18:36:58.089 +09:00 [DBG] Metrics agent shut down
+2021-08-31 18:36:58.094 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-31 18:36:58.465 +09:00 [INF] Starting OpenVpn process
+2021-08-31 18:36:58.466 +09:00 [DBG] Starting process
+2021-08-31 18:36:58.474 +09:00 [DBG] Start to read process output
+2021-08-31 18:36:58.532 +09:00 [DBG] End reading process output
+2021-08-31 18:36:58.575 +09:00 [DBG] Helper app --init output: Kill success.
+2021-08-31 18:36:58.575 +09:00 [DBG] Connecting using command /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/AWS VPN Client/Contents/MacOS/ACVCHelperTool --start -c "/Users/insightshiga/.config/AWSVPNClient/OpenVpnConfigs/current_connection.txt" -p "/Users/insightshiga/.config/AWSVPNClient/acvc-8096.txt"
+2021-08-31 18:36:58.576 +09:00 [DBG] Starting process
+2021-08-31 18:36:58.581 +09:00 [DBG] Start to read process output
+2021-08-31 18:36:58.834 +09:00 [DBG] End reading process output
+2021-08-31 18:36:58.883 +09:00 [DBG] Helper app --start output: Start success.
+2021-08-31 18:36:58.883 +09:00 [INF] Connecting to management interface... host 127.0.0.1, port 8096
+2021-08-31 18:36:58.884 +09:00 [DBG] Socket connected
+2021-08-31 18:36:58.884 +09:00 [DBG] Starting to listen to management port
+2021-08-31 18:36:58.884 +09:00 [DBG] Called isAliveProcess
+2021-08-31 18:36:58.884 +09:00 [INF] Received bytes: 15
+2021-08-31 18:36:58.886 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:36:58.886 +09:00 [DBG] CM received: ENTER PASSWORD:
+2021-08-31 18:36:58.887 +09:00 [INF] Validating schema for OpenVPN config: /Users/insightshiga/.config/AWSVPNClient/OpenVpnConfigs/InsightStandardVPN
+2021-08-31 18:36:58.887 +09:00 [DBG] CM processsing: ENTER PASSWORD:
+2021-08-31 18:36:58.887 +09:00 [DBG] Port needs password to connect
+2021-08-31 18:36:58.887 +09:00 [DBG] Sending port password
+2021-08-31 18:36:58.887 +09:00 [INF] Begin receive init again
+2021-08-31 18:36:58.887 +09:00 [INF] Received bytes: 105
+2021-08-31 18:36:58.887 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:36:58.888 +09:00 [DBG] CM received: SUCCESS: password is correct
+>INFO:OpenVPN Management Interface Version 1 -- type 'help' for more info
+
+2021-08-31 18:36:58.888 +09:00 [DBG] CM processsing: SUCCESS: password is correct
+2021-08-31 18:36:58.888 +09:00 [DBG] 🥶 ONE lineSUCCESS: password is correct
+2021-08-31 18:36:58.888 +09:00 [DBG] CM processsing: >INFO:OpenVPN Management Interface Version 1 -- type 'help' for more info
+2021-08-31 18:36:58.888 +09:00 [DBG] Asking for real-time state and log notifications.
+2021-08-31 18:36:58.888 +09:00 [DBG] Waiting fixed time for response.
+2021-08-31 18:36:58.888 +09:00 [DBG] CM processsing: 
+2021-08-31 18:36:58.888 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:36:58.888 +09:00 [INF] Begin receive init again
+2021-08-31 18:36:58.889 +09:00 [INF] Received bytes: 175
+2021-08-31 18:36:58.889 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:36:58.889 +09:00 [DBG] CM received: >PASSWORD:Need 'Auth' username/password
+SUCCESS: real-time state notification set to ON
+SUCCESS: real-time log notification set to ON
+>LOG:1630402618,D,MANAGEMENT: CMD ''
+
+2021-08-31 18:36:58.889 +09:00 [DBG] CM processsing: >PASSWORD:Need 'Auth' username/password
+2021-08-31 18:36:58.889 +09:00 [DBG] CM received user/pass request: >PASSWORD:Need 'Auth' username/password
+2021-08-31 18:36:58.889 +09:00 [DBG] No MFA configured.
+2021-08-31 18:36:58.895 +09:00 [INF] Successfully validated /Users/insightshiga/.config/AWSVPNClient/OpenVpnConfigs/InsightStandardVPN
+2021-08-31 18:36:58.898 +09:00 [DBG] Inserted event CONNECTION_PROFILE_TYPE 1 to AnalyticsTable
+2021-08-31 18:36:58.914 +09:00 [DBG] Challenge echo received in login view: 
+2021-08-31 18:36:58.932 +09:00 [DBG] CM processsing: SUCCESS: real-time state notification set to ON
+2021-08-31 18:36:58.932 +09:00 [DBG] Response recieved for: state on
+2021-08-31 18:36:58.932 +09:00 [DBG] Assume real-time state notifications are on. Received: SUCCESS: real-time state notification set to ON
+2021-08-31 18:36:58.932 +09:00 [DBG] CM processsing: SUCCESS: real-time log notification set to ON
+2021-08-31 18:36:58.932 +09:00 [DBG] Response recieved for: log on
+2021-08-31 18:36:58.932 +09:00 [DBG] CM processsing: >LOG:1630402618,D,MANAGEMENT: CMD ''
+2021-08-31 18:36:58.932 +09:00 [DBG] CM processsing: 
+2021-08-31 18:36:58.932 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:36:58.932 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:17.159 +09:00 [DBG] Login ok button clicked.
+2021-08-31 18:37:17.160 +09:00 [DBG] Sending username for login.
+2021-08-31 18:37:17.160 +09:00 [INF] Received bytes: 68
+2021-08-31 18:37:17.160 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:17.161 +09:00 [DBG] CM received: >LOG:1630402637,D,MANAGEMENT: CMD 'username "Auth" akitoshi.shiga'
+
+2021-08-31 18:37:17.161 +09:00 [DBG] CM processsing: >LOG:1630402637,D,MANAGEMENT: CMD 'username "Auth" akitoshi.shiga'
+2021-08-31 18:37:17.161 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:17.161 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:17.161 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:17.166 +09:00 [INF] Received bytes: 94
+2021-08-31 18:37:17.166 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:17.167 +09:00 [DBG] CM received: SUCCESS: 'Auth' username entered, but not yet verified
+>LOG:1630402637,D,MANAGEMENT: CMD ''
+
+2021-08-31 18:37:17.167 +09:00 [DBG] CM processsing: SUCCESS: 'Auth' username entered, but not yet verified
+2021-08-31 18:37:17.167 +09:00 [DBG] 🥶 ONE lineSUCCESS: 'Auth' username entered, but not yet verified
+2021-08-31 18:37:17.167 +09:00 [DBG] Sending password for login.
+2021-08-31 18:37:17.167 +09:00 [DBG] CM processsing: >LOG:1630402637,D,MANAGEMENT: CMD ''
+2021-08-31 18:37:17.167 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:17.167 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:17.167 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:17.167 +09:00 [INF] Received bytes: 146
+2021-08-31 18:37:17.167 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:17.167 +09:00 [DBG] CM received: >LOG:1630402637,D,MANAGEMENT: CMD 'password [...]'
+SUCCESS: 'Auth' password entered, but not yet verified
+>LOG:1630402637,D,MANAGEMENT: CMD ''
+
+2021-08-31 18:37:17.167 +09:00 [DBG] CM processsing: >LOG:1630402637,D,MANAGEMENT: CMD 'password [...]'
+2021-08-31 18:37:17.168 +09:00 [DBG] CM processsing: SUCCESS: 'Auth' password entered, but not yet verified
+2021-08-31 18:37:17.168 +09:00 [DBG] 🥶 ONE lineSUCCESS: 'Auth' password entered, but not yet verified
+2021-08-31 18:37:17.168 +09:00 [DBG] CM processsing: >LOG:1630402637,D,MANAGEMENT: CMD ''
+2021-08-31 18:37:17.168 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:17.168 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:17.168 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:17.355 +09:00 [INF] Received bytes: 575
+2021-08-31 18:37:17.356 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:17.356 +09:00 [DBG] CM received: >LOG:1630402637,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+>LOG:1630402637,,MANAGEMENT: >STATE:1630402637,RESOLVE,,,,,,
+>STATE:1630402637,RESOLVE,,,,,,
+>LOG:1630402637,I,TCP/UDP: Preserving recently used remote address: [AF_INET]52.69.181.7:443
+>LOG:1630402637,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+>LOG:1630402637,I,UDP link local: (not bound)
+>LOG:1630402637,I,UDP link remote: [AF_INET]52.69.181.7:443
+>LOG:1630402637,,MANAGEMENT: >STATE:1630402637,WAIT,,,,,,
+>STATE:1630402637,WAIT,,,,,,
+
+2021-08-31 18:37:17.356 +09:00 [DBG] CM processsing: >LOG:1630402637,W,NOTE: the current --script-security setting may allow this configuration to call user-defined scripts
+2021-08-31 18:37:17.356 +09:00 [DBG] CM processsing: >LOG:1630402637,,MANAGEMENT: >STATE:1630402637,RESOLVE,,,,,,
+2021-08-31 18:37:17.356 +09:00 [DBG] CM received state: >LOG:1630402637,,MANAGEMENT: >STATE:1630402637,RESOLVE,,,,,,
+2021-08-31 18:37:17.356 +09:00 [DBG] CM processsing: >STATE:1630402637,RESOLVE,,,,,,
+2021-08-31 18:37:17.356 +09:00 [DBG] CM received state: >STATE:1630402637,RESOLVE,,,,,,
+2021-08-31 18:37:17.356 +09:00 [DBG] CM processsing: >LOG:1630402637,I,TCP/UDP: Preserving recently used remote address: [AF_INET]52.69.181.7:443
+2021-08-31 18:37:17.356 +09:00 [DBG] CM processsing: >LOG:1630402637,,Socket Buffers: R=[786896->786896] S=[9216->9216]
+2021-08-31 18:37:17.356 +09:00 [DBG] CM processsing: >LOG:1630402637,I,UDP link local: (not bound)
+2021-08-31 18:37:17.356 +09:00 [DBG] CM processsing: >LOG:1630402637,I,UDP link remote: [AF_INET]52.69.181.7:443
+2021-08-31 18:37:17.356 +09:00 [DBG] CM processsing: >LOG:1630402637,,MANAGEMENT: >STATE:1630402637,WAIT,,,,,,
+2021-08-31 18:37:17.356 +09:00 [DBG] CM received state: >LOG:1630402637,,MANAGEMENT: >STATE:1630402637,WAIT,,,,,,
+2021-08-31 18:37:17.356 +09:00 [DBG] CM processsing: >STATE:1630402637,WAIT,,,,,,
+2021-08-31 18:37:17.356 +09:00 [DBG] CM received state: >STATE:1630402637,WAIT,,,,,,
+2021-08-31 18:37:17.356 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:17.356 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:17.356 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:17.367 +09:00 [INF] Received bytes: 180
+2021-08-31 18:37:17.367 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:17.367 +09:00 [DBG] CM received: >LOG:1630402637,,MANAGEMENT: >STATE:1630402637,AUTH,,,,,,
+>STATE:1630402637,AUTH,,,,,,
+>LOG:1630402637,,TLS: Initial packet from [AF_INET]52.69.181.7:443, sid=2f6787cb 96ab6da0
+
+2021-08-31 18:37:17.367 +09:00 [DBG] CM processsing: >LOG:1630402637,,MANAGEMENT: >STATE:1630402637,AUTH,,,,,,
+2021-08-31 18:37:17.367 +09:00 [DBG] CM received state: >LOG:1630402637,,MANAGEMENT: >STATE:1630402637,AUTH,,,,,,
+2021-08-31 18:37:17.367 +09:00 [DBG] CM processsing: >STATE:1630402637,AUTH,,,,,,
+2021-08-31 18:37:17.367 +09:00 [DBG] CM received state: >STATE:1630402637,AUTH,,,,,,
+2021-08-31 18:37:17.367 +09:00 [DBG] CM processsing: >LOG:1630402637,,TLS: Initial packet from [AF_INET]52.69.181.7:443, sid=2f6787cb 96ab6da0
+2021-08-31 18:37:17.367 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:17.367 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:17.367 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:17.367 +09:00 [INF] Received bytes: 124
+2021-08-31 18:37:17.367 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:17.367 +09:00 [DBG] CM received: >LOG:1630402637,W,WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+
+2021-08-31 18:37:17.367 +09:00 [DBG] CM processsing: >LOG:1630402637,W,WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+2021-08-31 18:37:17.368 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:17.368 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:17.368 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:17.377 +09:00 [INF] Received bytes: 364
+2021-08-31 18:37:17.377 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:17.377 +09:00 [DBG] CM received: >LOG:1630402637,,VERIFY OK: depth=1, CN=insight-inc.biz
+>LOG:1630402637,,VERIFY KU OK
+>LOG:1630402637,,Validating certificate extended key usage
+>LOG:1630402637,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+>LOG:1630402637,,VERIFY EKU OK
+>LOG:1630402637,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+
+2021-08-31 18:37:17.377 +09:00 [DBG] CM processsing: >LOG:1630402637,,VERIFY OK: depth=1, CN=insight-inc.biz
+2021-08-31 18:37:17.377 +09:00 [DBG] CM processsing: >LOG:1630402637,,VERIFY KU OK
+2021-08-31 18:37:17.377 +09:00 [DBG] CM processsing: >LOG:1630402637,,Validating certificate extended key usage
+2021-08-31 18:37:17.377 +09:00 [DBG] CM processsing: >LOG:1630402637,,++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+2021-08-31 18:37:17.377 +09:00 [DBG] CM processsing: >LOG:1630402637,,VERIFY EKU OK
+2021-08-31 18:37:17.377 +09:00 [DBG] CM processsing: >LOG:1630402637,,VERIFY OK: depth=0, CN=vpn-server.insight-inc.biz
+2021-08-31 18:37:17.377 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:17.377 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:17.377 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:17.393 +09:00 [INF] Received bytes: 209
+2021-08-31 18:37:17.393 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:17.393 +09:00 [DBG] CM received: >LOG:1630402637,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+>LOG:1630402637,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]52.69.181.7:443
+
+2021-08-31 18:37:17.393 +09:00 [DBG] CM processsing: >LOG:1630402637,,Control Channel: TLSv1.2, cipher TLSv1/SSLv3 ECDHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+2021-08-31 18:37:17.393 +09:00 [DBG] CM processsing: >LOG:1630402637,I,[vpn-server.insight-inc.biz] Peer Connection Initiated with [AF_INET]52.69.181.7:443
+2021-08-31 18:37:17.393 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:17.393 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:17.394 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:18.550 +09:00 [INF] Received bytes: 188
+2021-08-31 18:37:18.550 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:18.550 +09:00 [DBG] CM received: >LOG:1630402638,,MANAGEMENT: >STATE:1630402638,GET_CONFIG,,,,,,
+>STATE:1630402638,GET_CONFIG,,,,,,
+>LOG:1630402638,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+
+2021-08-31 18:37:18.550 +09:00 [DBG] CM processsing: >LOG:1630402638,,MANAGEMENT: >STATE:1630402638,GET_CONFIG,,,,,,
+2021-08-31 18:37:18.550 +09:00 [DBG] CM received state: >LOG:1630402638,,MANAGEMENT: >STATE:1630402638,GET_CONFIG,,,,,,
+2021-08-31 18:37:18.550 +09:00 [DBG] CM processsing: >STATE:1630402638,GET_CONFIG,,,,,,
+2021-08-31 18:37:18.550 +09:00 [DBG] CM received state: >STATE:1630402638,GET_CONFIG,,,,,,
+2021-08-31 18:37:18.551 +09:00 [DBG] CM processsing: >LOG:1630402638,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-08-31 18:37:18.551 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:18.551 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:18.551 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:23.713 +09:00 [INF] Received bytes: 87
+2021-08-31 18:37:23.713 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:23.714 +09:00 [DBG] CM received: >LOG:1630402643,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+
+2021-08-31 18:37:23.714 +09:00 [DBG] CM processsing: >LOG:1630402643,,SENT CONTROL [vpn-server.insight-inc.biz]: 'PUSH_REQUEST' (status=1)
+2021-08-31 18:37:23.714 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:23.714 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:23.714 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:26.030 +09:00 [INF] Received bytes: 2032
+2021-08-31 18:37:26.030 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:26.030 +09:00 [DBG] CM received: >LOG:1630402643,,PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,route-gateway 172.16.0.161,topology subnet,ping 1,ping-restart 20,ifconfig 172.16.0.162 255.255.255.224,peer-id 0,cipher AES-256-GCM'
+>LOG:1630402643,,OPTIONS IMPORT: timers and/or timeouts modified
+>LOG:1630402643,,OPTIONS IMPORT: --ifconfig/up options modified
+>LOG:1630402643,,OPTIONS IMPORT: route options modified
+>LOG:1630402643,,OPTIONS IMPORT: route-related options modified
+>LOG:1630402643,,OPTIONS IMPORT: peer-id set
+>LOG:1630402643,,OPTIONS IMPORT: adjusting link_mtu to 1624
+>LOG:1630402643,,OPTIONS IMPORT: data channel crypto options modified
+>LOG:1630402643,,Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+>LOG:1630402643,,Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+>LOG:1630402643,,ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=en9 HWADDR=80:3f:5d:01:8b:6f
+>LOG:1630402643,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+>LOG:1630402643,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+>LOG:1630402643,I,Opened utun device utun2
+>LOG:1630402643,D,do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+>LOG:1630402643,,MANAGEMENT: >STATE:1630402643,ASSIGN_IP,,172.16.0.162,,,,
+>STATE:1630402643,ASSIGN_IP,,172.16.0.162,,,,
+>LOG:1630402643,I,/sbin/ifconfig utun2 delete
+>LOG:1630402643,I,NOTE: Tried to delete pre-existing tun/tap instance -- No Problem if failure
+>LOG:1630402643,I,/sbin/ifconfig utun2 172.16.0.162 172.16.0.162 netmask 255.255.255.224 mtu 1500 up
+>LOG:1630402643,,/sbin/route add -net 172.16.0.160 172.16.0.162 255.255.255.224
+>LOG:1630402643,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.up utun2 1500 1552 172.16.0.162 255.255.255.224 init
+>LOG:1630402646,,/sbin/route add -net 52.69.181.7 192.168.0.1 255.255.255.255
+>LOG:1630402646,,/sbin/route add -net 0.0.0.0 172.16.0.161 128.0.0.0
+>LOG:1630402646,,/sbin/route add -net 128.0.0.0 172.16.0.161 128.0.0.0
+
+2021-08-31 18:37:26.030 +09:00 [DBG] CM processsing: >LOG:1630402643,,PUSH: Received control message: 'PUSH_REPLY,redirect-gateway def1 bypass-dhcp,route-gateway 172.16.0.161,topology subnet,ping 1,ping-restart 20,ifconfig 172.16.0.162 255.255.255.224,peer-id 0,cipher AES-256-GCM'
+2021-08-31 18:37:26.030 +09:00 [DBG] CM processsing: >LOG:1630402643,,OPTIONS IMPORT: timers and/or timeouts modified
+2021-08-31 18:37:26.030 +09:00 [DBG] CM processsing: >LOG:1630402643,,OPTIONS IMPORT: --ifconfig/up options modified
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,OPTIONS IMPORT: route options modified
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,OPTIONS IMPORT: route-related options modified
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,OPTIONS IMPORT: peer-id set
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,OPTIONS IMPORT: adjusting link_mtu to 1624
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,OPTIONS IMPORT: data channel crypto options modified
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,Outgoing Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,Incoming Data Channel: Cipher 'AES-256-GCM' initialized with 256 bit key
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,ROUTE_GATEWAY 192.168.0.1/255.255.255.0 IFACE=en9 HWADDR=80:3f:5d:01:8b:6f
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,Opening utun (connect(AF_SYS_CONTROL)): Resource busy (errno=16)
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,I,Opened utun device utun2
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,D,do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,MANAGEMENT: >STATE:1630402643,ASSIGN_IP,,172.16.0.162,,,,
+2021-08-31 18:37:26.031 +09:00 [DBG] CM received state: >LOG:1630402643,,MANAGEMENT: >STATE:1630402643,ASSIGN_IP,,172.16.0.162,,,,
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >STATE:1630402643,ASSIGN_IP,,172.16.0.162,,,,
+2021-08-31 18:37:26.031 +09:00 [DBG] CM received state: >STATE:1630402643,ASSIGN_IP,,172.16.0.162,,,,
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,I,/sbin/ifconfig utun2 delete
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,I,NOTE: Tried to delete pre-existing tun/tap instance -- No Problem if failure
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,I,/sbin/ifconfig utun2 172.16.0.162 172.16.0.162 netmask 255.255.255.224 mtu 1500 up
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,,/sbin/route add -net 172.16.0.160 172.16.0.162 255.255.255.224
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402643,I,/Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/client.up utun2 1500 1552 172.16.0.162 255.255.255.224 init
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402646,,/sbin/route add -net 52.69.181.7 192.168.0.1 255.255.255.255
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402646,,/sbin/route add -net 0.0.0.0 172.16.0.161 128.0.0.0
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: >LOG:1630402646,,/sbin/route add -net 128.0.0.0 172.16.0.161 128.0.0.0
+2021-08-31 18:37:26.031 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:26.031 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:26.031 +09:00 [INF] Begin receive init again
+2021-08-31 18:37:26.031 +09:00 [INF] Received bytes: 218
+2021-08-31 18:37:26.032 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:37:26.032 +09:00 [DBG] CM received: >LOG:1630402646,I,Initialization Sequence Completed
+>LOG:1630402646,,MANAGEMENT: >STATE:1630402646,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+>STATE:1630402646,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+
+2021-08-31 18:37:26.032 +09:00 [DBG] CM processsing: >LOG:1630402646,I,Initialization Sequence Completed
+2021-08-31 18:37:26.032 +09:00 [DBG] CM processsing: >LOG:1630402646,,MANAGEMENT: >STATE:1630402646,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+2021-08-31 18:37:26.032 +09:00 [DBG] CM received state: >LOG:1630402646,,MANAGEMENT: >STATE:1630402646,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+2021-08-31 18:37:26.036 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_SUCCESS 1 to AnalyticsTable
+2021-08-31 18:37:26.038 +09:00 [DBG] Inserted event CONNECTION_START_TIME 1630402646 to AnalyticsTable
+2021-08-31 18:37:26.040 +09:00 [DBG] Inserted event CONNECTION_INITIALIZATION_TIME 28 to MetricsTable
+2021-08-31 18:37:26.043 +09:00 [DBG] Inserted event CONNECTION_INITIALIZATION_TIME 28 to AnalyticsTable
+2021-08-31 18:37:26.045 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-31 18:37:26.046 +09:00 [DBG] Management port password authenticated.
+2021-08-31 18:37:26.046 +09:00 [DBG] CM processsing: >STATE:1630402646,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+2021-08-31 18:37:26.046 +09:00 [DBG] CM received state: >STATE:1630402646,CONNECTED,SUCCESS,172.16.0.162,52.69.181.7,443,,
+2021-08-31 18:37:26.053 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_SUCCESS 1 to AnalyticsTable
+2021-08-31 18:37:26.055 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-31 18:37:26.055 +09:00 [DBG] Management port password authenticated.
+2021-08-31 18:37:26.055 +09:00 [DBG] Destroyed management port password file on authentication.
+2021-08-31 18:37:26.055 +09:00 [DBG] CM processsing: 
+2021-08-31 18:37:26.055 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:37:26.055 +09:00 [INF] Begin receive init again
+2021-08-31 18:38:06.732 +09:00 [DBG] Inserted event CLICK_APP_DISCONNECT 1 to AnalyticsTable
+2021-08-31 18:38:06.739 +09:00 [INF] Received bytes: 236
+2021-08-31 18:38:06.739 +09:00 [DBG] Message marshalling complete
+2021-08-31 18:38:06.739 +09:00 [DBG] CM received: >LOG:1630402686,D,MANAGEMENT: CMD 'status'
+OpenVPN STATISTICS
+Updated,Tue Aug 31 18:38:06 2021
+TUN/TAP read bytes,87780
+TUN/TAP write bytes,182417
+TCP/UDP read bytes,195420
+TCP/UDP write bytes,101446
+Auth read bytes,182945
+END
+
+2021-08-31 18:38:06.740 +09:00 [DBG] CM processsing: >LOG:1630402686,D,MANAGEMENT: CMD 'status'
+2021-08-31 18:38:06.740 +09:00 [DBG] CM processsing: OpenVPN STATISTICS
+2021-08-31 18:38:06.740 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:38:06.740 +09:00 [DBG] CM processsing: Updated,Tue Aug 31 18:38:06 2021
+2021-08-31 18:38:06.740 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:38:06.740 +09:00 [DBG] CM processsing: TUN/TAP read bytes,87780
+2021-08-31 18:38:06.740 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:38:06.740 +09:00 [DBG] CM processsing: TUN/TAP write bytes,182417
+2021-08-31 18:38:06.741 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:38:06.741 +09:00 [DBG] CM processsing: TCP/UDP read bytes,195420
+2021-08-31 18:38:06.741 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:38:06.741 +09:00 [DBG] CM processsing: TCP/UDP write bytes,101446
+2021-08-31 18:38:06.741 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:38:06.741 +09:00 [DBG] CM processsing: Auth read bytes,182945
+2021-08-31 18:38:06.741 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:38:06.741 +09:00 [DBG] CM processsing: END
+2021-08-31 18:38:06.741 +09:00 [DBG] 🥶 END
+2021-08-31 18:38:06.741 +09:00 [DBG] CM processsing: 
+2021-08-31 18:38:06.741 +09:00 [DBG] 🥶 APPEND line
+2021-08-31 18:38:06.741 +09:00 [INF] Begin receive init again
+2021-08-31 18:38:06.741 +09:00 [DBG] Already received bytes: 195420
+2021-08-31 18:38:06.741 +09:00 [DBG] Already sent bytes: 101446
+2021-08-31 18:38:06.745 +09:00 [DBG] Inserted event CONNECTION_BYTES_SENT 101446 to AnalyticsTable
+2021-08-31 18:38:06.749 +09:00 [DBG] Inserted event CONNECTION_BYTES_RECEIVED 195420 to AnalyticsTable
+2021-08-31 18:38:06.753 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-31 18:38:06.753 +09:00 [INF] Terminating connection
+2021-08-31 18:38:06.753 +09:00 [DBG] 🏞 Ending connection details reporting.
+2021-08-31 18:38:06.753 +09:00 [WRN] We are calling GracefulKill in a method that is not supposed to change Connection state.
+2021-08-31 18:38:06.753 +09:00 [DBG] GracefulKill
+2021-08-31 18:38:06.753 +09:00 [DBG] Cancelling socket listen token
+2021-08-31 18:38:06.753 +09:00 [DBG] Dispose socket
+2021-08-31 18:38:06.754 +09:00 [DBG] Signal process kill with helper tool.
+2021-08-31 18:38:06.754 +09:00 [DBG] Starting process
+2021-08-31 18:38:06.755 +09:00 [DBG] Cancellation requested
+2021-08-31 18:38:06.758 +09:00 [DBG] Start to read process output
+2021-08-31 18:38:08.870 +09:00 [DBG] End reading process output
+2021-08-31 18:38:08.969 +09:00 [DBG] Helper app --kill output: Kill success.
+2021-08-31 18:38:08.969 +09:00 [DBG] Release process manager start lock
+2021-08-31 18:38:08.969 +09:00 [DBG] Release process manager stop lock
+2021-08-31 18:38:08.969 +09:00 [DBG] Disconnected
+2021-08-31 18:38:08.970 +09:00 [DBG] Metric agent started
+2021-08-31 18:38:08.970 +09:00 [DBG] Sending Metrics batches
+2021-08-31 18:38:09.009 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 18:38:09.010 +09:00 [DBG] is empty: False
+2021-08-31 18:38:09.011 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-31 18:38:09.011 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 18:38:09.011 +09:00 [DBG] Sending metrics batch async
+2021-08-31 18:38:09.011 +09:00 [DBG] OS: MacOS
+2021-08-31 18:38:09.011 +09:00 [DBG] OS: MacOS
+2021-08-31 18:38:09.011 +09:00 [DBG] OS: MacOS
+2021-08-31 18:38:09.011 +09:00 [DBG] OS: MacOS
+2021-08-31 18:38:09.011 +09:00 [DBG] OS: MacOS
+2021-08-31 18:38:09.011 +09:00 [DBG] Metrics data request created
+2021-08-31 18:38:09.024 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 18:38:09.025 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 18:38:09.026 +09:00 [DBG] is empty: False
+2021-08-31 18:38:09.028 +09:00 [DBG] Analytics event batch successfully created, sending analytics
+2021-08-31 18:38:09.028 +09:00 [DBG] Sending analytics batch async
+2021-08-31 18:38:09.028 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 18:38:09.028 +09:00 [DBG] Pinpoint endpoint ID already exists
+2021-08-31 18:38:09.028 +09:00 [DBG] OSVersion: Unix 19.6.0.0
+2021-08-31 18:38:09.028 +09:00 [DBG] OS: MacOS
+2021-08-31 18:38:09.028 +09:00 [DBG] Endpoint ID: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-31 18:38:09.028 +09:00 [DBG] Pinpoint endpoint id: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-31 18:38:09.028 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 18:38:09.028 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 18:38:09.072 +09:00 [DBG] Inserted event CONNECTION_END_TIME 1630402688 to AnalyticsTable
+2021-08-31 18:38:09.079 +09:00 [DBG] Inserted event CONNECTION_DURATION 42 to AnalyticsTable
+2021-08-31 18:38:09.081 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-31 18:38:09.155 +09:00 [DBG] Caching credentials.
+2021-08-31 18:38:09.268 +09:00 [DBG] 2021/08/31 18:38:09 Accepted
+2021-08-31 18:38:09.268 +09:00 [DBG] successfully put analytics to pinpoint
+2021-08-31 18:38:09.268 +09:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2021-08-31 18:38:09.272 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 18:38:09.272 +09:00 [DBG] is empty: False
+2021-08-31 18:38:09.273 +09:00 [DBG] Analytics event batch successfully created, sending analytics
+2021-08-31 18:38:09.273 +09:00 [DBG] Sending analytics batch async
+2021-08-31 18:38:09.273 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 18:38:09.273 +09:00 [DBG] Pinpoint endpoint ID already exists
+2021-08-31 18:38:09.273 +09:00 [DBG] OSVersion: Unix 19.6.0.0
+2021-08-31 18:38:09.273 +09:00 [DBG] OS: MacOS
+2021-08-31 18:38:09.273 +09:00 [DBG] Endpoint ID: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-31 18:38:09.273 +09:00 [DBG] Pinpoint endpoint id: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-31 18:38:09.273 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 18:38:09.273 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 18:38:09.361 +09:00 [DBG] 2021/08/31 18:38:09 Accepted
+2021-08-31 18:38:09.361 +09:00 [DBG] successfully put analytics to pinpoint
+2021-08-31 18:38:09.361 +09:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2021-08-31 18:38:09.365 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 18:38:09.365 +09:00 [DBG] is empty: True
+2021-08-31 18:38:09.365 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-31 18:38:09.397 +09:00 [DBG] CloudWatch response received
+2021-08-31 18:38:09.397 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-31 18:38:09.397 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-31 18:38:09.397 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-31 18:38:09.401 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 18:38:09.401 +09:00 [DBG] is empty: False
+2021-08-31 18:38:09.407 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-31 18:38:09.407 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-31 18:38:09.407 +09:00 [DBG] Sending metrics batch async
+2021-08-31 18:38:09.407 +09:00 [DBG] OS: MacOS
+2021-08-31 18:38:09.407 +09:00 [DBG] Metrics data request created
+2021-08-31 18:38:09.468 +09:00 [DBG] CloudWatch response received
+2021-08-31 18:38:09.468 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-31 18:38:09.469 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-31 18:38:09.469 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-31 18:38:09.472 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 18:38:09.472 +09:00 [DBG] is empty: True
+2021-08-31 18:38:09.472 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 19:38:09.001 +09:00 [DBG] Sending Metrics batches
+2021-08-31 19:38:09.012 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 19:38:09.013 +09:00 [DBG] is empty: True
+2021-08-31 19:38:09.013 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 19:38:09.013 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 19:38:09.015 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 19:38:09.016 +09:00 [DBG] is empty: True
+2021-08-31 19:38:09.016 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-31 20:38:08.954 +09:00 [DBG] Sending Metrics batches
+2021-08-31 20:38:08.995 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 20:38:08.997 +09:00 [DBG] is empty: True
+2021-08-31 20:38:08.997 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 20:38:08.997 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 20:38:09.003 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 20:38:09.005 +09:00 [DBG] is empty: True
+2021-08-31 20:38:09.005 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-31 21:38:16.364 +09:00 [DBG] Sending Metrics batches
+2021-08-31 21:38:16.412 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 21:38:16.414 +09:00 [DBG] is empty: True
+2021-08-31 21:38:16.414 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 21:38:16.414 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 21:38:16.418 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 21:38:16.420 +09:00 [DBG] is empty: True
+2021-08-31 21:38:16.420 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-31 22:38:16.333 +09:00 [DBG] Sending Metrics batches
+2021-08-31 22:38:16.340 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 22:38:16.340 +09:00 [DBG] is empty: True
+2021-08-31 22:38:16.340 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 22:38:16.340 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 22:38:16.341 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 22:38:16.342 +09:00 [DBG] is empty: True
+2021-08-31 22:38:16.342 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-31 23:38:16.253 +09:00 [DBG] Sending Metrics batches
+2021-08-31 23:38:16.262 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-31 23:38:16.263 +09:00 [DBG] is empty: True
+2021-08-31 23:38:16.263 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-31 23:38:16.263 +09:00 [DBG] Sending Analytics Batches
+2021-08-31 23:38:16.266 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-31 23:38:16.268 +09:00 [DBG] is empty: True
+2021-08-31 23:38:16.268 +09:00 [DBG] Finished sending batches of analytics to pinpoint.

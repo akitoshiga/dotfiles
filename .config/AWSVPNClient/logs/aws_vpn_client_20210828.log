@@ -1,0 +1,202 @@
+2021-08-28 11:56:03.200 +09:00 [INF] Logger initialized
+2021-08-28 11:56:03.306 +09:00 [INF] Current OS Information:
+2021-08-28 11:56:03.308 +09:00 [INF] Platform: "Unix"
+2021-08-28 11:56:03.311 +09:00 [INF] Version String: Unix 19.6.0.0
+2021-08-28 11:56:03.313 +09:00 [INF] OS description: Unix 19.6.0.0
+2021-08-28 11:56:03.313 +09:00 [INF] OSX detected.
+2021-08-28 11:56:03.595 +09:00 [INF] Loading attributes file from /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-28 11:56:03.687 +09:00 [DBG] Metrics attributes saved to file: /Users/insightshiga/.config/AWSVPNClient/MetricsAttributes
+2021-08-28 11:56:03.688 +09:00 [DBG] Database path: /Users/insightshiga/.config/AWSVPNClient/awsvpnclientmetrics.db
+2021-08-28 11:56:03.690 +09:00 [INF] Loading profile store from /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-28 11:56:03.707 +09:00 [INF] Saving profile store to /Users/insightshiga/.config/AWSVPNClient/ConnectionProfiles
+2021-08-28 11:56:03.716 +09:00 [DBG] Auto culture: ja-JP Auto UI culture: ja-JP
+2021-08-28 11:56:03.717 +09:00 [DBG] Can successfully read and write app data folder.
+2021-08-28 11:56:03.719 +09:00 [DBG] openVpnExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/openvpn/acvc-openvpn
+2021-08-28 11:56:03.719 +09:00 [DBG] helperToolExePath: /Applications/AWS VPN Client/AWS VPN Client.app/Contents/Resources/AWS VPN Client/Contents/MacOS/ACVCHelperTool
+2021-08-28 11:56:03.807 +09:00 [DBG] macOS viewDidLoad
+2021-08-28 11:56:03.818 +09:00 [INF] Loading preferences file from /Users/insightshiga/.config/AWSVPNClient/Preferences
+2021-08-28 11:56:03.906 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-28 11:56:04.311 +09:00 [DBG] Inserted event APPLICATION_CRASH_DETECTED 0 to MetricsTable
+2021-08-28 11:56:04.312 +09:00 [DBG] Current preferences schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-28 11:56:04.317 +09:00 [DBG] Metric agent started
+2021-08-28 11:56:04.318 +09:00 [DBG] Sending Metrics batches
+2021-08-28 11:56:04.321 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 11:56:04.325 +09:00 [DBG] is empty: False
+2021-08-28 11:56:04.341 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-28 11:56:04.366 +09:00 [DBG] Inserted event PROFILE_CONFIGURATION_VERSION 1 to AnalyticsTable
+2021-08-28 11:56:04.366 +09:00 [DBG] Current metadata schema version is 1, which is less or equal to current supported version: 1. 
+2021-08-28 11:56:04.368 +09:00 [DBG] Inserted event CLICK_LAUNCH_DESKTOP_APP 1 to AnalyticsTable
+2021-08-28 11:56:04.377 +09:00 [DBG] AcvcHelperOutLog doesn't exist. Skipping
+2021-08-28 11:56:04.377 +09:00 [DBG] AcvcHelperErrLog doesn't exist. Skipping
+2021-08-28 11:56:04.424 +09:00 [DBG] Total logs size: 12190140 bytes
+2021-08-28 11:56:04.425 +09:00 [DBG] /usr/bin/dig stdout: 
+; <<>> DiG 9.10.6 <<>> pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 6002
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 4, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. IN A
+
+;; ANSWER SECTION:
+pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com. 900 IN CNAME pinpoint.ap-northeast-1.amazonaws.com.
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	65.9.42.70
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	65.9.42.63
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	65.9.42.23
+pinpoint.ap-northeast-1.amazonaws.com. 60 IN A	65.9.42.66
+
+;; AUTHORITY SECTION:
+pinpoint.ap-northeast-1.amazonaws.com. 14950 IN	NS ns-205.awsdns-25.com.
+pinpoint.ap-northeast-1.amazonaws.com. 14950 IN	NS ns-523.awsdns-01.net.
+pinpoint.ap-northeast-1.amazonaws.com. 14950 IN	NS ns-1113.awsdns-11.org.
+pinpoint.ap-northeast-1.amazonaws.com. 14950 IN	NS ns-1796.awsdns-32.co.uk.
+
+;; Query time: 43 msec
+;; SERVER: 2404:1a8:7f01:b::3#53(2404:1a8:7f01:b::3)
+;; WHEN: Sat Aug 28 11:56:04 JST 2021
+;; MSG SIZE  rcvd: 321
+
+
+2021-08-28 11:56:04.426 +09:00 [DBG] Inserted event LOG_DISK_USAGE 12190140 to MetricsTable
+2021-08-28 11:56:04.428 +09:00 [DBG] Inserted event LOG_DISK_USAGE 12190140 to AnalyticsTable
+2021-08-28 11:56:04.428 +09:00 [DBG] /usr/bin/dig stderr: 
+2021-08-28 11:56:04.429 +09:00 [DBG] /usr/bin/dig exit code: 0
+2021-08-28 11:56:04.429 +09:00 [DBG] Error: 
+2021-08-28 11:56:04.430 +09:00 [DBG] dig command result: pinpoint.ap-northeast-1.amazonaws.com.
+2021-08-28 11:56:04.433 +09:00 [DBG] Storing metrics region ap-northeast-1 in app
+2021-08-28 11:56:04.433 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-28 11:56:04.434 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-28 11:56:04.434 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-28 11:56:04.434 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-28 11:56:04.544 +09:00 [DBG] Fetching cached identity id.
+2021-08-28 11:56:04.545 +09:00 [DBG] Looking up current region
+2021-08-28 11:56:04.545 +09:00 [DBG] Current region is: ap-northeast-1
+2021-08-28 11:56:04.545 +09:00 [DBG] Setting identityId and temporaryCredentials file paths.
+2021-08-28 11:56:04.546 +09:00 [DBG] Caching identity id.
+2021-08-28 11:56:04.548 +09:00 [DBG] Fetching cached credentials.
+2021-08-28 11:56:04.548 +09:00 [DBG] Reading cached credentials file.
+2021-08-28 11:56:04.552 +09:00 [DBG] Initializing credentials provider.
+2021-08-28 11:56:04.552 +09:00 [DBG] Sending metrics batch async
+2021-08-28 11:56:04.553 +09:00 [DBG] OS: MacOS
+2021-08-28 11:56:04.553 +09:00 [DBG] OS: MacOS
+2021-08-28 11:56:04.553 +09:00 [DBG] OS: MacOS
+2021-08-28 11:56:04.553 +09:00 [DBG] OS: MacOS
+2021-08-28 11:56:04.553 +09:00 [DBG] OS: MacOS
+2021-08-28 11:56:04.553 +09:00 [DBG] OS: MacOS
+2021-08-28 11:56:04.553 +09:00 [DBG] OS: MacOS
+2021-08-28 11:56:04.553 +09:00 [DBG] Metrics data request created
+2021-08-28 11:56:04.667 +09:00 [DBG] Sending Analytics Batches
+2021-08-28 11:56:04.673 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-28 11:56:04.674 +09:00 [DBG] is empty: False
+2021-08-28 11:56:04.675 +09:00 [DBG] Analytics event batch successfully created, sending analytics
+2021-08-28 11:56:04.676 +09:00 [DBG] Sending analytics batch async
+2021-08-28 11:56:04.676 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-28 11:56:04.676 +09:00 [DBG] Pinpoint endpoint ID already exists
+2021-08-28 11:56:04.676 +09:00 [DBG] OSVersion: Unix 19.6.0.0
+2021-08-28 11:56:04.676 +09:00 [DBG] OS: MacOS
+2021-08-28 11:56:04.677 +09:00 [DBG] Endpoint ID: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-28 11:56:04.677 +09:00 [DBG] Pinpoint endpoint id: ap-northeast-1:d999a751-9f05-4814-9c7f-21eb27358894
+2021-08-28 11:56:04.682 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-28 11:56:04.685 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-28 11:56:04.686 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-28 11:56:04.686 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-28 11:56:04.895 +09:00 [DBG] Caching credentials.
+2021-08-28 11:56:05.082 +09:00 [DBG] 2021/08/28 11:56:05 Accepted
+2021-08-28 11:56:05.082 +09:00 [DBG] successfully put analytics to pinpoint
+2021-08-28 11:56:05.082 +09:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2021-08-28 11:56:05.087 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-28 11:56:05.087 +09:00 [DBG] is empty: True
+2021-08-28 11:56:05.087 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-28 11:56:05.121 +09:00 [DBG] CloudWatch response received
+2021-08-28 11:56:05.122 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-28 11:56:05.122 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-28 11:56:05.122 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-28 11:56:05.124 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 11:56:05.124 +09:00 [DBG] is empty: False
+2021-08-28 11:56:05.125 +09:00 [DBG] Metrics event batch successfully created, sending metrics
+2021-08-28 11:56:05.125 +09:00 [DBG] metrics region already exists in app: ap-northeast-1
+2021-08-28 11:56:05.125 +09:00 [DBG] Sending metrics batch async
+2021-08-28 11:56:05.125 +09:00 [DBG] OS: MacOS
+2021-08-28 11:56:05.125 +09:00 [DBG] Metrics data request created
+2021-08-28 11:56:05.186 +09:00 [DBG] CloudWatch response received
+2021-08-28 11:56:05.186 +09:00 [DBG] CloudWatch response status code: OK
+2021-08-28 11:56:05.186 +09:00 [DBG] successfully put metrics to cloudwatch
+2021-08-28 11:56:05.186 +09:00 [DBG] Deleting successfully sent batch of metric events
+2021-08-28 11:56:05.190 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 11:56:05.190 +09:00 [DBG] is empty: True
+2021-08-28 11:56:05.190 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-28 14:04:55.237 +09:00 [DBG] Sending Metrics batches
+2021-08-28 14:04:55.243 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 14:04:55.244 +09:00 [DBG] is empty: True
+2021-08-28 14:04:55.244 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-28 14:04:55.244 +09:00 [DBG] Sending Analytics Batches
+2021-08-28 14:04:55.247 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-28 14:04:55.249 +09:00 [DBG] is empty: True
+2021-08-28 14:04:55.249 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-28 16:14:12.477 +09:00 [DBG] Sending Metrics batches
+2021-08-28 16:14:12.480 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 16:14:12.481 +09:00 [DBG] is empty: True
+2021-08-28 16:14:12.481 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-28 16:14:12.481 +09:00 [DBG] Sending Analytics Batches
+2021-08-28 16:14:12.483 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-28 16:14:12.483 +09:00 [DBG] is empty: True
+2021-08-28 16:14:12.484 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-28 17:14:12.408 +09:00 [DBG] Sending Metrics batches
+2021-08-28 17:14:12.413 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 17:14:12.414 +09:00 [DBG] is empty: True
+2021-08-28 17:14:12.415 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-28 17:14:12.415 +09:00 [DBG] Sending Analytics Batches
+2021-08-28 17:14:12.418 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-28 17:14:12.419 +09:00 [DBG] is empty: True
+2021-08-28 17:14:12.419 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-28 18:14:12.396 +09:00 [DBG] Sending Metrics batches
+2021-08-28 18:14:12.402 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 18:14:12.403 +09:00 [DBG] is empty: True
+2021-08-28 18:14:12.403 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-28 18:14:12.403 +09:00 [DBG] Sending Analytics Batches
+2021-08-28 18:14:12.405 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-28 18:14:12.406 +09:00 [DBG] is empty: True
+2021-08-28 18:14:12.406 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-28 19:14:12.310 +09:00 [DBG] Sending Metrics batches
+2021-08-28 19:14:12.318 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 19:14:12.320 +09:00 [DBG] is empty: True
+2021-08-28 19:14:12.320 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-28 19:14:12.320 +09:00 [DBG] Sending Analytics Batches
+2021-08-28 19:14:12.322 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-28 19:14:12.322 +09:00 [DBG] is empty: True
+2021-08-28 19:14:12.322 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-28 20:14:13.844 +09:00 [DBG] Sending Metrics batches
+2021-08-28 20:14:13.849 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 20:14:13.851 +09:00 [DBG] is empty: True
+2021-08-28 20:14:13.851 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-28 20:14:13.851 +09:00 [DBG] Sending Analytics Batches
+2021-08-28 20:14:13.855 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-28 20:14:13.855 +09:00 [DBG] is empty: True
+2021-08-28 20:14:13.855 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-28 21:14:13.764 +09:00 [DBG] Sending Metrics batches
+2021-08-28 21:14:13.769 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 21:14:13.770 +09:00 [DBG] is empty: True
+2021-08-28 21:14:13.770 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-28 21:14:13.770 +09:00 [DBG] Sending Analytics Batches
+2021-08-28 21:14:13.771 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-28 21:14:13.772 +09:00 [DBG] is empty: True
+2021-08-28 21:14:13.772 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-28 22:14:13.738 +09:00 [DBG] Sending Metrics batches
+2021-08-28 22:14:13.746 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 22:14:13.747 +09:00 [DBG] is empty: True
+2021-08-28 22:14:13.747 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-28 22:14:13.747 +09:00 [DBG] Sending Analytics Batches
+2021-08-28 22:14:13.748 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-28 22:14:13.749 +09:00 [DBG] is empty: True
+2021-08-28 22:14:13.749 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-28 23:14:13.660 +09:00 [DBG] Sending Metrics batches
+2021-08-28 23:14:13.676 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-28 23:14:13.677 +09:00 [DBG] is empty: True
+2021-08-28 23:14:13.678 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-28 23:14:13.678 +09:00 [DBG] Sending Analytics Batches
+2021-08-28 23:14:13.681 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-28 23:14:13.682 +09:00 [DBG] is empty: True
+2021-08-28 23:14:13.682 +09:00 [DBG] Finished sending batches of analytics to pinpoint.

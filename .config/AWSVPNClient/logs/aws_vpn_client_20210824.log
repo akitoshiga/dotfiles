@@ -1,0 +1,32 @@
+2021-08-24 00:33:37.111 +09:00 [DBG] Sending Metrics batches
+2021-08-24 00:33:38.070 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-24 00:33:38.072 +09:00 [DBG] is empty: True
+2021-08-24 00:33:38.072 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-24 00:33:38.072 +09:00 [DBG] Sending Analytics Batches
+2021-08-24 00:33:38.078 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-24 00:33:38.079 +09:00 [DBG] is empty: True
+2021-08-24 00:33:38.079 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-24 01:33:37.986 +09:00 [DBG] Sending Metrics batches
+2021-08-24 01:33:38.036 +09:00 [DBG] Checking if table MetricsTable is empty
+2021-08-24 01:33:38.037 +09:00 [DBG] is empty: True
+2021-08-24 01:33:38.038 +09:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2021-08-24 01:33:38.038 +09:00 [DBG] Sending Analytics Batches
+2021-08-24 01:33:38.059 +09:00 [DBG] Checking if table AnalyticsTable is empty
+2021-08-24 01:33:38.061 +09:00 [DBG] is empty: True
+2021-08-24 01:33:38.061 +09:00 [DBG] Finished sending batches of analytics to pinpoint.
+2021-08-24 08:13:07.471 +09:00 [DBG] Caught exception when getting connection status. Exception information: System.TimeoutException: The message did not respond within the expected timeframe or was cancelled
+  at ACVC.Core.OpenVpn.OvpnConnectionManager.SendMessage (System.String message, System.Int32 timeout, System.Threading.CancellationToken cancellationToken) [0x001ca] in <31f17d339caa4e67b9ad9d7f4a1b866a>:0 
+  at ACVC.Core.OpenVpn.OvpnConnectionManager.GetConnectionStatus () [0x0007c] in <31f17d339caa4e67b9ad9d7f4a1b866a>:0 
+  at ACVC.Core.Metrics.MetricsClient.RecordBytesMetricsAndAnalytics (ACVC.Core.IConnectionManager connectionManager) [0x00077] in <31f17d339caa4e67b9ad9d7f4a1b866a>:0 
+2021-08-24 08:13:07.557 +09:00 [DBG] Inserted event UI_APP_VPN_CONNECT_GENERAL_ERROR 0 to MetricsTable
+2021-08-24 08:13:07.560 +09:00 [INF] Terminating connection
+2021-08-24 08:13:07.560 +09:00 [DBG] 🏞 Ending connection details reporting.
+2021-08-24 08:13:07.560 +09:00 [WRN] We are calling GracefulKill in a method that is not supposed to change Connection state.
+2021-08-24 08:13:07.560 +09:00 [DBG] GracefulKill
+2021-08-24 08:13:07.560 +09:00 [DBG] Cancelling socket listen token
+2021-08-24 08:13:07.560 +09:00 [DBG] Dispose socket
+2021-08-24 08:13:07.560 +09:00 [DBG] Signal process kill with helper tool.
+2021-08-24 08:13:07.560 +09:00 [DBG] Starting process
+2021-08-24 08:13:07.569 +09:00 [DBG] Shutting down metrics agent
+2021-08-24 08:13:07.569 +09:00 [DBG] Metrics agent shut down
+2021-08-24 08:13:07.570 +09:00 [DBG] Start to read process output
