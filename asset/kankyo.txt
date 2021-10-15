@@ -1,0 +1,89 @@
+
+onivim2
+
+## brew
+zlib
+openssl
+pyenv
+rbenv
+tree
+zsh-completions
+brew tap homebrew/cask-fonts
+brew install --cask font-jetbrains-mono
+tmux
+git
+neovim
+python3
+ruby
+pearl
+spotify
+node
+python2
+yarn
+
+## cask 
+google-japanese-ime
+nerd
+jetbrains mono
+vivaldi
+iterm2
+onyx
+cheatsheet
+appcleaner
+alfred
+bettertouchtoosl
+
+## font
+
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+
+## dotfile
+git clone https://github.com/Akitoshiga/dotfiles
+bash installDotFiles.sh
+bash installBrew.sh
+
+## prezto
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+
+cd .zprezto
+
+rm -rf runcoms
+ln -s ../dotfiles/runcoms runcoms
+
+## animation off
+write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+defaults write -g QLPanelAnimationDuration -float 
+defaults write com.apple.dock expose-animation-duration -float 0.1
+defaults delete com.apple.dock expose-animation-duration
+defaults write com.apple.dock springboard-show-duration -int 0
+defaults write com.apple.dock springboard-hide-duration -int 0
+defaults write com.apple.finder DisableAllAnimations -boolean true
+defaults write -g NSInitialToolTipDelay -integer 100
+killall Finder
+killall Dock
+
+
+## nvim
+
+pyenv install 3.7.4
+pyenv install 2.7.16
+pyenv virtualenv 3.7.4 neovim3
+pyenv virtualenv 2.7.16 neovim2
+pyenv shell neovim3
+pip install pynvim
+pyenv shell neovim2
+pip install pynvim
+
+rbenv install 2.6.3
+rbenv global 2.6.3
+gem install neovim
+npm install -g neovim
+
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh)" _ ~/.cache/dein
