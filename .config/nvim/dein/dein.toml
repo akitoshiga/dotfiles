@@ -345,37 +345,37 @@ let s:blue = [ '#00ffff', 11 ]
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}, 'command': {}}
 
 " let s:p.{mode}.{where} = [ [ {guifg}, {guibg}, {ctermfg}, {ctermbg} ], ... ]
-let s:p.normal.left = [ [ s:cyan, s:black ], [ s:black, s:cyan ] ]
-let s:p.normal.middle = [ [ s:black, s:cyan ] ]
-"let s:p.normal.middle = [ [ s:cyan, s:black ] ]
-let s:p.normal.right = [ [ s:pink, s:black ], [ s:black, s:pink ] ]
-let s:p.normal.error = [ [ s:red, s:black ] ]
-let s:p.normal.warning = [ [ s:yellow, s:black ] ]
+let s:p.normal.left = [ [ s:cyan, s:gray ], [ s:gray, s:cyan ] ]
+let s:p.normal.middle = [ [ s:gray, s:cyan ] ]
+"let s:p.normal.middle = [ [ s:cyan, s:gray ] ]
+let s:p.normal.right = [ [ s:pink, s:gray ], [ s:gray, s:pink ] ]
+let s:p.normal.error = [ [ s:red, s:gray ] ]
+let s:p.normal.warning = [ [ s:yellow, s:gray ] ]
 
-let s:p.insert.left = [ [ s:yellow, s:black ], [ s:black, s:yellow ] ]
-let s:p.insert.middle = [ [ s:black, s:yellow ] ]
-let s:p.insert.right = [ [ s:pink, s:black ], [ s:black, s:pink ] ]
+let s:p.insert.left = [ [ s:yellow, s:gray ], [ s:gray, s:yellow ] ]
+let s:p.insert.middle = [ [ s:gray, s:yellow ] ]
+let s:p.insert.right = [ [ s:pink, s:gray ], [ s:gray, s:pink ] ]
 
-let s:p.visual.left = [ [ s:pink, s:black], [ s:black, s:pink] ]
-let s:p.visual.middle = [ [ s:black, s:pink] ]
-let s:p.visual.right = [ [ s:cyan, s:black ], [ s:black, s:cyan ] ]
+let s:p.visual.left = [ [ s:pink, s:gray], [ s:gray, s:pink] ]
+let s:p.visual.middle = [ [ s:gray, s:pink] ]
+let s:p.visual.right = [ [ s:cyan, s:gray ], [ s:gray, s:cyan ] ]
 
-let s:p.replace.left = [ [ s:blue, s:black ], [ s:black, s:blue ] ]
-let s:p.replace.middle = [ [ s:black, s:blue ] ]
-let s:p.replace.right = [ [ s:pink, s:black ], [ s:black, s:pink ] ]
+let s:p.replace.left = [ [ s:blue, s:gray ], [ s:gray, s:blue ] ]
+let s:p.replace.middle = [ [ s:gray, s:blue ] ]
+let s:p.replace.right = [ [ s:pink, s:gray ], [ s:gray, s:pink ] ]
 
-let s:p.command.left = [ [ s:green, s:black ], [ s:black, s:green ] ]
-let s:p.command.middle = [ [ s:black, s:green ],]
-let s:p.command.right = [ [ s:pink, s:black ], [ s:black, s:pink ] ]
+let s:p.command.left = [ [ s:green, s:gray ], [ s:gray, s:green ] ]
+let s:p.command.middle = [ [ s:gray, s:green ],]
+let s:p.command.right = [ [ s:pink, s:gray ], [ s:gray, s:pink ] ]
 
 let s:p.inactive.left =  [ [ s:pink, s:gray ], [ s:white, s:gray ] ]
 let s:p.inactive.middle = [ [ s:white, s:gray] ]
 let s:p.inactive.right = [ [ s:cyan, s:gray], [ s:gray, s:cyan] ]
 
-let s:p.tabline.left = [ [ s:cyan, s:black ] ]
-let s:p.tabline.middle = [ [ s:cyan, s:black] ]
+let s:p.tabline.left = [ [ s:cyan, s:gray ] ]
+let s:p.tabline.middle = [ [ s:cyan, s:gray] ]
 let s:p.tabline.right = copy(s:p.normal.right)
-let s:p.tabline.tabsel = [ [ s:black, s:pink ] ]
+let s:p.tabline.tabsel = [ [ s:gray, s:pink ] ]
 
 let g:lightline#colorscheme#molokai#palette = lightline#colorscheme#flatten(s:p)
 set noshowmode

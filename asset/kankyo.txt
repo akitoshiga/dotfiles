@@ -2,6 +2,7 @@
 onivim2
 
 ## brew
+peco
 zlib
 openssl
 pyenv
@@ -87,3 +88,13 @@ gem install neovim
 npm install -g neovim
 
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh)" _ ~/.cache/dein
+
+# cdr
+mkdir -p $HOME/.cache/shell/
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+add-zsh-hook chpwd chpwd_recent_dirs
+zstyle ':completion:*' recent-dirs-insert both
+zstyle ':chpwd:*' recent-dirs-max 500
+zstyle ':chpwd:*' recent-dirs-default true
+zstyle ':chpwd:*' recent-dirs-file "$HOME/.cache/shell/chpwd-recent-dirs"
+zstyle ':chpwd:*' recent-dirs-pushd true
