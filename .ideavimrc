@@ -1,0 +1,39 @@
+set textobj-entire
+set ReplaceWithRegister
+" _で発動. ダブルクォーテーションの中を置換したいなら _i"
+map _ gr
+set commentary
+set multiple-cursors
+" Ctrl+kで発動
+map <C-k> <A-n>
+set surround
+set easymotion
+" sで開始
+nmap s <Plug>(easymotion-s2)
+" カーソル形状
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[0 q"
+" insert mode
+inoremap <c-a> <c-o>^
+inoremap <c-e> <c-o><right>
+inoremap <c-b> <left>
+inoremap <c-f> <right>
+inoremap <c-n> <down>
+inoremap <c-p> <up>
+inoremap <c-h> <bs>
+inoremap <c-d> <del>
+inoremap <c-k> <c-o>d$<right>
+inoremap <c-j> <c-o>p
+inoremap <c-u> <c-o>d^
+inoremap <c-w> <c-o>db
+set virtualedit=block
+set smartcase
+" 検索がファイル末尾まで進んだら、ファイル先頭から再び検索
+set wrapscan
+" インクリメンタル検索 (検索ワードの最初の文字を入力した時点で検索が開始)
+set incsearch
+" 検索結果をハイライト表示
+set hlsearch
+set expandtab

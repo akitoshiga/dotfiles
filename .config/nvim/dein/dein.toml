@@ -714,3 +714,6 @@ repo='bluz71/vim-moonfly-colors'
 repo='bluz71/vim-nightfly-guicolors'
 [[plugins]]
 repo='haishanh/night-owl.vim'
+[[plugins]]
+repo='stsewd/spotify.vim'
+
