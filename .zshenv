@@ -1,1 +1,1 @@
-/Users/insightshiga/.zprezto/runcoms/zshenv
+./runcoms/zshenv

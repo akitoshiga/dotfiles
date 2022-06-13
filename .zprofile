@@ -1,1 +1,1 @@
-/Users/insightshiga/.zprezto/runcoms/zprofile
+./runcoms/zprofile

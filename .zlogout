@@ -1,1 +1,1 @@
-/Users/insightshiga/.zprezto/runcoms/zlogout
+./runcoms/zlogout

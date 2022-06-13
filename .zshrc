@@ -1,1 +1,1 @@
-/Users/insightshiga/.zprezto/runcoms/zshrc
+./runcoms/zshrc
