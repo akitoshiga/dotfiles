@@ -1,11 +1,11 @@
 # キャッシュの再読み込み
 `call dein#recache_runtimepath()`
 # vimprocのmake
-`cd /Users/insightshiga/.cache/dein/repos/github.com/Shougo/vimproc.vim; make`
+`cd /Users/akitoshiga/.cache/dein/repos/github.com/Shougo/vimproc.vim; make`
 # tree-sitterが調子悪いとき
 `write | edit | TSBufEnable highlight`
 # cocの更新
-`cd /Users/insightshiga/.cache/dein/repos/github.com/neoclide/coc.nvim/&& git reset --hard HEAD && yarn install`
+`cd /Users/akitoshiga/.cache/dein/repos/github.com/neoclide/coc.nvim/&& git reset --hard HEAD && yarn install`
 
 
 # Basic

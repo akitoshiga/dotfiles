@@ -1,9 +1,12 @@
 " MAIN
 "scriptencoding utf-8
 " :call mkdp#until#install()vim用の言語たち
-let g:python_host_prog = $HOME . '/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = $HOME . '/.pyenv/versions/neovim3/bin/python'
-let g:ruby_host_prog = $HOME . '/.rbenv/versions/3.0.2/bin/neovim-ruby-host'
+let g:python_host_prog     = $HOME . '/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog    = $HOME . '/.pyenv/versions/neovim3/bin/python'
+let g:ruby_host_prog       = $HOME . '/.rbenv/versions/2.7.6/bin/neovim-ruby-host'
+let g:node_host_prog       = $HOME . '/.nodenv/versions/16.12.0/bin/neovim-node-host'
+let g:loaded_perl_provider = 0
+
 
 " キーバインド
   " Emacs
@@ -91,35 +94,39 @@ endif
 " スクロール幅の変更
 set scroll=10
 
+
 "dein Scripts-----------------------------
-"
-"初期化
 if &compatible
   set nocompatible               " Be iMproved
 endif
 
-set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+" Required:
+set runtimepath+=/Users/akitoshiga/.config/nvim/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state('~/.cache/dein')
-  " キャッシュの読み込み
-  call dein#begin('~/.cache/dein')
-  " tomlの読み込み
+" Required:
+call dein#begin('/Users/akitoshiga/.config/nvim/dein')
+
+" Let dein manage dein
+" Required:
+call dein#add('/Users/akitoshiga/.config/nvim/dein/repos/github.com/Shougo/dein.vim')
+
+" Add or remove your plugins here like this:
   call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
   call dein#load_toml('~/.config/nvim/dein/dein.toml')
   call dein#load_toml('~/.config/nvim/dein/dein_lazy.toml', { 'lazy': 1 })
-  " 保存して終了
-  call dein#end()
-  call dein#save_state()
-endif
+" Required:
+call dein#end()
 
 " Required:
 filetype plugin indent on
 syntax enable
 
-" もしインストールしてない奴があったらインストールしておく
+" If you want to install not installed plugins on startup.
 "if dein#check_install()
-  "call dein#install()
+"  call dein#install()
 "endif
+
+"End dein Scripts-------------------------
 
 
 
@@ -150,5 +157,6 @@ colorscheme tokyonight
 
 let g:nightflyCursorColor = 1
 let g:nightflyNormalFloat = 1
-let g:tokyonight_style = 'storm' " available: night, storm
+"let g:tokyonight_style = 'storm' " available: night, storm
+let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1

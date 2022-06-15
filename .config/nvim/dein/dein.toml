@@ -1,8 +1,4 @@
 [[plugins]]
-repo = 'Shougo/dein.vim'
-
-
-[[plugins]]
 repo = 'roxma/nvim-yarp'
 
 [[plugins]]
