@@ -2,14 +2,18 @@ set textobj-entire
 set ReplaceWithRegister
 " _で発動. ダブルクォーテーションの中を置換したいなら _i"
 map _ gr
-set commentary
-set multiple-cursors
-" Ctrl+kで発動
-map <C-k> <A-n>
 set surround
 set easymotion
 " sで開始
 nmap s <Plug>(easymotion-s2)
+set commentary
+" multiple cursor
+set multiple-cursors
+map <C-N>  <A-N>
+map <C-P>  <A-P>
+map <C-X>  <A-X>
+map g<C-N> g<A-N>
+
 " カーソル形状
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
