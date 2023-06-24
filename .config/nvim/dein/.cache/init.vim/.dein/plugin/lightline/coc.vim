@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/josa42/vim-lightline-coc/plugin/lightline/coc.vim

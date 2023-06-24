@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/kassio/neoterm/test-config/nvim/init.vim

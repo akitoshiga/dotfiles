@@ -18,6 +18,7 @@ inoremap <C-p> <Up>
 inoremap <C-n> <Down>
 inoremap <C-f> <right>
 inoremap <C-b> <left>
+
   " Leader
 let maplocalleader = "\<Space>"
 let mapleader = "\<Space>"

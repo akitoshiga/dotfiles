@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/neoclide/coc-python/pythonFiles/testing_tools/adapter/report.py

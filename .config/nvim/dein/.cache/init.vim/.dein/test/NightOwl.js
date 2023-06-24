@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/haishanh/night-owl.vim/test/NightOwl.js

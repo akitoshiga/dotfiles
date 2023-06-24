@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/nvim-treesitter/nvim-treesitter/tests/unit/ts_utils_spec.lua

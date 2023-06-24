@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/mg979/vim-visual-multi/test/tests/alignment/commands.py

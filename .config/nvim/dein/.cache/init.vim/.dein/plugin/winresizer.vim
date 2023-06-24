@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/simeji/winresizer/plugin/winresizer.vim

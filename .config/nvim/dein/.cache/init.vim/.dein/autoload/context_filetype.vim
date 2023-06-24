@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/Shougo/context_filetype.vim/autoload/context_filetype.vim

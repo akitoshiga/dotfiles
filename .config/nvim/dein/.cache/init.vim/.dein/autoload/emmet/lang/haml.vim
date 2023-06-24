@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/mattn/emmet-vim/autoload/emmet/lang/haml.vim

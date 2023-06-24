@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/kristijanhusak/defx-git/rplugin/python3/defx/column/git.py

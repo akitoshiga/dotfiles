@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/liuchengxu/vista.vim/test/data/ctags_tree_view.py

@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/dhruvasagar/vim-table-mode/t/fixtures/table/sample_realign_unicode_after.txt

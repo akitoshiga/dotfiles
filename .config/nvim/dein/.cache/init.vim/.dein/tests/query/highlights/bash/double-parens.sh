@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/nvim-treesitter/nvim-treesitter/tests/query/highlights/bash/double-parens.sh

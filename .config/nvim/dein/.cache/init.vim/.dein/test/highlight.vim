@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/itchyny/lightline.vim/test/highlight.vim

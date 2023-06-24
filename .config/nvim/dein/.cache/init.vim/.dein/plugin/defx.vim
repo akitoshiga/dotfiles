@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/Shougo/defx.nvim/plugin/defx.vim

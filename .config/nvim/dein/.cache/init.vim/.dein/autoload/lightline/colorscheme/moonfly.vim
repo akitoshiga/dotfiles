@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/bluz71/vim-moonfly-colors/autoload/lightline/colorscheme/moonfly.vim

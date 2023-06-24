@@ -21,7 +21,7 @@ let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 " insert mode
 inoremap <c-a> <c-o>^
-inoremap <c-e> <c-o><right>
+inoremap <c-e> <c-o>$
 inoremap <c-b> <left>
 inoremap <c-f> <right>
 inoremap <c-n> <down>
@@ -41,3 +41,6 @@ set incsearch
 " 検索結果をハイライト表示
 set hlsearch
 set expandtab
+" ベルをミュート
+set visualbell
+set noerrorbell

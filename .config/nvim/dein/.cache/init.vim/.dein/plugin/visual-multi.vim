@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/mg979/vim-visual-multi/plugin/visual-multi.vim

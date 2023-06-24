@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/nvim-treesitter/nvim-treesitter/tests/query/injections/cuda/macro-self-injection.cu

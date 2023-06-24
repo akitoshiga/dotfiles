@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/roxma/vim-hug-neovim-rpc/pythonx/neovim_rpc_server.py

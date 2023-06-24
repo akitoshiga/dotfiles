@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/ryanoasis/vim-devicons/test/default_setting.vim

@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/sainnhe/sonokai/autoload/lightline/colorscheme/sonokai.vim

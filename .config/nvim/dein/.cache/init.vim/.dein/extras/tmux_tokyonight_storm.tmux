@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/folke/tokyonight.nvim/extras/tmux_tokyonight_storm.tmux

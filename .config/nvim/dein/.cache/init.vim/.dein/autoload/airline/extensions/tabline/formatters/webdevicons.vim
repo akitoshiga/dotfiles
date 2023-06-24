@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/ryanoasis/vim-devicons/autoload/airline/extensions/tabline/formatters/webdevicons.vim

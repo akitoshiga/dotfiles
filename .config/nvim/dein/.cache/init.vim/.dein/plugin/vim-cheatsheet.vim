@@ -1,0 +1,1 @@
+/Users/akitoshiga/.config/nvim/dein/repos/github.com/reireias/vim-cheatsheet/plugin/vim-cheatsheet.vim
