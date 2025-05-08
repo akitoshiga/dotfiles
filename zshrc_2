@@ -1,0 +1,59 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+# Customize to your needs...
+# cd省略
+setopt auto_cd
+# タイポ
+setopt correct
+# コマンド履歴
+HISTFILE=~/.zsh_history
+export HISTSIZE=1000
+setopt hist_reduce_blanks
+
+
+# プロンプトが表示されるたびにプロンプト文字列を評価、置換する
+setopt prompt_subst
+
+# lsd
+alias ls='lsd -a'
+alias ll='lsd -l'
+alias lla='lsd -la'
+alias la='lsd -a'
+alias lla='lsd -la'
+alias lt='lsd --tree'
+
+# bat
+alias cat='bat'
+
+# cdしたらls
+chpwd() {
+   ls -a
+}
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# fvm
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="$PATH":"$HOME/fvm/default/bin"
+export PATH="$PATH":"$HOME/.local/bin"
+
+
+eval "$(starship init zsh)"
+
+# go
+#export GOPATH="/Users/akitoshiga/.asdf/shims/go"
+#export PATH="$GOPATH/bin:$PATH"
+
+alias zshrcv='vi ~/.zshrc'
+alias zshrcs='source ~/.zshrc'
+
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+. /opt/homebrew/etc/profile.d/z.sh
+
+alias '$'=''
+
+export PATH="$PATH":"`go env GOPATH`/bin"
