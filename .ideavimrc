@@ -3,9 +3,10 @@ set ReplaceWithRegister
 " _で発動. ダブルクォーテーションの中を置換したいなら _i"
 map _ gr
 set surround
-set easymotion
-" sで開始
-nmap s <Plug>(easymotion-s2)
+echo -e '
+
+nmap s <Action>(AceTargetAction)
+
 set commentary
 " multiple cursor
 set multiple-cursors
@@ -29,6 +30,7 @@ inoremap <c-p> <up>
 inoremap <c-h> <bs>
 inoremap <c-d> <del>
 inoremap <c-k> <c-o>d$<right>
+inoremap <c-y> <c-o>p
 inoremap <c-j> <c-o>p
 inoremap <c-u> <c-o>d^
 inoremap <c-w> <c-o>db
@@ -44,3 +46,6 @@ set expandtab
 " ベルをミュート
 set visualbell
 set noerrorbell
+
+" ヤンクをクリップボードにコピー
+set clipboard+=unnamedplus
